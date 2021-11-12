@@ -1,0 +1,7 @@
+{
+  "name": "via-crucis",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
