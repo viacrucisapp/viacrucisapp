@@ -1,0 +1,21 @@
+
+.item.item-accordion {
+    line-height: 38px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-left: 1em;
+    transition: 0.09s all linear;
+  }
+  .list .item.item-accordion.ng-hide {
+    line-height: 0px;
+  }
+.subMenu-group {
+    transition: all .2s linear;
+    height: 0;
+    overflow: hidden;
+}
+
+.subMenu-group.active {
+    height: 300px;
+    transition: all .2s linear;
+}

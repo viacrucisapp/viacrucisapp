@@ -1,0 +1,12 @@
+{
+    "menu": {
+        "language": "Idioma",
+        "music": "Musica",
+        "donate": "Donazioni",
+        "rate": "Valutaci",
+        "info": "Maggiori informazioni"
+    },
+    "main": {
+        "stations": "Le stagioni"   
+    }
+}

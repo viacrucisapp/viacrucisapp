@@ -1,0 +1,12 @@
+{
+    "menu": {
+        "language": "Language",
+        "music": "Music",
+        "donate": "Donations",
+        "rate": "Rate Us",
+        "info": "More information"
+    },
+    "main": {
+        "stations": "Stations"   
+    }
+}

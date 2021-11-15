@@ -1,0 +1,12 @@
+{
+    "menu": {
+        "language": "Idiom",
+        "music": "Musik",
+        "donate": "Spenden",
+        "rate": "bewerten Sie uns",
+        "info": "Mehr Informationen"
+    },
+    "main": {
+        "stations": "Stationen"   
+    }
+}
