@@ -12,6 +12,7 @@ import lectures_es from "./translations/es/lectures.json"
 import lectures_en from "./translations/en/lectures.json"
 
 
+
 i18next.init({
   interpolation: {
     escapeValue: false
@@ -28,8 +29,11 @@ i18next.init({
     }
   },
   react: {
+    defaultTransParent: 'div',
+    transEmptyNodeValue: '',
     transSupportBasicHtmlNodes: true, // allow <br/> and simple html elements in translations
-    transKeepBasicHtmlNodesFor: ['br', 'strong', 'i', 'b', 'p'], // don't convert to <1></1> if simple react elements
+    transKeepBasicHtmlNodesFor: ['br', 'i', 'b', 'p'], // don't convert to <1></1> if simple react elements
+    transWrapTextNodes: '',
   }
 })
 

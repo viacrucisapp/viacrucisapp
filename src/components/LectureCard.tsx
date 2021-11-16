@@ -4,10 +4,9 @@ import { useTranslation } from "react-i18next"
 import './LectureCard.css'
 
 type LectureCardProps = {
-    title: string;
-    subTitle: string;
-    lecture: {title, subTitle, body, images:{miniature, full}, audio, id};
-    images: any
+    lecture: {title: string, subTitle: string, body: string, images:{miniature, full}, audio, id: number};
+    images: any,
+
 }
 
 export const LectureCard = ({lecture, images} : LectureCardProps) => {
@@ -16,10 +15,10 @@ export const LectureCard = ({lecture, images} : LectureCardProps) => {
     console.log(lecture.images.miniature)
 
     return (
-        <IonCard className="lecture-card">
+        <IonCard className="lecture-card" href={`lectures/${lecture.title}`}>
             <IonRow>
                 <IonCol>
-                    <img className="lecture-card__image" alt="Artist painting" src={images.imagesHome[lecture.id].default} />
+                    <img className="lecture-card__image" alt="Artist painting" src={images[lecture.id].small} />
                 </IonCol>
                 <IonCol>
                     <IonCardTitle className="lecture-card__title">{t(lecture.title)}</IonCardTitle>
