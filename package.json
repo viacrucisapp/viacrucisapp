@@ -67,7 +67,8 @@
     ]
   },
   "devDependencies": {
-    "@capacitor/cli": "3.3.1"
+    "@capacitor/cli": "3.3.1",
+    "@types/webpack-env": "^1.16.3"
   },
   "description": "An Ionic project"
 }

@@ -25,10 +25,10 @@ const Menu: React.FC = () => {
   const [t, i18n] = useTranslation("global");
 
   return (
-    <IonMenu contentId="main" type="overlay">
+    <IonMenu  contentId="main" type="overlay" side="end">
       <IonContent>
         <IonList id="inbox-list">  
-              <IonMenuToggle autoHide={false}>                
+              <IonMenuToggle autoHide={false} >                
               </IonMenuToggle>
               < AccordionList />                  
         </IonList>
