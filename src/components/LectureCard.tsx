@@ -9,6 +9,7 @@ type LectureCardProps = {
 
 }
 
+
 export const LectureCard = ({lecture, images} : LectureCardProps) => {
 
     const [t, i18n] = useTranslation("lectures");

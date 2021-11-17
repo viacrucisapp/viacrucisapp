@@ -29,7 +29,7 @@ i18next.init({
     }
   },
   react: {
-    defaultTransParent: 'div',
+    
     transEmptyNodeValue: '',
     transSupportBasicHtmlNodes: true, // allow <br/> and simple html elements in translations
     transKeepBasicHtmlNodesFor: ['br', 'i', 'b', 'p'], // don't convert to <1></1> if simple react elements

@@ -19,39 +19,45 @@ const Page: React.FC = () => {
   }*/
   let arrayLectures: any = t("list", { returnObjects: true });
   //let firstArr = arrayLectures[0]
-  const [currentLecture, setCurrentLecture] = useState<any>(arrayLectures[0]);
+  const [currentIndex, setCurrentIndex] = useState<any>(0);
   const[currentImage, setCurrentImage] = useState<any>(imageData[0]);
-  
-  const data =  {
-    "title": t(currentLecture.title), 
-    "subTitle": t(currentLecture.subTitle), 
-    "body": t(currentLecture.body)
-  };
 
- /*
 useEffect(() => {
-    setCurrentLecture(arrayLectures.find((estacion) => {
-     return estacion.title === name
-  }))
-  setCurrentImage(imageData.find((image) => {
-    return image.id === currentLecture.id
-  }))
-  console.log(currentLecture);
-  console.log(currentImage)
-}, [])
-*/
+  arrayLectures.filter((estacion) => {
+    if (estacion.title === name) { 
+      setCurrentIndex(estacion.id);
 
+      imageData.find((image) => {
+        if(image.id === estacion.id){
+        setCurrentImage(image)
+        }
+      })
+    };
+     
+  })
+}, [])
+
+
+
+
+/*
+
+<h2>{t(arrayLectures[currentIndex].title)}</h2>
+        <h3>{t(arrayLectures[currentIndex].subTitle)}</h3>
+        <Trans t={t}>
+          {t(arrayLectures[currentIndex].body)}
+        </Trans>
 
 console.log(arrayLectures);
 console.log(arrayLectures[0]);
 
 console.log('array')
-console.log(t(arrayLectures[0]))
+console.log(t(arrayLectures[0].subTitle))
 console.log('state')
 console.log(t(currentLecture.subTitle))
 
 console.log('DATA')
-console.log(data.subTitle)
+console.log(data.subTitle)*/
   return (
     <IonPage>
       <IonHeader>
@@ -71,10 +77,10 @@ console.log(data.subTitle)
           </IonToolbar>
         </IonHeader>
         <img src={currentImage.full} alt="painting" />
-        <h2>{t(currentLecture.title)}</h2>
-        <h3>{t(currentLecture.subTitle)}</h3>
+        <h2>{t(arrayLectures[currentIndex].title)}</h2>
+        <h3>{t(arrayLectures[currentIndex].subTitle)}</h3>
         <Trans t={t}>
-          {t(currentLecture.body)}
+          {t(arrayLectures[currentIndex].body)}
         </Trans>
       
       </IonContent>
