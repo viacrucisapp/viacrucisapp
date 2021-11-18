@@ -1,0 +1,6 @@
+ion-header {
+    --background: transparent no-repeat fixed center;
+    --color: black;
+    position: absolute;
+    top: 0;
+}

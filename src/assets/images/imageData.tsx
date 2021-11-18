@@ -27,7 +27,7 @@ import fullE12 from "./full/ImgE12.png"
 import fullE13 from "./full/ImgE13.png"
 import fullE14 from "./full/ImgE14.png"
 
-const imageData = [
+const imageData= [
     {
         "id": 0,
         "full": fullE1,

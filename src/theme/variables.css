@@ -2,6 +2,34 @@
 http://ionicframework.com/docs/theming/ */
 
 /** Ionic CSS Variables **/
+
+@font-face {
+  font-family: 'Roboto';  
+  font-weight: 400;
+  font-style: normal;
+  src: url('../assets/fonts/Roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto';  
+  font-weight: 400;
+  font-style: italic;
+  src: url('../assets/fonts/Roboto/Roboto-Italic.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto';  
+  font-weight: 300;
+  font-style: normal;
+  src: url('../assets/fonts/Roboto/Roboto-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto';  
+  font-weight: 300;
+  font-style: italic;
+  src: url('../assets/fonts/Roboto/Roboto-LightItalic.ttf');
+}
 :root {
   /** primary **/
   --ion-color-primary: #3880ff;
@@ -74,6 +102,22 @@ http://ionicframework.com/docs/theming/ */
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  /** favorite **/
+
+  --ion-color-favorite: #69bb7b;
+  --ion-color-favorite-rgb: 105,187,123;
+  --ion-color-favorite-contrast: #ffffff;
+  --ion-color-favorite-contrast-rgb: 255,255,255;
+  --ion-color-favorite-shade: #5ca56c;
+  --ion-color-favorite-tint: #78c288;
+
+  /** TOOLBAR **/
+  --ion-toolbar-background:transparent;
+
+  
+  --ion-font-family: 'Roboto', sans-serif;
+ 
 }
 
 @media (prefers-color-scheme: dark) {
@@ -233,4 +277,22 @@ http://ionicframework.com/docs/theming/ */
 
     --ion-card-background: #1e1e1e;
   }
+}
+
+h1, h2, h3, h4, h5, h6  {
+  margin-block-start:0; margin-block-end:0; margin-inline-start:0; margin-inline-end:0;
+  padding-block-start:0; padding-block-end:0; padding-inline-start:0; padding-inline-end:0;
+}
+
+h1 {
+  font-size: 2.18rem;
+}
+
+.ion-color-favorite {
+  --ion-color-base: var(--ion-color-favorite);
+  --ion-color-base-rgb: var(--ion-color-favorite-rgb);
+  --ion-color-contrast: var(--ion-color-favorite-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-favorite-contrast-rgb);
+  --ion-color-shade: var(--ion-color-favorite-shade);
+  --ion-color-tint: var(--ion-color-favorite-tint);
 }

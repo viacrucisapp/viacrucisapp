@@ -1,5 +1,30 @@
 .lecture-card {
-    height: 100px;
+    /*height: 100px;*/
+    border-radius: 1em;
+    box-shadow: none;
+    
+    font-family: 'Roboto', sans-serif;
 }
 
-.lecture-card__title{}
+.lecture-card__image {
+    width: 100%;
+    height: 100%;
+    border-radius: 0 1em 1em 0;
+
+}
+:root {
+    --ion-grid-padding: none;
+    --ion-grid-column-padding: none
+}
+.lecture-card__title{    
+    font-weight: 300 ;
+    font-size: 1.5rem ;
+    color:#444;
+}
+
+.lecture-card__text{
+    color: --ion-color-danger;
+    font-size: 1rem;
+    color:#444;
+   
+}

@@ -20,17 +20,15 @@ const Home: React.FC = () => {
 */
   return (
     <IonPage>
-      <IonHeader>
-        <IonToolbar>
-          
-          <IonTitle>Home</IonTitle>
-          <IonButtons slot="end">
-            <IonMenuButton />
-          </IonButtons>
-        </IonToolbar>
-      </IonHeader>
+    <IonToolbar>
+        
+        <IonTitle>Estaciones</IonTitle>
+        <IonButtons slot="end">
+        <IonMenuButton />
+        </IonButtons>
+    </IonToolbar>
 
-      <IonContent fullscreen>
+      <IonContent fullscreen color="light">
         <IonHeader collapse="condense">
           <IonToolbar>
             <IonTitle size="large">Home</IonTitle>
@@ -44,6 +42,7 @@ const Home: React.FC = () => {
             <LectureCard images={imageData} key={index} lecture={lecture}/>
           ))
         }
+        
 
         
       
