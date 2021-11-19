@@ -9,7 +9,7 @@ import {
   IonToolbar,
   useIonViewDidEnter,
   useIonViewDidLeave,
-  IonModal
+  IonModal,
  } from '@ionic/react';
 import { useParams, useRouteMatch } from 'react-router';
 import './Lecture.css';
@@ -35,14 +35,25 @@ const Page: React.FC = () => {
     current = languages.list.find(lecture => lecture.title === match.params.name);
     isMounted.current && setLecturaIndex(current.id);
     console.log('enter')
+    console.log(isMounted.current)
 
-
+    
   })
+
+
+
   //arrayLectures[currentIndex].id === 0
   useIonViewDidLeave(()=>{
     isMounted.current = false
     console.log('leave')
   })
+
+
+  const indexCheck = (current) => {
+    if(current.id <= 0){
+      
+    }
+  }
   /*
   useEffect(()=>{
    
