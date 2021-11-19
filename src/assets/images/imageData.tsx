@@ -26,8 +26,9 @@ import fullE11 from "./full/ImgE11.png"
 import fullE12 from "./full/ImgE12.png"
 import fullE13 from "./full/ImgE13.png"
 import fullE14 from "./full/ImgE14.png"
+import { Iimages } from "../../common/types"
 
-const imageData= [
+const imageData: Iimages[]= [
     {
         "id": 0,
         "full": fullE1,

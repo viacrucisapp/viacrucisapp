@@ -2,11 +2,12 @@ import React from 'react';
 import { IonCard, IonRow, IonCol, IonGrid, IonCardHeader, IonCardTitle, IonCardContent, IonText, IonCardSubtitle } from '@ionic/react';
 import { useTranslation } from "react-i18next"
 import './LectureCard.css'
-import { NavContext, useIonRouter } from '@ionic/react'
+import { NavContext, useIonRouter } from '@ionic/react';
+import { Ilectures, Iimages} from "../common/types";
 
 type LectureCardProps = {
-    lecture: {title: string, subTitle: string, body: string, images:{miniature, full}, audio, id: number};
-    images: any,
+    lecture: Ilectures;
+    images: Iimages[],
 
 }
 
@@ -31,7 +32,7 @@ export const LectureCard = ({lecture, images} : LectureCardProps) => {
     }
 
     return (
-        <IonCard button className="lecture-card" mode="ios" color="danger"  onClick={() => {router.push(`lectures/${lecture.title}`, "forward", "push")}} >
+        <IonCard button className="lecture-card" mode="ios" color="danger"  routerLink={`lectures/${lecture.title}`} >
             <IonGrid>
             <IonRow>
                 <IonCol size="2">

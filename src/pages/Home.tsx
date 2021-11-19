@@ -3,21 +3,16 @@ import { useParams } from 'react-router';
 import './Home.css';
 import { useTranslation } from "react-i18next";
 import { LectureCard } from '../components/LectureCard';
-import  imageData  from '../assets/images/imageData'; 
+import  imageData  from '../assets/images/imageData';
+import { Iimages, Ilectures} from "../common/types" 
 
 const Home: React.FC = () => {
 
   
   const [t, i18n] = useTranslation("lectures");
-  let arrayLectures: {title: string, subTitle: string, body: string, images:{miniature, full}, audio, id: number}[] = t("list", { returnObjects: true });
+  let arrayLectures: Ilectures[] = t("list", { returnObjects: true });
+  
 
-/*  function importAll(r) {
-    return r.keys().map(r);
-  }
-// @ts-ignore
-  const imagesHome = importAll(require.context('../assets/images/home', false, /\.(png|jpe?g|svg)$/))
-  const imagesInner= importAll(require.context('../assets/images/inner', false, /\.(png|jpe?g|svg)$/))
-*/
   return (
     <IonPage>
     <IonToolbar>
@@ -42,10 +37,7 @@ const Home: React.FC = () => {
             <LectureCard images={imageData} key={index} lecture={lecture}/>
           ))
         }
-        
 
-        
-      
       </IonContent>
     </IonPage>
   );
