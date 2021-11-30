@@ -7,8 +7,8 @@ import {
   IonMenuButton, 
   IonPage, 
   IonToolbar,
-  useIonViewDidEnter,
-  useIonViewDidLeave,
+  useIonViewWillEnter,
+  useIonViewWillLeave,
   IonModal,
  } from '@ionic/react';
 import { useParams, useRouteMatch } from 'react-router';
@@ -30,11 +30,11 @@ const Page: React.FC = () => {
   const [links, setLinks] = useState<{next?: string | boolean, prev?: string | boolean}>({})
   //let arrayLectures: Ilectures[] = t("list", { returnObjects: true });
   //const router = useIonRouter();
-  useIonViewDidEnter(()=>{
+  useIonViewWillEnter(()=>{
     let current;
     current = languages.list.find(lecture => lecture.title === match.params.name);
     isMounted.current && setLecturaIndex(current.id);
-    console.log('enter')
+    console.log('enter lecture')
     console.log(isMounted.current)
 
     
@@ -43,9 +43,10 @@ const Page: React.FC = () => {
 
 
   //arrayLectures[currentIndex].id === 0
-  useIonViewDidLeave(()=>{
+  useIonViewWillLeave(()=>{
     isMounted.current = false
-    console.log('leave')
+    console.log('leave lecture')
+    console.log(isMounted.current)
   })
 
 

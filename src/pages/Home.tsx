@@ -1,4 +1,4 @@
-import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar, useIonViewWillLeave, useIonViewWillEnter } from '@ionic/react';
 import { useParams } from 'react-router';
 import './Home.css';
 import { useTranslation } from "react-i18next";
@@ -12,7 +12,17 @@ const Home: React.FC = () => {
   const [t, i18n] = useTranslation("lectures");
   let arrayLectures: Ilectures[] = t("list", { returnObjects: true });
   
+  useIonViewWillEnter(()=>{
+    
+    console.log('enter home')
+    
+  })
 
+  useIonViewWillLeave(()=>{
+    
+    console.log('leave home')
+    
+  })
   return (
     <IonPage>
     <IonToolbar>
