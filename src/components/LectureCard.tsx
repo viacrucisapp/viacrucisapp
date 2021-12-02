@@ -1,5 +1,5 @@
 import React from 'react';
-import { IonCard, IonRow, IonCol, IonGrid, IonCardHeader, IonCardTitle, IonCardContent, IonText, IonCardSubtitle } from '@ionic/react';
+import { IonCard, IonRow, IonCol, IonGrid } from '@ionic/react';
 import { useTranslation } from "react-i18next"
 import './LectureCard.css'
 import { NavContext, useIonRouter } from '@ionic/react';
@@ -32,7 +32,7 @@ export const LectureCard = ({lecture, images} : LectureCardProps) => {
     }
 
     return (
-        <IonCard button className="lecture-card" mode="ios" color="danger"  routerLink={`lectures/${lecture.title}`} >
+        <IonCard button className="lecture-card" mode="ios" color="danger"  routerLink={`/lectures/${lecture.title}`} >
             <IonGrid>
             <IonRow>
                 <IonCol size="2">

@@ -94,7 +94,7 @@ http://ionicframework.com/docs/theming/ */
   --ion-color-light-shade: #dcdcdc;
   --ion-color-light-tint: #fbfbfb;
 
-  --ion-toolbar-background:transparent;
+  /*--ion-toolbar-background:transparent;*/
   
   --ion-font-family: 'Roboto', sans-serif;
 }
