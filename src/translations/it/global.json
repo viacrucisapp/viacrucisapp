@@ -4,7 +4,9 @@
         "music": "Musica",
         "donate": "Donazioni",
         "rate": "Valutaci",
-        "info": "Maggiori informazioni"
+        "info": "Maggiori informazioni",
+        "musicYes": "Si",
+        "musicNo": "No"
     },
     "main": {
         "stations": "Le stagioni"   

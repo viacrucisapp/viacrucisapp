@@ -21,11 +21,59 @@ import '@ionic/react/css/text-alignment.css';
 import '@ionic/react/css/text-transformation.css';
 import '@ionic/react/css/flex-utils.css';
 import '@ionic/react/css/display.css';
+import soundtrack from "./assets/audio/soundtrack.mp3";
+import { useTranslation } from "react-i18next";
 
 /* Theme variables */
 import './theme/variables.css';
+import { useEffect, useState } from 'react';
 
-const App: React.FC = () => {
+
+
+const App = () => {
+  const [t, i18n] = useTranslation("global");
+  const audio = new Audio(soundtrack); 
+  audio.loop = true;
+  const [audioState, setAudioState] = useState('menu.musicNo');
+  const [audioOn, setAudio] = useState(audio.paused)
+
+  
+
+  const audioController = () => {
+    
+    if( audioOn === true){
+      console.log('play');
+      playAudio();
+      setAudioState('menu.musicYes');
+      console.log(audio.paused);
+      setAudio(audio.paused)
+      
+    }
+    else{
+      console.log('stop');
+      pauseAudio();
+      setAudioState('menu.musicNo')
+      setAudio(audio.paused)
+          
+    }
+  }
+  
+  useEffect(()=>{
+    console.log('useffect')
+  
+    console.log(audioOn)
+  }, [audioOn])
+  
+  const playAudio = () => {
+    audio.play()
+  }
+
+  const pauseAudio = () => {
+    audio.pause();
+  };
+
+  
+
   return (
     <IonApp>
       
@@ -33,7 +81,7 @@ const App: React.FC = () => {
       
       <IonReactRouter>
         <IonSplitPane contentId="main">
-          <Menu />
+          <Menu audioController={audioController} audioState={audioState}/>
           
           <IonRouterOutlet id="main">
             <Route path="/" exact>

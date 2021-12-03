@@ -4,7 +4,9 @@
         "music": "Musique",
         "donate": "Faire un don",
         "rate": "Contribution",
-        "info": "Plus d'information"
+        "info": "Plus d'information",
+        "musicYes": "Oui",
+        "musicNo": "Non"
     },
     "main": {
         "stations": "Stations"   

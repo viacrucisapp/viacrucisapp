@@ -4,40 +4,22 @@ import { type } from 'os';
 import { useEffect, useState } from 'react';
 import './AccordionList.css';
 
-type LectureCardProps = {
-    title: string;
-    subTitle: string;
+type AccordionListProps = {
+    audioController: Function ;
 }
 
-export const AccordionList = () => {
+const languages: { id: string, label: string }[] = [
+    { "id": "es", "label": "Español" },
+    { "id": "en", "label": "English" },
+    { "id": "de", "label": "Deutsch" },
+    { "id": "it", "label": "Italiano" },
+    { "id": "fr", "label": "Français" }        
+];
+
+export const AccordionList = ({audioController, audioState}) => {
     
 
-    const languages: { id: string, label: string }[] = [
-        { "id": "es", "label": "Español" },
-        { "id": "en", "label": "English" },
-        { "id": "de", "label": "Deutsch" },
-        { "id": "it", "label": "Italiano" },
-        { "id": "fr", "label": "Français" }        
-    ];
-
-    const menuItems = [
-        { "name": "language", "subMenu": languages},
-        { "name": "music", "subMenu": null},
-        { "name": "donate", "subMenu": null},
-        { "name": "rate", "subMenu": null},
-        { "name": "info", "subMenu": null},
-    ]
-
-    const [clicked, setClicked] = useState(undefined)
-
-    //armar menu mappeable y cambiar id x index
-    const toggle = id => {
-        if (clicked === id) {
-            return setClicked(null)
-        }
-        setClicked(id)
-    }
-   
+    const [clicked, setClicked] = useState(undefined);   
 
     const showel = e => {  
         if (clicked === e.currentTarget.id) {
@@ -46,6 +28,11 @@ export const AccordionList = () => {
         setClicked(e.currentTarget.id)
     }
     const [t, i18n] = useTranslation("global");
+
+    const playButton = (e) => {
+        showel(e);
+        audioController();
+    }
 
     return (
        <div>
@@ -62,10 +49,10 @@ export const AccordionList = () => {
                 )))}
             </div> 
             </div>
-
-            <div className="listGroup" id="music" onClick={(e) => {showel(e)}}>
+               
+            <div className="listGroup" id="music" onClick={(e) => {showel(e); audioController()}}>
                 <IonItem button className="item-stable" lines="none">
-                        <IonLabel>{t('menu.music')}</IonLabel>
+                        <IonLabel>{t('menu.music')}: {t(audioState)}</IonLabel>
                 </IonItem>
             </div>
 

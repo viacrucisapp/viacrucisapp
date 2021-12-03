@@ -51,7 +51,7 @@ const Page: React.FC = () => {
       });
       indexCheck(current);
       scrollToTop()
-      window.addEventListener("ionScroll", getScroll)
+      //window.addEventListener("ionScroll", getScroll)
     }
     
     else{
@@ -68,7 +68,7 @@ const Page: React.FC = () => {
 
   useIonViewWillLeave(()=>{
     console.log('will leave lecture');
-    window.removeEventListener("scroll", getScroll);
+    //window.removeEventListener("scroll", getScroll);
 
   }, [match?.params])
 
