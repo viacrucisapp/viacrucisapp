@@ -4,17 +4,23 @@ import {
   IonMenu,
   IonMenuToggle,
   useIonViewWillEnter,  
-  useIonViewWillLeave
+  useIonViewWillLeave,
+
 } from '@ionic/react';
 
 import './Menu.css';
 import { AccordionList } from "./AccordionList";
 
 
+interface MenuProps {
+  audioController: Function;
+  audioState: string;
+  showModal: Function
+}
 
 
-const Menu = ({audioController, audioState}) => {
- 
+const Menu: React.FC<MenuProps> = ({audioController, audioState, showModal}) => {
+  
 
   return (
     <IonMenu  contentId="main" type="overlay" side="end">
@@ -22,7 +28,7 @@ const Menu = ({audioController, audioState}) => {
         <IonList id="inbox-list">  
               <IonMenuToggle autoHide={false} >                
               </IonMenuToggle>
-              < AccordionList audioController={audioController} audioState={audioState} />                  
+              < AccordionList audioController={audioController} audioState={audioState} showModal={showModal} />                  
         </IonList>
 
       </IonContent>

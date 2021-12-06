@@ -4,3 +4,26 @@ ion-header {
     position: absolute;
     top: 0;
 }
+
+ion-menu-button {
+    font-size: 30px ;
+
+    border-radius: 200px !important;
+    
+    
+  }
+
+  ion-menu-button.menuBtn{
+    background-color: white ;
+
+  }
+
+  .lecture_image{
+      width: 100%;
+      position: relative;
+      z-index: 1;
+  }
+
+  .lecture_contentCard {
+    z-index: 200;
+  }

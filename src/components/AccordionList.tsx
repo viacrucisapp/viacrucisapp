@@ -1,11 +1,13 @@
-import { IonCard, IonRow, IonCol, IonGrid, IonCardHeader, IonCardTitle, IonCardContent, IonText, IonItem, IonLabel } from '@ionic/react';
+import { IonCard, IonRow, IonCol, IonGrid, IonCardHeader, IonCardTitle, IonCardContent, IonText, IonItem, IonLabel, IonMenuToggle } from '@ionic/react';
 import { useTranslation } from "react-i18next"
 import { type } from 'os';
 import { useEffect, useState } from 'react';
 import './AccordionList.css';
 
-type AccordionListProps = {
-    audioController: Function ;
+interface AccordionListProps {
+    audioController: Function;
+  audioState: string;
+  showModal: Function
 }
 
 const languages: { id: string, label: string }[] = [
@@ -16,7 +18,7 @@ const languages: { id: string, label: string }[] = [
     { "id": "fr", "label": "Français" }        
 ];
 
-export const AccordionList = ({audioController, audioState}) => {
+export const AccordionList:React.FC<AccordionListProps> = ({audioController, audioState, showModal}) => {
     
 
     const [clicked, setClicked] = useState(undefined);   
@@ -28,11 +30,7 @@ export const AccordionList = ({audioController, audioState}) => {
         setClicked(e.currentTarget.id)
     }
     const [t, i18n] = useTranslation("global");
-
-    const playButton = (e) => {
-        showel(e);
-        audioController();
-    }
+    
 
     return (
        <div>
@@ -44,7 +42,7 @@ export const AccordionList = ({audioController, audioState}) => {
             <div className={`subMenu-group ${clicked === 'language' ? 'active' : ''}`}> 
             {(languages.map((language, index) => (
                 <IonItem button color={i18n.language === language.id ? 'primary' : 'light'} onClick={() => i18n.changeLanguage(language.id)} className="item-accordion" lines="none" key={index}>
-                    <IonLabel class="ion-margin-start">{language.label}</IonLabel>
+                    <IonLabel >{language.label}</IonLabel>
                 </IonItem>
                 )))}
             </div> 
@@ -68,12 +66,13 @@ export const AccordionList = ({audioController, audioState}) => {
                     </IonItem>
             </div>
 
-            <div className="listGroup" id="info" onClick={(e) => {showel(e)}}>
+            <IonMenuToggle autoHide={false} >             
+            <div className="listGroup" id="info" onClick={(e) => {showel(e); showModal()}}>
                     <IonItem button className="item-stable" lines="none">
                             <IonLabel>{t('menu.info')}</IonLabel>
                     </IonItem>
             </div>
-
+            </IonMenuToggle>
             
        </div>
 

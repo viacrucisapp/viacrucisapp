@@ -11,7 +11,7 @@ const Home: React.FC = () => {
   
   const [t, i18n] = useTranslation("lectures");
   let arrayLectures: Ilectures[] = t("list", { returnObjects: true });
-  
+  const [tMain] = useTranslation("global");
   useIonViewWillEnter(()=>{
     
     console.log('enter home')
@@ -25,15 +25,15 @@ const Home: React.FC = () => {
   })
   return (
     <IonPage>
-    <IonToolbar>
+    <IonToolbar color="light">
         
-        <IonTitle>Estaciones</IonTitle>
+        <IonTitle color="tertiary" size="large">{tMain('main.stations')}</IonTitle>
         <IonButtons slot="end">
         <IonMenuButton />
         </IonButtons>
     </IonToolbar>
 
-      <IonContent fullscreen color="light">
+      <IonContent class="mainContent" fullscreen color="light">
         <IonHeader collapse="condense">
           <IonToolbar>
             <IonTitle size="large">Home</IonTitle>

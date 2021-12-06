@@ -112,23 +112,23 @@ const Page: React.FC = () => {
     <IonPage>
       
       <IonHeader className="ion-no-border">
-        <IonToolbar >
+        <IonToolbar  >
         <IonButtons slot="start">
-          <IonButton routerLink="/lectures" routerDirection="back">
-            <IonIcon slot="icon-only" icon={arrowBackOutline} >
+          <IonButton routerLink="/lectures" routerDirection="back" style={{backgroundColor: 'rgba(255, 255, 255, 0.5)', borderRadius: '200px'}}>
+            <IonIcon slot="icon-only" icon={arrowBackOutline}  >
             </IonIcon>
             
           </IonButton>
         </IonButtons>
-          <IonButtons slot="end">
-            <IonMenuButton />
+          <IonButtons slot="end" >
+            <IonMenuButton style={{backgroundColor: 'rgba(255, 255, 255, 0.5)'}} className="menuBtn" />
           </IonButtons>
         </IonToolbar>
       </IonHeader>
       <IonContent ref={contentRef} scrollEvents={true} fullscreen>
-        <div ref={heightRef}><br/><br/><br/></div>
-        <img src={imageData[lecturaIndex].full} alt="artist painting"/>
-        <div ref={scrollableRef}>
+        
+        <img className="lecture_image" src={imageData[lecturaIndex].full} alt="artist painting"/>
+        <div className="lecture_contentCard" ref={scrollableRef}>
           <p>{t(`list.${lecturaIndex}.subTitle`)}</p>  
           <Trans> 
           {t(`list.${lecturaIndex}.body`)}

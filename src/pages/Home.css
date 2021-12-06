@@ -1,0 +1,21 @@
+ion-title.title-large {
+    font-size: 2.18rem;
+  }
+  
+  ion-menu-button {
+    font-size: 30px ;
+    border-radius: 200px !important;
+    
+    
+  }
+
+  ion-toolbar {
+    --padding-end: 35px;
+    --padding-start: 15px;
+    --padding-top: 15px;
+  }
+
+  .mainContent {
+    --padding-start: 15px;
+    --padding-end: 15px;
+  }
