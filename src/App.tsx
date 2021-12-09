@@ -2,6 +2,7 @@ import { IonApp, IonRouterOutlet, IonSplitPane, IonModal, IonButton } from '@ion
 import { IonReactRouter } from '@ionic/react-router';
 import { Redirect, Route } from 'react-router-dom';
 import Menu from './components/Menu';
+import InfoModal from './components/InfoModal';
 import Lecture from './pages/Lecture';
 import Home from './pages/Home';
 import { useStateWithCallbackLazy } from 'use-state-with-callback';
@@ -90,11 +91,10 @@ const App: React.FC = () => {
         
       
       <IonReactRouter>
-        <IonSplitPane contentId="main">
-        <IonModal isOpen={showModal} cssClass='my-custom-class'>
-          <p>INFO MODAL</p>
-          <IonButton onClick={() => setShowModal(false)}>Close Modal</IonButton>
-        </IonModal>  
+        
+
+        <InfoModal setShowModal={setShowModal} showModal={showModal}></InfoModal>
+        
         <Menu audioController={audioController} audioState={audioState} showModal={() => {setShowModal(true)}}/>
         <audio
           ref={audioRef}
@@ -110,7 +110,7 @@ const App: React.FC = () => {
               <Lecture />
             </Route>
           </IonRouterOutlet>
-        </IonSplitPane>
+        
       </IonReactRouter>
     </IonApp>
   );

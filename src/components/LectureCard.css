@@ -9,10 +9,19 @@ ion-card-content {
     height: 110px;
 }
 
+
+
 .lecture-card__image {   
     height: 100%;
     object-fit:cover;
+    
 }
+
+.lecture-card__image::part(image) {   
+    border-radius: 10px;
+    
+}
+
 :root {
     --ion-grid-padding: 0;
     --ion-grid-column-padding: 0;

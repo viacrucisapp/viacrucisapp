@@ -9,6 +9,11 @@
         "musicNo": "Nain"
     },
     "main": {
-        "stations": "Stationen"   
+        "stations": "Stationen",
+        "privacy": "Datenschutz-Bestimmungen",
+        "terms":  "Geschäftsbedingungen",
+        "privacyBody": "Ut qui aliquip eu mollit. Labore id minim nostrud enim. Cillum voluptate ut Lorem aliqua excepteur culpa sint et.",
+        "termsBody": "Ut qui aliquip eu mollit. Labore id minim nostrud enim. Cillum voluptate ut Lorem aliqua excepteur culpa sint et.",
+        "developed": "Entwickelt von"  
     }
 }

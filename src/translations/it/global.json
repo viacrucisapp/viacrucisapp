@@ -9,6 +9,11 @@
         "musicNo": "No"
     },
     "main": {
-        "stations": "Le stagioni"   
+        "stations": "Le stagioni",
+        "privacy": "politica sulla riservatezza",
+        "terms":  "Termini e Condizioni",
+        "privacyBody": "Ut qui aliquip eu mollit. Labore id minim nostrud enim. Cillum voluptate ut Lorem aliqua excepteur culpa sint et.",
+        "termsBody": "Ut qui aliquip eu mollit. Labore id minim nostrud enim. Cillum voluptate ut Lorem aliqua excepteur culpa sint et." ,
+        "developed": "Sviluppato da"       
     }
 }

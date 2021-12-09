@@ -10,9 +10,10 @@ ion-title.title-large {
   }
 
   ion-toolbar {
-    --padding-end: 35px;
+    --padding-end: 15px;
     --padding-start: 15px;
     --padding-top: 15px;
+    --padding-bottom: 15px;
   }
 
   .mainContent {

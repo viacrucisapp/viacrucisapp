@@ -9,6 +9,11 @@
         "musicNo": "No"
     },
     "main": {
-        "stations": "Stations"   
+        "stations": "Stations",
+        "privacy": "Privacy policy",
+        "terms":  "Terms and conditions",
+        "privacyBody": "Ut qui aliquip eu mollit. Labore id minim nostrud enim. Cillum voluptate ut Lorem aliqua excepteur culpa sint et.",
+        "termsBody": "Ut qui aliquip eu mollit. Labore id minim nostrud enim. Cillum voluptate ut Lorem aliqua excepteur culpa sint et." ,
+        "developed": "Developed by"    
     }
 }

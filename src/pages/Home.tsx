@@ -27,7 +27,7 @@ const Home: React.FC = () => {
     <IonPage>
     <IonToolbar color="light">
         
-        <IonTitle color="tertiary" size="large">{tMain('main.stations')}</IonTitle>
+        <IonTitle class="toolbarTitle" color="tertiary" size="large">{tMain('main.stations')}</IonTitle>
         <IonButtons slot="end">
         <IonMenuButton />
         </IonButtons>

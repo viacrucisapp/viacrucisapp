@@ -12,6 +12,8 @@ import {
   useIonViewDidLeave,
   IonModal, 
   IonIcon,
+  useIonModal,
+  IonFabButton
  } from '@ionic/react';
 import { useParams, useRouteMatch } from 'react-router';
 import './Lecture.css';
@@ -20,7 +22,7 @@ import  imageData  from '../assets/images/imageData';
 import { useState, useRef } from 'react';
 import languages from '../translations/es/lectures.json';
 import { useHistory } from 'react-router-dom';
-import { arrowBackOutline } from 'ionicons/icons';
+import { arrowBackOutline, chevronBackOutline, chevronForwardOutline, paperPlaneOutline } from 'ionicons/icons';
 
 const Page: React.FC = () => {
   let history = useHistory();
@@ -50,8 +52,11 @@ const Page: React.FC = () => {
         prev: current.id > 0 ? `/lectures/${languages.list[current.id-1].title}` : '/lectures'
       });
       indexCheck(current);
-      scrollToTop()
-      //window.addEventListener("ionScroll", getScroll)
+      scrollToTop();
+      //scrollableRef.current.addEventListener("scroll", getScroll)
+      scrollableRef.current.scrollTop = 0
+      console.log(scrollableRef.current)
+      
     }
     
     else{
@@ -64,14 +69,16 @@ const Page: React.FC = () => {
 
   const scrollToTop = () => {
     contentRef.current && contentRef.current.scrollToTop(500);
+    
   }
 
   useIonViewWillLeave(()=>{
     console.log('will leave lecture');
     //window.removeEventListener("scroll", getScroll);
 
-  }, [match?.params])
+  }, [contentRef])
 
+ 
   useIonViewDidLeave(()=>{
     console.log('did leave lecture');
   }, [match?.params])
@@ -93,7 +100,8 @@ const Page: React.FC = () => {
   }
   
   function getScroll() {
-    if(scrollableRef.current && heightRef.current && scrollableRef.current.offsetHeight > heightRef.current.offsetHeight) {
+    console.log(scrollableRef.current.scrollTop )
+    /*if(scrollableRef.current && heightRef.current && scrollableRef.current.offsetHeight > heightRef.current.offsetHeight) {
       console.log('TOCA EL TOP!!!!!')
       console.log(heightRef.current.offsetTop)
       console.log(scrollableRef.current.offsetTop)
@@ -104,8 +112,9 @@ const Page: React.FC = () => {
     else {
       console.log('no toca'); 
       console.log(heightRef.current)
-    }
+    }*/
   }
+
 
   
   return (
@@ -125,41 +134,71 @@ const Page: React.FC = () => {
           </IonButtons>
         </IonToolbar>
       </IonHeader>
-      <IonContent ref={contentRef} scrollEvents={true} fullscreen>
+      <IonContent class="lectureWrapper" ref={contentRef} scrollEvents={true} fullscreen>
         
         <img className="lecture_image" src={imageData[lecturaIndex].full} alt="artist painting"/>
-        <div className="lecture_contentCard" ref={scrollableRef}>
-          <p>{t(`list.${lecturaIndex}.subTitle`)}</p>  
-          <Trans> 
-          {t(`list.${lecturaIndex}.body`)}
-          </Trans>
-          <IonModal isOpen={showModal} cssClass='my-custom-class'>
+        <div className="lecture_contentCard" >
+          <div className="lecture_text-wrapper" ref={scrollableRef}>
+          <div className="topFade"></div>  
+
+
+            <div ref={heightRef}></div>
+            <div className="textContent">
+              <h1 className="lecture_title">{t(`list.${lecturaIndex}.title`)}</h1>
+              
+              <Trans>
+              {t(`list.${lecturaIndex}.body`)}
+              </Trans>
+            </div>
+            <div className="lecture_buttons">    
+              <IonButton 
+                size="default" 
+                disabled={backBtnDisable} 
+                color="primary" 
+                routerLink={btnLinks.prev}                             
+                routerDirection="back"
+                class="lecture_navBtn"
+                shape="round"
+                
+              >
+                {languages.list[lecturaIndex-1] ? languages.list[lecturaIndex-1].title : '-'}
+                <IonIcon slot="start" icon={chevronBackOutline}  />
+                
+              </IonButton>
+              <IonButton 
+                onClick={() => setShowModal(true)} 
+                size="default"
+                color="primary" 
+                class="lecture_navBtn share"       
+                
+         
+              >
+                <IonIcon   icon={paperPlaneOutline} />                
+              </IonButton>
+
+              
+              <IonButton 
+                size="default" 
+                disabled={nextBtnDisable} 
+                color="primary" 
+                routerLink={btnLinks.next}
+                routerDirection="forward"
+                class="lecture_navBtn"
+                shape="round"
+              >  
+                {languages.list[lecturaIndex+1] ? languages.list[lecturaIndex+1].title : '-'}
+                <IonIcon slot="end" icon={chevronForwardOutline}  />
+                
+              </IonButton>
+              
+            </div>
+            <div className="bottomFade"></div>  
+          </div>
+        </div>
+        <IonModal isOpen={showModal}>
           <p>This is modal content</p>
           <IonButton onClick={() => setShowModal(false)}>Close Modal</IonButton>
-        </IonModal>        
-          <IonButton 
-            size="default" 
-            disabled={backBtnDisable} 
-            color="dark" 
-            routerLink={btnLinks.prev}                             
-            routerDirection="back">
-            ANTERIOR
-          </IonButton>
-          <IonButton 
-            onClick={() => setShowModal(true)} 
-            size="default" color="favorite" 
-            shape="round">
-            SHARE
-          </IonButton>
-          <IonButton 
-            size="default" 
-            disabled={nextBtnDisable} 
-            color="primary" 
-            routerLink={btnLinks.next}
-            routerDirection="forward">  
-          SIGUIENTE
-          </IonButton>
-        </div>
+        </IonModal> 
       </IonContent>
     </IonPage>
   );

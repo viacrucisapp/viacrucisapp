@@ -1,0 +1,8 @@
+.columnModal {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: 'Roboto';
+    padding-top: 4em;
+}
