@@ -23,6 +23,7 @@ import { useState, useRef } from 'react';
 import languages from '../translations/es/lectures.json';
 import { useHistory } from 'react-router-dom';
 import { arrowBackOutline, chevronBackOutline, chevronForwardOutline, paperPlaneOutline } from 'ionicons/icons';
+import { Share } from '@capacitor/share';
 
 const Page: React.FC = () => {
   let history = useHistory();
@@ -54,8 +55,8 @@ const Page: React.FC = () => {
       indexCheck(current);
       scrollToTop();
       //scrollableRef.current.addEventListener("scroll", getScroll)
-      scrollableRef.current.scrollTop = 0
-      console.log(scrollableRef.current)
+      scrollableRef.current.scrollTop = 0      
+      scrollableRef.current.style.top = `0px`
       
     }
     
@@ -75,6 +76,8 @@ const Page: React.FC = () => {
   useIonViewWillLeave(()=>{
     console.log('will leave lecture');
     //window.removeEventListener("scroll", getScroll);
+    scrollableRef.current.scrollTop = 0;
+    scrollableRef.current.style.top = `0px`
 
   }, [contentRef])
 
@@ -115,7 +118,27 @@ const Page: React.FC = () => {
     }*/
   }
 
+  async function shareLecture() {
+    await Share.share({
+      title: 'Via Crucis',
+      text: 'Descarga la aplicación y lleva el Via Crucis en tu celular',
+      url: 'https://fluo.digital/',
+      dialogTitle: 'Compartir',
+    });
+  }
 
+const scrollingFn = () => {
+  
+  if(scrollableRef.current.scrollTop < 80) {
+    if(heightRef.current.style.transform !== '-80px'){
+        heightRef.current.style.transform = `translateY(-${scrollableRef.current.scrollTop}px)`
+        //scrollableRef.current.style.top = `${scrollableRef.current.scrollTop}px`
+    } return
+
+  }
+  else console.log(scrollableRef.current.scrollTop)
+  
+}
   
   return (
     <IonPage>
@@ -137,12 +160,12 @@ const Page: React.FC = () => {
       <IonContent class="lectureWrapper" ref={contentRef} scrollEvents={true} fullscreen>
         
         <img className="lecture_image" src={imageData[lecturaIndex].full} alt="artist painting"/>
-        <div className="lecture_contentCard" >
-          <div className="lecture_text-wrapper" ref={scrollableRef}>
+        <div className="lecture_contentCard" ref={heightRef}>
+          <div className="lecture_text-wrapper" onScroll={scrollingFn}  ref={scrollableRef}>
           <div className="topFade"></div>  
 
 
-            <div ref={heightRef}></div>
+            
             <div className="textContent">
               <h1 className="lecture_title">{t(`list.${lecturaIndex}.title`)}</h1>
               
@@ -166,7 +189,7 @@ const Page: React.FC = () => {
                 
               </IonButton>
               <IonButton 
-                onClick={() => setShowModal(true)} 
+                onClick={() => shareLecture()} 
                 size="default"
                 color="primary" 
                 class="lecture_navBtn share"       

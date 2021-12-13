@@ -28,12 +28,13 @@ ion-card-content {
 }
 h2.lecture-card__title{    
     font-weight: 700 ;
-    font-size: 1rem ;
+    font-size: 1.2rem ;
     color:#444;
 }
 
 h3.lecture-card__text{    
-    font-size: 1rem;
+    font-size: 1.2rem;
     color:#444;
+    line-height: 1.5rem;
    
 }
