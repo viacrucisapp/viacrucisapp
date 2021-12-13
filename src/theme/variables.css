@@ -291,3 +291,7 @@ h1 {
   --ion-color-tint: var(--ion-color-favorite-tint);
 }
 
+ion-modal {
+  --width: 100%;
+  --height: 100%
+}

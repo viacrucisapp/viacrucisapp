@@ -3,7 +3,7 @@
 	"appName": "via-crucis",
 	"webDir": "build",
 	"bundledWebRuntime": false,
-	"linux" : {
+	"linux": {
 		"linuxAndroidStudioPath": "/opt/android-studio/bin/studio.sh"
 	}
 }
