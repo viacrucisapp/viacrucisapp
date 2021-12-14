@@ -129,16 +129,22 @@ const Page: React.FC = () => {
 
 const scrollingFn = () => {
   
-  if(scrollableRef.current.scrollTop < 80) {
-    if(heightRef.current.style.transform !== '-80px'){
-        heightRef.current.style.transform = `translateY(-${scrollableRef.current.scrollTop}px)`
+  if(scrollableRef.current.scrollTop < 50) {    
+        //heightRef.current.style.transform = `translateY(-${scrollableRef.current.scrollTop}px)`;
+        heightRef.current.style.marginTop = `-${scrollableRef.current.scrollTop}px`;
+        heightRef.current.style.borderRadius= `${scrollableRef.current.scrollTop/2}px`
         //scrollableRef.current.style.top = `${scrollableRef.current.scrollTop}px`
-    } return
-
   }
-  else console.log(scrollableRef.current.scrollTop)
+  else {
+    //console.log(scrollableRef.current.scrollTop);  
+    heightRef.current.style.marginTop = `-50px`;
+    heightRef.current.style.borderRadius= `25px`
+  }
   
 }
+
+
+
   
   return (
     <IonPage>
@@ -173,7 +179,8 @@ const scrollingFn = () => {
               {t(`list.${lecturaIndex}.body`)}
               </Trans>
             </div>
-            <div className="lecture_buttons">    
+            <div className="lecture_buttons">
+                
               <IonButton 
                 size="default" 
                 disabled={backBtnDisable} 
@@ -181,8 +188,8 @@ const scrollingFn = () => {
                 routerLink={btnLinks.prev}                             
                 routerDirection="back"
                 class="lecture_navBtn"
-                shape="round"
-                
+                shape="round"                
+                style={ { visibility: backBtnDisable ? 'hidden' : 'visible'} }
               >
                 {languages.list[lecturaIndex-1] ? languages.list[lecturaIndex-1].title : '-'}
                 <IonIcon slot="start" icon={chevronBackOutline}  />
@@ -208,6 +215,7 @@ const scrollingFn = () => {
                 routerDirection="forward"
                 class="lecture_navBtn"
                 shape="round"
+                style={ { visibility: nextBtnDisable ? 'hidden' : 'visible'} }
               >  
                 {languages.list[lecturaIndex+1] ? languages.list[lecturaIndex+1].title : '-'}
                 <IonIcon slot="end" icon={chevronForwardOutline}  />

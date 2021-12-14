@@ -39,7 +39,7 @@ ion-menu-button {
     /*con transparencia*/
     /*background: linear-gradient(180deg, rgba(2,0,36,0) -12%, rgba(255,255,255,1) 12%);*/
     background: linear-gradient(180deg, rgba(2,0,36,0) -12%, rgba(255,255,255,1) 0%);
-    border-radius: 20px;
+    /*border-radius: 20px;*/
     padding: 1em;
     overflow: hidden;
     height: 1;
@@ -103,7 +103,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
     shape-outside:linear-gradient(transparent,transparent);
     position: sticky;
     
-    top: 0;
+    top: -1px;
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
   }
 

@@ -36,7 +36,7 @@ export const LectureCard = ({lecture, images} : LectureCardProps) => {
             <IonGrid>
             <IonRow>
                 <IonCol size="3">
-                    <IonImg className="lecture-card__image" alt="Artist painting" src={images[lecture.id].full} />
+                    <IonImg className="lecture-card__image" alt="Artist painting" src={images[lecture.id].small} />
                 </IonCol>
                 <IonCol size="9">
                     <IonCardContent>

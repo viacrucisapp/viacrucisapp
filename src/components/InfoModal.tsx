@@ -8,7 +8,8 @@ import {
     IonContent,
     IonHeader,
     IonToolbar,
-    IonButtons
+    IonButtons,
+    IonIcon
   
   } from '@ionic/react';
   
@@ -19,7 +20,7 @@ import {
   import { useTranslation } from "react-i18next"
   import { useState, useRef } from 'react';
 import { trendingUpOutline } from 'ionicons/icons';
-
+import { arrowBackOutline } from 'ionicons/icons';
 
   interface ModalProps {
     setShowModal,
@@ -89,20 +90,17 @@ import { trendingUpOutline } from 'ionicons/icons';
       
       
         <IonModal onDidDismiss={() => {closeModal()}} class=""  isOpen={showModal}>
-          <IonHeader translucent>
+          <IonHeader translucent className="ion-no-border">
             <IonToolbar>
-              {
-              modalScreen !== 'info' ?
-              <IonButtons slot="start" >
-                <IonButton onClick={() => {setModalScreen('info')}} color="primary">Volver</IonButton>
+
+              <IonButtons slot="start">
+                <IonButton  onClick={modalScreen !== 'info' ? () => {setModalScreen('info')} : () => {closeModal()}}>
+                  <IonIcon slot="icon-only" icon={arrowBackOutline}  >
+                  </IonIcon>
+                  
+                </IonButton>
               </IonButtons>
-               : 
-               null
-              }
               
-              <IonButtons slot="end">
-                <IonButton onClick={() => {closeModal()}} color="primary">Cerrar</IonButton>
-              </IonButtons>
             </IonToolbar>
           </IonHeader>
           <IonContent color="medium" fullscreen>
