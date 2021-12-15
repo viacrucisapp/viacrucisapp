@@ -6,6 +6,7 @@ import InfoModal from './components/InfoModal';
 import Lecture from './pages/Lecture';
 import Home from './pages/Home';
 import { useStateWithCallbackLazy } from 'use-state-with-callback';
+import { App as AppIon } from '@capacitor/app'
 
 
 
@@ -40,7 +41,11 @@ const App: React.FC = () => {
   let fadeTimer  = useRef<any>();
   const [showModal, setShowModal] = useState(false);
 
-  
+  AppIon.addListener('appStateChange', ({ isActive }) => {
+    if(!isActive) {
+      setAudioState('menu.musicNo', () => {pauseAudio()}) 
+    };
+  });
 
   const audioController = () => {
     
