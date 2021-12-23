@@ -90,12 +90,12 @@ import { arrowBackOutline } from 'ionicons/icons';
       
       
         <IonModal onDidDismiss={() => {closeModal()}} class=""  isOpen={showModal}>
-          <IonHeader translucent className="ion-no-border">
-            <IonToolbar>
+          <IonHeader mode="md" translucent className="ion-no-border">
+            <IonToolbar mode='md'>
 
               <IonButtons slot="start">
-                <IonButton  onClick={modalScreen !== 'info' ? () => {setModalScreen('info')} : () => {closeModal()}}>
-                  <IonIcon slot="icon-only" icon={arrowBackOutline}  >
+                <IonButton mode='md' onClick={modalScreen !== 'info' ? () => {setModalScreen('info')} : () => {closeModal()}}>
+                  <IonIcon mode='md' slot="icon-only" icon={arrowBackOutline}  >
                   </IonIcon>
                   
                 </IonButton>

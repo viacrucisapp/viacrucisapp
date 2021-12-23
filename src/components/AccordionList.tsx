@@ -36,12 +36,12 @@ export const AccordionList:React.FC<AccordionListProps> = ({audioController, aud
        <div>
 
             <div className="listGroup" id="language" onClick={(e) => {showel(e)}}>
-                <IonItem button className="item-stable" lines="none">
+                <IonItem detail={false} button className="item-stable" lines="none">
                         <IonLabel id="music">{t('menu.language')}</IonLabel>
                 </IonItem>
             <div className={`subMenu-group ${clicked === 'language' ? 'active' : ''}`}> 
             {(languages.map((language, index) => (
-                <IonItem button color={i18n.language === language.id ? 'primary' : 'light'} onClick={() => i18n.changeLanguage(language.id)} className="item-accordion" lines="none" key={index}>
+                <IonItem detail={false} button color={i18n.language === language.id ? 'primary' : 'light'} onClick={() => i18n.changeLanguage(language.id)} className="item-accordion" lines="none" key={index}>
                     <IonLabel >{language.label}</IonLabel>
                 </IonItem>
                 )))}
@@ -49,26 +49,26 @@ export const AccordionList:React.FC<AccordionListProps> = ({audioController, aud
             </div>
                
             <div className="listGroup" id="music" onClick={(e) => {showel(e); audioController()}}>
-                <IonItem button className="item-stable" lines="none">
+                <IonItem detail={false} button className="item-stable" lines="none">
                         <IonLabel>{t('menu.music')}: {t(audioState)}</IonLabel>
                 </IonItem>
             </div>
 
             <div className="listGroup" id="donate" onClick={(e) => {showel(e)}}>
-                    <IonItem button className="item-stable" lines="none">
+                    <IonItem detail={false} button className="item-stable" lines="none">
                             <IonLabel>{t('menu.donate')}</IonLabel>
                     </IonItem>
             </div>
 
             <div className="listGroup" id="rate" onClick={(e) => {showel(e)}}>
-                    <IonItem button className="item-stable" lines="none">
+                    <IonItem detail={false} button className="item-stable" lines="none">
                             <IonLabel>{t('menu.rate')}</IonLabel>
                     </IonItem>
             </div>
 
             <IonMenuToggle autoHide={false} >             
             <div className="listGroup" id="info" onClick={(e) => {showel(e); showModal()}}>
-                    <IonItem button className="item-stable" lines="none">
+                    <IonItem detail={false} button className="item-stable" lines="none">
                             <IonLabel>{t('menu.info')}</IonLabel>
                     </IonItem>
             </div>

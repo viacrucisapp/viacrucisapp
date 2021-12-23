@@ -25,7 +25,7 @@ const Home: React.FC = () => {
   })
   return (
     <IonPage>
-    <IonToolbar color="light">
+    <IonToolbar color="light" mode="md">
         
         <IonTitle class="toolbarTitle" color="tertiary" size="large">{tMain('main.stations')}</IonTitle>
         <IonButtons slot="end">
@@ -33,12 +33,8 @@ const Home: React.FC = () => {
         </IonButtons>
     </IonToolbar>
 
-      <IonContent class="mainContent" fullscreen color="light">
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Home</IonTitle>
-          </IonToolbar>
-        </IonHeader>
+      <IonContent forceOverscroll={true} class="mainContent" fullscreen color="light">
+
 
         {
           

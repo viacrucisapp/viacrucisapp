@@ -149,21 +149,21 @@ const scrollingFn = () => {
   return (
     <IonPage>
       
-      <IonHeader className="ion-no-border">
-        <IonToolbar  >
+      <IonHeader mode="md" className="ion-no-border">
+        <IonToolbar mode="md" >
         <IonButtons slot="start">
-          <IonButton routerLink="/lectures" routerDirection="back" style={{backgroundColor: 'rgba(255, 255, 255, 0.5)', borderRadius: '200px'}}>
+          <IonButton mode="md" routerLink="/lectures" routerDirection="back" style={{backgroundColor: 'rgba(255, 255, 255, 0.5)', borderRadius: '200px'}}>
             <IonIcon slot="icon-only" icon={arrowBackOutline}  >
             </IonIcon>
             
           </IonButton>
         </IonButtons>
           <IonButtons slot="end" >
-            <IonMenuButton style={{backgroundColor: 'rgba(255, 255, 255, 0.5)'}} className="menuBtn" />
+            <IonMenuButton mode="md" style={{backgroundColor: 'rgba(255, 255, 255, 0.5)'}} className="menuBtn" />
           </IonButtons>
         </IonToolbar>
       </IonHeader>
-      <IonContent class="lectureWrapper" ref={contentRef} scrollEvents={true} fullscreen>
+      <IonContent scrollY={false} forceOverscroll={true} class="lectureWrapper" ref={contentRef} scrollEvents={true} fullscreen>
         
         <img className="lecture_image" src={imageData[lecturaIndex].full} alt="artist painting"/>
         <div className="lecture_contentCard" ref={heightRef}>
@@ -182,13 +182,14 @@ const scrollingFn = () => {
             <div className="lecture_buttons">
                 
               <IonButton 
+                mode="md"
                 size="default" 
                 disabled={backBtnDisable} 
                 color="primary" 
                 routerLink={btnLinks.prev}                             
                 routerDirection="back"
                 class="lecture_navBtn"
-                shape="round"                
+                shape="round"              
                 style={ { visibility: backBtnDisable ? 'hidden' : 'visible'} }
               >
                 {languages.list[lecturaIndex-1] ? languages.list[lecturaIndex-1].title : '-'}
@@ -199,11 +200,11 @@ const scrollingFn = () => {
                 onClick={() => shareLecture()} 
                 size="default"
                 color="primary" 
-                class="lecture_navBtn share"       
-                
-         
+                class="lecture_navBtn share" 
+                mode="md"     
+                style={ { borderRadius: '200px'} }   
               >
-                <IonIcon   icon={paperPlaneOutline} />                
+                <IonIcon slot='icon-only'   icon={paperPlaneOutline} />                
               </IonButton>
 
               
@@ -211,11 +212,13 @@ const scrollingFn = () => {
                 size="default" 
                 disabled={nextBtnDisable} 
                 color="primary" 
+                
                 routerLink={btnLinks.next}
                 routerDirection="forward"
                 class="lecture_navBtn"
                 shape="round"
                 style={ { visibility: nextBtnDisable ? 'hidden' : 'visible'} }
+                mode="md"
               >  
                 {languages.list[lecturaIndex+1] ? languages.list[lecturaIndex+1].title : '-'}
                 <IonIcon slot="end" icon={chevronForwardOutline}  />

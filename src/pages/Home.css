@@ -1,24 +1,24 @@
-ion-title.title-large {
+ion-title.title-large, ion-title.title-large .ios  {
     font-size: 2rem;
     margin-left: -4px;
     
   }
   
-  ion-menu-button {
+  ion-menu-button, ion-menu-button.ios {
     font-size: 30px ;
     border-radius: 200px !important;
     
     
   }
 
-  ion-toolbar {
+  ion-toolbar, ion-toolbar.md {
     --padding-end: 12px;
     --padding-start: 12px;
     --padding-top: 12px;
     --padding-bottom: 12px;
   }
 
-  .mainContent {
+  .mainContent, .mainContent.md {
     --padding-start: 12px;
     --padding-end: 12px;
   }
