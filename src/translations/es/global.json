@@ -4,16 +4,25 @@
         "music": "Musica",
         "donate": "Donaciones",
         "rate": "Calificanos",
-        "info": "Más información",
+        "info": "Acerca de esta APP",
+        "viaInfo": "Acerca del Via Crucis",
         "musicYes": "Si",
         "musicNo": "No"
     },
     "main": {
         "stations": "Estaciones",
+        "aboutBody": "<p>Las hermosas meditaciones de este Vía Crucis pertenecen al libro póstumo de San Josemaría Escrivá y fueron puestos generosamente a disposición  por la Fundación Studium.</p><p>Josemaría Escrivá fue un sacerdote fundador del Opus Dei, que dedicó su vida a difundir la llamada universal a la santidad. Vivió entre 10902 y 1975, y fué proclamado Santo el 6 de octubre de 2002.</p><p>Las ilustraciones de esta APP son obra de la talentosa artista suiza Bradi Barth, y cedidas  generosamente por la fundación que custodia su obra, Herbronnen vzw.</p><p>Esta APP fue desarrollada por Luz Libre, una empresa B especializada en la creación de contenidos inspiradores.</p>",
         "privacy": "Política de privacidad",
         "terms":  "Términos y condiciones",
         "privacyBody": "Ut qui aliquip eu mollit. Labore id minim nostrud enim. Cillum voluptate ut Lorem aliqua excepteur culpa sint et.",
         "termsBody": "Ut qui aliquip eu mollit. Labore id minim nostrud enim. Cillum voluptate ut Lorem aliqua excepteur culpa sint et.",
-        "developed": "Desarrollado por"     
+        "developed": "Desarrollado por",
+        "viaCrucisInfo": "El Via Crucis (en latín: “camino de la cruz”) es una de las devociones más extendidas entre los católicos. Se reza habitualmente el Viernes Santo o los viernes de Cuaresma y remite a los momentos vividos por Jesús desde su prendimiento hasta su crucifixión y sepultura. Es un camino de oración, basado en la meditación de la pasión y muerte de Jesucristo en su camino al monte Calvario.",
+        "howTo": "Cómo Rezarlo",
+        "howToBody": "<p>Antes de cada meditación puede decirse:</p><ul><li>Te alabamos Cristo y te bendecimos,</li><li>Que por tu Santa Cruz redimiste al mundo.</li></ul><p>Al término de cada meditación, puede rezarse un Padrenuestro y un Gloria.</p>",
+        "donateBody": "<p>Esta APP es ofrecida con la modalidad pago voluntario, a fin de promover en todo lo posible el rezo del Vía Crucis.</p><p>Tu pago voluntario nos ayudará a continuar difundiendo esta APP y a desarrollar otros proyectos dentro del espíritu de la nueva evangelización.</p><p>¡Muchas gracias!</p>",
+        "donateBtn": "Donar"    
     }
 }
+
+

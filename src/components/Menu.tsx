@@ -15,11 +15,13 @@ import { AccordionList } from "./AccordionList";
 interface MenuProps {
   audioController: Function;
   audioState: string;
-  showModal: Function
+  showModal: Function;
+  showViaInfoModal: Function;
+  showDonateModal: Function
 }
 
 
-const Menu: React.FC<MenuProps> = ({audioController, audioState, showModal}) => {
+const Menu: React.FC<MenuProps> = ({audioController, audioState, showModal, showViaInfoModal, showDonateModal}) => {
   
 
   return (
@@ -28,7 +30,7 @@ const Menu: React.FC<MenuProps> = ({audioController, audioState, showModal}) => 
         <IonList id="inbox-list">  
               <IonMenuToggle autoHide={false} >                
               </IonMenuToggle>
-              < AccordionList audioController={audioController} audioState={audioState} showModal={showModal} />                  
+              < AccordionList audioController={audioController} audioState={audioState} showModal={showModal} showViaInfoModal={showViaInfoModal} showDonateModal={showDonateModal} />                  
         </IonList>
 
       </IonContent>

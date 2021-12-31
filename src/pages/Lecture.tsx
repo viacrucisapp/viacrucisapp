@@ -174,7 +174,7 @@ const scrollingFn = () => {
             
             <div className="textContent">
               <h1 className="lecture_title">{t(`list.${lecturaIndex}.title`)}</h1>
-              
+              <h2 className="lecture_subTitle">{t(`list.${lecturaIndex}.subTitle`)}</h2>
               <Trans>
               {t(`list.${lecturaIndex}.body`)}
               </Trans>

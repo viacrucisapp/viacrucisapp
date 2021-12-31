@@ -64,6 +64,15 @@ ion-menu-button {
       
   }
 
+  .lecture_subTitle {
+    color: rgba(68, 68, 68, 0.5);
+    text-align: center;
+    font-weight: 300; 
+    z-index: 10;
+    position: relative;    
+    
+}
+
   .textContent {
     margin-top: -30px;
     

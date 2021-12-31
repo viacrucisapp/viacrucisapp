@@ -4,16 +4,24 @@
         "music": "Music",
         "donate": "Donations",
         "rate": "Rate Us",
-        "info": "More information",
+        "info": "About this APP",
+        "viaInfo": "About Via Crucis",
         "musicYes": "Yes",
         "musicNo": "No"
     },
     "main": {
         "stations": "Stations",
+        "aboutBody": "<p>The beautiful meditations of this Via Crucis belong to the posthumous book of Saint Josemaría Escrivá and were generously made available by the Studium Foundation.</p><p>Josemaría Escrivá was a founding priest of Opus Dei, who dedicated his life to spreading the universal call to holiness. He lived between 10902 and 1975, and was proclaimed a Saint on October 6, 2002.</p><p>The illustrations in this APP are the work of the talented Swiss artist Bradi Barth, and generously provided by the foundation that guards her work, Herbronnen vzw.</p><p>This APP was developed by Luz Libre, a B company specialized in creating inspiring content.</p>",
         "privacy": "Privacy policy",
         "terms":  "Terms and conditions",
         "privacyBody": "Ut qui aliquip eu mollit. Labore id minim nostrud enim. Cillum voluptate ut Lorem aliqua excepteur culpa sint et.",
         "termsBody": "Ut qui aliquip eu mollit. Labore id minim nostrud enim. Cillum voluptate ut Lorem aliqua excepteur culpa sint et." ,
-        "developed": "Developed by"    
+        "developed": "Developed by",
+        "viaCrucisInfo": "The Via Crucis (Latin: “way of the cross“) is one of the most widespread devotions among Catholics. It is usually prayed on Good Friday or the Fridays of Lent and refers to the moments lived by Jesus from the arrest of him to the crucifixion and burial of him. It is a path of prayer, based on the meditation of the passion and death of Jesus Christ on his way to Mount Calvary.",     
+        "howTo": "How to pray to it",
+        "howToBody": "<p>Before each meditation you can say:</p><ul><li>We praise you Christ and we bless you,</li><li>That by your Holy Cross you redeemed the world.</li></ul><p>At the end of each meditation, an Our Father and a Glory can be said.</p>",     
+        "donateBody": "<p>This APP is offered with the voluntary payment method, in order to promote the recitation of the Way of the Cross as much as possible.</p><p>Your voluntary payment will help us to continue spreading this APP and to develop other projects within the spirit of the new evangelization.</p><p>Thanks a lot!</p>",
+        "donateBtn": "Donate"    
     }
 }
+

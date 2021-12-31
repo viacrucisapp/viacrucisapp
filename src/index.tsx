@@ -32,7 +32,7 @@ i18next.init({
     
     transEmptyNodeValue: '',
     transSupportBasicHtmlNodes: true, // allow <br/> and simple html elements in translations
-    transKeepBasicHtmlNodesFor: ['br', 'i', 'b', 'p'], // don't convert to <1></1> if simple react elements
+    transKeepBasicHtmlNodesFor: ['br', 'i', 'b', 'p', 'ul', 'li'], // don't convert to <1></1> if simple react elements
     transWrapTextNodes: ''
   }
 })

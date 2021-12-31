@@ -59,12 +59,12 @@ http://ionicframework.com/docs/theming/ */
   --ion-color-secondary-shade: #6e6b67;
   --ion-color-secondary-tint: #8a8783;
 
-  --ion-color-tertiary: #CFC1A7;
-  --ion-color-tertiary-rgb: 207,193,167;
-  --ion-color-tertiary-contrast: #000000;
-  --ion-color-tertiary-contrast-rgb: 0,0,0;
-  --ion-color-tertiary-shade: #b6aa93;
-  --ion-color-tertiary-tint: #d4c7b0;
+	--ion-color-tertiary: #B5A68C;
+	--ion-color-tertiary-rgb: 181,166,140;
+	--ion-color-tertiary-contrast: #000000;
+	--ion-color-tertiary-contrast-rgb: 0,0,0;
+	--ion-color-tertiary-shade: #9f927b;
+	--ion-color-tertiary-tint: #bcaf98;
 
   --ion-color-success: #66bb6a;
   --ion-color-success-rgb: 102,187,106;

@@ -7,18 +7,21 @@ import './AccordionList.css';
 interface AccordionListProps {
     audioController: Function;
   audioState: string;
-  showModal: Function
+  showModal: Function;
+  showViaInfoModal: Function;
+  showDonateModal: Function;
 }
 
 const languages: { id: string, label: string }[] = [
     { "id": "es", "label": "Español" },
     { "id": "en", "label": "English" },
-    { "id": "de", "label": "Deutsch" },
-    { "id": "it", "label": "Italiano" },
-    { "id": "fr", "label": "Français" }        
+    { "id": "pt", "label": "português" },
+    { "id": "it", "label": "Italiano" }
+    //{ "id": "de", "label": "Deutsch" },
+    //{ "id": "fr", "label": "Français" }        
 ];
 
-export const AccordionList:React.FC<AccordionListProps> = ({audioController, audioState, showModal}) => {
+export const AccordionList:React.FC<AccordionListProps> = ({audioController, audioState, showModal, showViaInfoModal, showDonateModal}) => {
     
 
     const [clicked, setClicked] = useState(undefined);   
@@ -54,18 +57,6 @@ export const AccordionList:React.FC<AccordionListProps> = ({audioController, aud
                 </IonItem>
             </div>
 
-            <div className="listGroup" id="donate" onClick={(e) => {showel(e)}}>
-                    <IonItem detail={false} button className="item-stable" lines="none">
-                            <IonLabel>{t('menu.donate')}</IonLabel>
-                    </IonItem>
-            </div>
-
-            <div className="listGroup" id="rate" onClick={(e) => {showel(e)}}>
-                    <IonItem detail={false} button className="item-stable" lines="none">
-                            <IonLabel>{t('menu.rate')}</IonLabel>
-                    </IonItem>
-            </div>
-
             <IonMenuToggle autoHide={false} >             
             <div className="listGroup" id="info" onClick={(e) => {showel(e); showModal()}}>
                     <IonItem detail={false} button className="item-stable" lines="none">
@@ -73,6 +64,27 @@ export const AccordionList:React.FC<AccordionListProps> = ({audioController, aud
                     </IonItem>
             </div>
             </IonMenuToggle>
+
+            <IonMenuToggle autoHide={false} >             
+            <div className="listGroup" id="info" onClick={(e) => {showel(e); showViaInfoModal()}}>
+                    <IonItem detail={false} button className="item-stable" lines="none">
+                            <IonLabel>{t('menu.viaInfo')}</IonLabel>
+                    </IonItem>
+            </div>
+            </IonMenuToggle>
+            <IonMenuToggle autoHide={false} >  
+            <div className="listGroup" id="donate" onClick={(e) => {showel(e); showDonateModal()}}>
+                    <IonItem detail={false} button className="item-stable" lines="none">
+                            <IonLabel>{t('menu.donate')}</IonLabel>
+                    </IonItem>
+            </div>
+            </IonMenuToggle>
+            <div className="listGroup" id="rate" onClick={(e) => {showel(e)}}>
+                    <IonItem detail={false} button className="item-stable" lines="none">
+                            <IonLabel>{t('menu.rate')}</IonLabel>
+                    </IonItem>
+            </div>
+
             
        </div>
 

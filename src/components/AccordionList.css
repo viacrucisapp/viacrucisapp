@@ -25,6 +25,6 @@ ion-label {
 }
 
 .subMenu-group.active {
-    height: 240px;
+    height: 190px;
     transition: all .2s linear;
 }

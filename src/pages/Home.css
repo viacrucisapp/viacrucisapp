@@ -14,11 +14,15 @@ ion-title.title-large, ion-title.title-large .ios  {
   ion-toolbar, ion-toolbar.md {
     --padding-end: 12px;
     --padding-start: 12px;
-    --padding-top: 12px;
-    --padding-bottom: 12px;
+    --padding-top: 24px;
+    --padding-bottom: 24px;
   }
 
   .mainContent, .mainContent.md {
     --padding-start: 12px;
     --padding-end: 12px;
+  }
+
+  .lecture-card:first-child {
+    margin-top: 0;
   }

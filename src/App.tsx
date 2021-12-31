@@ -3,6 +3,8 @@ import { IonReactRouter } from '@ionic/react-router';
 import { Redirect, Route } from 'react-router-dom';
 import Menu from './components/Menu';
 import InfoModal from './components/InfoModal';
+import ViaInfoModal from  './components/ViaInfoModal';
+import DonateModal from './components/DonateModal'
 import Lecture from './pages/Lecture';
 import Home from './pages/Home';
 import { useStateWithCallbackLazy } from 'use-state-with-callback';
@@ -41,8 +43,11 @@ const App: React.FC = () => {
   const audioRef = useRef<HTMLAudioElement>();  
   let fadeTimer  = useRef<any>(undefined);
   const [showModal, setShowModal] = useState(false);
+  const [showViaInfoModal, setShowViaInfoModal] = useState(false);
+  const [showDonateModal, setShowDonateModal] = useState(false);
   const firstUpdate = useRef(true);
 
+  
   AppIon.addListener('appStateChange', ({ isActive }) => {
     if(!isActive) {
       setAudioState('menu.musicNo'); 
@@ -77,41 +82,7 @@ const pauseAudio = () => {
   audioRef.current.pause(); 
 } 
 
-/*
-  const playAudio = () => {
-    console.log('playaudioFN');
-    clearTimeout(fadeTimer.current);
 
-    audioRef.current.volume = 0; 
-    audioRef.current.play();
-    aud_fade_in()
-  }
-
-  var aud_fade_in = function() {
-    console.log('fadeinFN')
-    if (audioRef.current.volume < 0.995) {
-      audioRef.current.volume = Math.min(1, audioRef.current.volume+ 0.005);
-        fadeTimer.current = setTimeout(aud_fade_in, 5);
-    } else {
-      console.log('else de audfadein')
-      audioRef.current.volume = 1;
-     
-    }
-};
-
-  const pauseAudio = () => {    
-    clearTimeout(fadeTimer.current);
-    if (audioRef.current.volume > 0.005) {
-      audioRef.current.volume = Math.min(1, audioRef.current.volume - 0.005);
-      fadeTimer.current = setTimeout(pauseAudio, 5);
-  } else {
-      audioRef.current.volume = 0;
-      audioRef.current.pause();
-      console.log('corriendo el else de pauseaudio')
-     
-  }
-  };
-*/
 
   useLayoutEffect(() => {
     if (firstUpdate.current) {
@@ -130,7 +101,7 @@ const pauseAudio = () => {
       console.log(`after pauseAudio() audio is paused ${audioRef.current.paused}`)
 
     }
-  }, [audioState]);
+  }, [audioState]);//setShowDonateModal, showDonateModal
   return (
     <IonApp>
       
@@ -138,10 +109,10 @@ const pauseAudio = () => {
       
       <IonReactRouter>
         
-
+        <DonateModal setShowDonateModal={setShowDonateModal} showDonateModal={showDonateModal}></DonateModal>
         <InfoModal setShowModal={setShowModal} showModal={showModal}></InfoModal>
-        
-        <Menu audioController={audioController} audioState={audioState} showModal={() => {setShowModal(true)}}/>
+        <ViaInfoModal setShowViaInfoModal={setShowViaInfoModal} showViaInfoModal={showViaInfoModal}></ViaInfoModal>
+        <Menu audioController={audioController} audioState={audioState} showModal={() => {setShowModal(true)}} showViaInfoModal={() => {setShowViaInfoModal(true)}} showDonateModal={() => {setShowDonateModal(true)}}/>
         <audio
           ref={audioRef}
           src={soundtrack}

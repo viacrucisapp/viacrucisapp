@@ -17,7 +17,7 @@ import {
   import crossImg from '../assets/images/cross.svg'  
   import fluoLogo from '../assets/images/fluo.svg'  
 
-  import { useTranslation } from "react-i18next"
+  import { useTranslation, Trans } from "react-i18next"
   import { useState, useRef } from 'react';
 import { trendingUpOutline } from 'ionicons/icons';
 import { arrowBackOutline } from 'ionicons/icons';
@@ -47,17 +47,17 @@ import { arrowBackOutline } from 'ionicons/icons';
           return (
             <div className="modal_info">
                 <div className="ion-text-center ">
-                    <img src={crossImg} alt="hand drawed cross" />
-                    <p>Via Crucis App</p>
-                    <p>Version 2.3.1</p>
+                      <Trans>
+                       {t('main.aboutBody')}
+                      </Trans>  
                     <p onClick={() => {setModalScreen('privacy')}}><u>{t('main.privacy')}</u></p>
                     <p onClick={() => {setModalScreen('terms')}}><u>{t('main.terms')}</u></p>
                 </div>
           
   
-                <div className="ion-text-center">
+                <div className="ion-text-center developedDiv">
                   <p>{t('main.developed')}</p>
-                  <a href='https://fluo.digital'><img src={fluoLogo} alt='Fluo Logo'></img></a>                    
+                  <a href='https://fluo.digital'><img src={fluoLogo} className='fluoLogo' alt='Fluo Logo'></img></a>                    
                 </div>
               </div>
           )
@@ -66,7 +66,7 @@ import { arrowBackOutline } from 'ionicons/icons';
         case 'terms':
           return (
             <div className="modal_textInfo ion-text-center">
-              <h2> {t('main.terms')} </h2>
+              <h2 className='legalTitle'> {t('main.terms')} </h2>
               <p>
                 {t('main.termsBody')}
               </p>
@@ -76,7 +76,7 @@ import { arrowBackOutline } from 'ionicons/icons';
         case 'privacy':
           return (
             <div className="modal_textInfo ion-text-center">
-              <h2> {t('main.privacy')} </h2>
+              <h2 className='legalTitle'> {t('main.privacy')} </h2>
               <p>
                 {t('main.privacyBody')}
               </p>
