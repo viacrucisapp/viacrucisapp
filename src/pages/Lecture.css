@@ -69,12 +69,14 @@ ion-menu-button {
     text-align: center;
     font-weight: 300; 
     z-index: 10;
-    position: relative;    
+    position: relative;
+    font-size: 1.4rem; 
+    margin-bottom: 1.3em;
     
 }
 
   .textContent {
-    margin-top: -30px;
+    margin-top: -60px;
     
     position: relative;
   }

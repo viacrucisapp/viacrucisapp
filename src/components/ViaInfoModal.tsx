@@ -21,12 +21,13 @@ import {
   import { useState, useRef } from 'react';
 import { trendingUpOutline } from 'ionicons/icons';
 import { arrowBackOutline } from 'ionicons/icons';
+import logoNew from '../assets/images/logoNew.svg' 
 
   interface ModalProps {
     showViaInfoModal,
     setShowViaInfoModal
   }  
-  
+
   
   const ViaInfoModal: React.FC<ModalProps> = ({setShowViaInfoModal, showViaInfoModal}) => {
     const [t, i18n] = useTranslation("global");  
@@ -57,14 +58,19 @@ import { arrowBackOutline } from 'ionicons/icons';
               <IonRow class="ion-align-items-around">
                 <IonCol class="columnModal">
                   <div className="modal_info">
-                    <div className="ion-text-center ">                        
-                      <p>{t('main.viaCrucisInfo')}</p>
+
+                    <div className="ion-text-center">
+                      <img className='DonateModal__VCLogo' src={logoNew} alt="app icon" />                     
+                    </div>
+
+                    <div className="ion-text-center ">
+                    <h2 className='modalSubTitle'>{t('main.viaCrucisInfoTitle')}</h2>                        
+                      <Trans>{t('main.viaCrucisInfo')}</Trans>
                     </div>
               
       
                     <div className="ion-text-center">
-                      <img src={prayIcon} alt="hands praying icon" />
-                      <p>{t('main.howTo')}</p>
+                      <h2 className='modalSubTitle'>{t('main.howTo')}</h2>
                       <Trans>
                        {t('main.howToBody')}
                       </Trans>                                     

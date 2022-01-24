@@ -12,14 +12,14 @@ import {
   useIonViewDidLeave,
   IonModal, 
   IonIcon,
-  useIonModal,
-  IonFabButton
+  Gesture,
+  createGesture
  } from '@ionic/react';
 import { useParams, useRouteMatch } from 'react-router';
 import './Lecture.css';
 import { useTranslation, Trans } from "react-i18next";
 import  imageData  from '../assets/images/imageData'; 
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import languages from '../translations/es/lectures.json';
 import { useHistory } from 'react-router-dom';
 import { arrowBackOutline, chevronBackOutline, chevronForwardOutline, paperPlaneOutline } from 'ionicons/icons';
@@ -145,7 +145,43 @@ const scrollingFn = () => {
 
 
 
-  
+/*
+useEffect(() => {
+  const gesture: Gesture = createGesture({
+    el: contentRef.current!,
+    gestureName: 'my-gest',
+    threshold: 70,
+    gesturePriority: 42,
+    onMove: (detail: any) => {
+      console.log('test');
+      onMove(detail);
+    }
+  });
+;
+  gesture.enable();
+  return() => {gesture.destroy()}
+
+});
+
+
+
+
+
+const onMove = (detail) => {
+
+  if(detail.currentX < detail.startX) {
+    console.log('izq');
+    history.push(btnLinks.next);
+
+  }
+  if(detail.currentX > detail.startX) {
+    console.log('der');
+    history.push(btnLinks.prev);
+  }
+
+}
+
+*/
   return (
     <IonPage>
       

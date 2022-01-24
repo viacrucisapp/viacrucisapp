@@ -35,10 +35,10 @@ export const LectureCard = ({lecture, images} : LectureCardProps) => {
         <IonCard button className="lecture-card" mode="ios"  routerLink={`/lectures/${lecture.title}`} >
             <IonGrid>
             <IonRow>
-                <IonCol size="3">
+                <IonCol size="4">
                     <IonImg className="lecture-card__image" alt="Artist painting" src={images[lecture.id].small} />
                 </IonCol>
-                <IonCol size="9">
+                <IonCol size="8">
                     <IonCardContent>
                         <h2 className="lecture-card__title">{t(lecture.title)}</h2> 
                         <h3 color="primary" className="lecture-card__text">{t(lecture.subTitle)}</h3>

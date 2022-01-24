@@ -21,15 +21,13 @@ import {
   import { useState, useRef } from 'react';
 import { trendingUpOutline } from 'ionicons/icons';
 import { arrowBackOutline } from 'ionicons/icons';
+import logoNew from '../assets/images/logoNew.svg' 
 
   interface ModalProps {
     setShowModal,
     showModal
   }
 
-  
-  
-  
   const InfoModal: React.FC<ModalProps> = ({setShowModal, showModal}) => {
     const [t, i18n] = useTranslation("global");  
     const [modalScreen, setModalScreen] = useState<string>('info')
@@ -40,25 +38,29 @@ import { arrowBackOutline } from 'ionicons/icons';
 
     }
 
-
+/*
+                <div className="ion-text-center developedDiv">
+                  <p>{t('main.developed')}</p>
+                  <a href='https://fluo.digital'><img src={fluoLogo} className='fluoLogo' alt='Fluo Logo'></img></a>                    
+                </div>*/
     const renderScreen = (modalScreen) => {
       switch (modalScreen) {
         case 'info':
           return (
             <div className="modal_info">
+
+               
+
                 <div className="ion-text-center ">
-                      <Trans>
-                       {t('main.aboutBody')}
+                <img className='DonateModal__VCLogo' src={logoNew} alt="app icon" />      
+                      <Trans  t={t} i18nKey="main.aboutBody">
+                       Text <a href="http://luzlibre.com.ar/"><u>Luz Libre</u></a> Text
                       </Trans>  
-                    <p onClick={() => {setModalScreen('privacy')}}><u>{t('main.privacy')}</u></p>
-                    <p onClick={() => {setModalScreen('terms')}}><u>{t('main.terms')}</u></p>
+                    <p className='legalLinks' onClick={() => {setModalScreen('privacy')}}><u>{t('main.privacy')}</u></p>
+                    <p className='legalLinks' onClick={() => {setModalScreen('terms')}}><u>{t('main.terms')}</u></p>
                 </div>
           
   
-                <div className="ion-text-center developedDiv">
-                  <p>{t('main.developed')}</p>
-                  <a href='https://fluo.digital'><img src={fluoLogo} className='fluoLogo' alt='Fluo Logo'></img></a>                    
-                </div>
               </div>
           )
           break;
@@ -66,7 +68,7 @@ import { arrowBackOutline } from 'ionicons/icons';
         case 'terms':
           return (
             <div className="modal_textInfo ion-text-center">
-              <h2 className='legalTitle'> {t('main.terms')} </h2>
+              <h2 className='modalSubTitle'> {t('main.terms')} </h2>
               <p>
                 {t('main.termsBody')}
               </p>
@@ -76,7 +78,7 @@ import { arrowBackOutline } from 'ionicons/icons';
         case 'privacy':
           return (
             <div className="modal_textInfo ion-text-center">
-              <h2 className='legalTitle'> {t('main.privacy')} </h2>
+              <h2 className='modalSubTitle'> {t('main.privacy')} </h2>
               <p>
                 {t('main.privacyBody')}
               </p>

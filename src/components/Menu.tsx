@@ -25,7 +25,7 @@ const Menu: React.FC<MenuProps> = ({audioController, audioState, showModal, show
   
 
   return (
-    <IonMenu  contentId="main" type="overlay" side="end">
+    <IonMenu swipeGesture={false}  contentId="main" type="overlay" side="end">
       <IonContent>
         <IonList id="inbox-list">  
               <IonMenuToggle autoHide={false} >                
