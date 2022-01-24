@@ -16,21 +16,6 @@ export const LectureCard = ({lecture, images} : LectureCardProps) => {
 
     const [t, i18n] = useTranslation("lectures");
 
-    const router = useIonRouter();
-
-    const dynamicNavigate = (path, direction) =>{
-      const action = direction == "forward" ? "push" : "pop";
-      router.push(path, direction, action)
-    }
-  
-    const navigateBack = () => {
-      if(router.canGoBack()){
-        router.goBack();
-        console.log('puedo')
-      }
-      return router.push("/", "back", "push")
-    }
-
     return (
         <IonCard button className="lecture-card" mode="ios"  routerLink={`/lectures/${lecture.title}`} >
             <IonGrid>
