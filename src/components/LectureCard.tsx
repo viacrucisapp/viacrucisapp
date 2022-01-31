@@ -1,16 +1,12 @@
-import React from 'react';
 import { IonCard, IonRow, IonCol, IonGrid, IonImg, IonCardContent } from '@ionic/react';
 import { useTranslation } from "react-i18next"
 import './LectureCard.css'
-import { NavContext, useIonRouter } from '@ionic/react';
 import { Ilectures, Iimages} from "../common/types";
 
 type LectureCardProps = {
     lecture: Ilectures;
     images: Iimages[],
-
 }
-
 
 export const LectureCard = ({lecture, images} : LectureCardProps) => {
 
@@ -36,4 +32,3 @@ export const LectureCard = ({lecture, images} : LectureCardProps) => {
         
     )
 }
-

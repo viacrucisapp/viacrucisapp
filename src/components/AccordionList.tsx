@@ -1,7 +1,6 @@
-import { IonCard, IonRow, IonCol, IonGrid, IonCardHeader, IonCardTitle, IonCardContent, IonText, IonItem, IonLabel, IonMenuToggle } from '@ionic/react';
+import { IonItem, IonLabel, IonMenuToggle } from '@ionic/react';
 import { useTranslation } from "react-i18next"
-import { type } from 'os';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import './AccordionList.css';
 
 interface AccordionListProps {
@@ -15,7 +14,7 @@ interface AccordionListProps {
 const languages: { id: string, label: string }[] = [
     { "id": "es", "label": "Español" },
     { "id": "en", "label": "English" },
-    { "id": "pt", "label": "português" },
+    { "id": "pt", "label": "Português" },
     { "id": "it", "label": "Italiano" }
     //{ "id": "de", "label": "Deutsch" },
     //{ "id": "fr", "label": "Français" }        

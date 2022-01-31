@@ -11,16 +11,22 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    
     padding: 0 1.5em;
     align-items: center;
+    position: relative;
+}
+
+.modal_textContent {
+    margin-top: auto;
+    margin-bottom: auto;
+
 }
 
 .modal_textInfo {
-    height: 100%;
+   
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: column;    
     align-items: center;
     padding: 4em;
 }
@@ -29,9 +35,19 @@
     font-size: 0.8rem;
 }
 
-ul {
+.modal_info ul {
     text-align: start;
+    list-style: none;
 }
+
+.modal_info ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #614E48; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
 
 .donateModal__donateBtn{
     text-transform: none;
@@ -39,11 +55,12 @@ ul {
     --box-shadow: none;
     width: 200px;
     height: 50px;
+    margin-top: 30px;
 }
 
 .modalSubTitle{
     font-size: 1rem;
-    color: #111;
+    color: #614E48;
 }
 
 .fluoLogo {
@@ -52,6 +69,15 @@ ul {
 
 .DonateModal__VCLogo {
     width: 60px;
+    top: 0;
+    position: relative;
+    text-align: center;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+    margin-bottom: 20px;
+
 }
 
 .legalLinks {

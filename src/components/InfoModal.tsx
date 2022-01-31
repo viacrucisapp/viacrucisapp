@@ -14,12 +14,8 @@ import {
   } from '@ionic/react';
   
   import './InfoModal.css'
-  import crossImg from '../assets/images/cross.svg'  
-  import fluoLogo from '../assets/images/fluo.svg'  
-
   import { useTranslation, Trans } from "react-i18next"
-  import { useState, useRef } from 'react';
-import { trendingUpOutline } from 'ionicons/icons';
+  import { useState } from 'react';
 import { arrowBackOutline } from 'ionicons/icons';
 import logoNew from '../assets/images/logoNew.svg' 
 
@@ -38,11 +34,7 @@ import logoNew from '../assets/images/logoNew.svg'
 
     }
 
-/*
-                <div className="ion-text-center developedDiv">
-                  <p>{t('main.developed')}</p>
-                  <a href='https://fluo.digital'><img src={fluoLogo} className='fluoLogo' alt='Fluo Logo'></img></a>                    
-                </div>*/
+
     const renderScreen = (modalScreen) => {
       switch (modalScreen) {
         case 'info':
@@ -50,9 +42,8 @@ import logoNew from '../assets/images/logoNew.svg'
             <div className="modal_info">
 
                
-
-                <div className="ion-text-center ">
-                <img className='DonateModal__VCLogo' src={logoNew} alt="app icon" />      
+                <img className='DonateModal__VCLogo' src={logoNew} alt="app icon" /> 
+                <div className="ion-text-center modal_textContent">                    
                       <Trans  t={t} i18nKey="main.aboutBody">
                        Text <a href="http://luzlibre.com.ar/"><u>Luz Libre</u></a> Text
                       </Trans>  
@@ -63,7 +54,6 @@ import logoNew from '../assets/images/logoNew.svg'
   
               </div>
           )
-          break;
       
         case 'terms':
           return (
@@ -74,7 +64,7 @@ import logoNew from '../assets/images/logoNew.svg'
               </p>
             </div>
           )
-          break
+
         case 'privacy':
           return (
             <div className="modal_textInfo ion-text-center">
@@ -84,12 +74,10 @@ import logoNew from '../assets/images/logoNew.svg'
               </p>
             </div>
           )
-          break
       }
     }
 
     return (
-      
       
         <IonModal onDidDismiss={() => {closeModal()}} class=""  isOpen={showModal}>
           <IonHeader mode="md" translucent className="ion-no-border">
