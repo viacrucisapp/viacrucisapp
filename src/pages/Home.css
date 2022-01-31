@@ -3,7 +3,26 @@ ion-title.title-large, ion-title.title-large .ios  {
     margin-left: -4px;
     
   }
-  
+
+  .home_bg {
+    
+  }
+  .home_bg::part(scroll) {
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    height: 100vh;
+    position: relative;
+    /*
+    display: grid;
+    grid-template-rows:40% auto auto  ;
+    */
+  }
+
+  .home_bg::part(background) {
+    background: url('../assets/images/backgroundHome.png');
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+  }
   ion-menu-button, ion-menu-button.ios {
     font-size: 30px ;
     border-radius: 200px !important;
@@ -21,8 +40,40 @@ ion-title.title-large, ion-title.title-large .ios  {
   .mainContent, .mainContent.md {
     --padding-start: 12px;
     --padding-end: 12px;
+    
   }
 
   .lecture-card:first-child {
     margin-top: 0;
   }
+
+ .home_donateBtn {
+  margin-inline: 16px;
+  position: relative;
+  bottom: 0;
+ }
+
+ .swiper {
+   width: 100%;
+ }
+ .swiper-slide {
+   transition: all 1s ease-out;
+   z-index: 999;
+ }
+
+
+ .swiper-slide.swiper-slide-next .slider-card,
+ .swiper-slide.swiper-slide-prev .slider-card {
+  transform: scale(0.9);
+  transition: all 0.2s ease-out;
+  opacity: 0.4;
+ }
+
+
+ @media (max-height: 690px) { 
+    
+  .swiper {
+     margin-top: -20px;
+  }
+  
+}

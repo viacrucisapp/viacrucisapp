@@ -1,12 +1,27 @@
-import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle, IonToolbar, useIonViewWillLeave, useIonViewWillEnter } from '@ionic/react';
-import { useParams } from 'react-router';
+import { IonButtons, IonContent, IonMenuButton, IonPage, IonTitle, IonToolbar, useIonViewWillLeave, useIonViewWillEnter, IonButton} from '@ionic/react';
+
 import './Home.css';
 import { useTranslation } from "react-i18next";
-import { LectureCard } from '../components/LectureCard';
+import { SliderCard } from '../components/SliderCard';
 import  imageData  from '../assets/images/imageData';
-import { Iimages, Ilectures} from "../common/types" 
+import { Ilectures} from "../common/types" 
+import { Swiper, SwiperSlide } from 'swiper/react/swiper-react.js';
 
-const Home: React.FC = () => {
+import 'swiper/swiper-bundle.min.css'
+import '@ionic/react/css/ionic-swiper.css';
+
+import viaCrucisLogo from "../assets/images/viaCrucisAppLogo.svg"
+import { ActionCard } from '../components/ActionCard';
+import aboutApp from "../assets/images/aboutApp.png";
+import aboutVia from "../assets/images/aboutVia.png";
+
+interface HomeProps {
+  showModal: Function;
+  showViaInfoModal: Function;
+  showDonateModal: Function
+}
+
+const Home: React.FC<HomeProps> = ({showModal, showViaInfoModal, showDonateModal}) => {
 
   
   const [t, i18n] = useTranslation("lectures");
@@ -23,27 +38,41 @@ const Home: React.FC = () => {
     console.log('leave home')
     
   })
+
   return (
     <IonPage>
-    <IonToolbar color="light" mode="md">
+    <IonToolbar  mode="md">
         
-        <IonTitle class="toolbarTitle" color="tertiary" size="large">{tMain('main.stations')}</IonTitle>
+        <IonTitle class="toolbarTitle" color="tertiary" size="large"><img src={viaCrucisLogo} /></IonTitle>
         <IonButtons slot="end">
         <IonMenuButton />
         </IonButtons>
     </IonToolbar>
 
-      <IonContent forceOverscroll={true} class="mainContent" fullscreen color="light">
-
-
-        {
+      <IonContent forceOverscroll={false} class="home_bg mainContent" fullscreen >
+        <Swiper 
+          centeredSlides={true}
+          loop={true}
+          slidesPerView={1.5}
+          spaceBetween={1}
+          speed={500}
           
+        >
+          
+        {
+                  
           arrayLectures.map((lecture, index) => (
+            <SwiperSlide key={index}>
+              <SliderCard images={imageData}  lecture={lecture}/>
+            </SwiperSlide>
             
-            <LectureCard images={imageData} key={index} lecture={lecture}/>
           ))
         }
+        </Swiper>
 
+        <ActionCard body='main.aboutViaCard' image={aboutVia} actionLink={showViaInfoModal} ></ActionCard>
+        <ActionCard body='main.aboutAppCard' image={aboutApp} actionLink={showModal} ></ActionCard>
+        <IonButton class="home_donateBtn" color="tertiary" onClick={(e) => {showDonateModal()}} mode='ios'  expand='block' >{tMain('main.colaborateBtn')}</IonButton>
       </IonContent>
     </IonPage>
   );
