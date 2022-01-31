@@ -1,4 +1,4 @@
-import { IonApp, IonRouterOutlet, IonSplitPane, IonModal, IonButton } from '@ionic/react';
+import { IonApp, IonRouterOutlet, setupIonicReact } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import { Redirect, Route } from 'react-router-dom';
 import Menu from './components/Menu';
@@ -7,7 +7,6 @@ import ViaInfoModal from  './components/ViaInfoModal';
 import DonateModal from './components/DonateModal'
 import Lecture from './pages/Lecture';
 import Home from './pages/Home';
-import { useStateWithCallbackLazy } from 'use-state-with-callback';
 import { App as AppIon } from '@capacitor/app'
 
 
@@ -28,26 +27,28 @@ import '@ionic/react/css/text-transformation.css';
 import '@ionic/react/css/flex-utils.css';
 import '@ionic/react/css/display.css';
 import soundtrack from "./assets/audio/soundtrack.mp3";
-import { useTranslation } from "react-i18next";
+
 
 /* Theme variables */
 import './theme/variables.css';
-import { useEffect, useState, useRef, useLayoutEffect } from 'react';
+import { useState, useRef, useLayoutEffect } from 'react';
+
 
 
 
 const App: React.FC = () => {
-  const [t, i18n] = useTranslation("global");  
   //const [audioState, setAudioState] = useStateWithCallbackLazy('menu.musicNo'); 
   const [audioState, setAudioState] = useState('menu.musicNo'); 
   const audioRef = useRef<HTMLAudioElement>();  
-  let fadeTimer  = useRef<any>(undefined);
   const [showModal, setShowModal] = useState(false);
   const [showViaInfoModal, setShowViaInfoModal] = useState(false);
   const [showDonateModal, setShowDonateModal] = useState(false);
   const firstUpdate = useRef(true);
 
-  
+  setupIonicReact({
+    mode: 'md'
+  });
+
   AppIon.addListener('appStateChange', ({ isActive }) => {
     if(!isActive) {
       setAudioState('menu.musicNo'); 
@@ -122,7 +123,9 @@ const pauseAudio = () => {
             <Route path="/" exact>
               <Redirect to="/lectures" />
             </Route>
-            <Route path="/lectures" exact component={Home}></Route>
+            <Route path="/lectures" exact>
+              <Home showDonateModal={() => {setShowDonateModal(true)}} showModal={() => {setShowModal(true)}} showViaInfoModal={() => {setShowViaInfoModal(true)}}/>
+            </Route>
             <Route path="/lectures/:name" >
               <Lecture />
             </Route>

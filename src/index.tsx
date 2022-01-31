@@ -8,16 +8,30 @@ import i18next from "i18next";
 
 import global_es from "./translations/es/global.json"
 import global_en from "./translations/en/global.json"
+import global_pt from "./translations/pt/global.json"
+import global_it from "./translations/it/global.json"
 import lectures_es from "./translations/es/lectures.json"
 import lectures_en from "./translations/en/lectures.json"
+import lectures_pt from "./translations/pt/lectures.json"
+import lectures_it from "./translations/it/lectures.json"
 
+
+
+const lang = function() {
+  let navLang = navigator.language
+  let langSplit = navLang.split('-')[0]
+  if(langSplit === 'es' || langSplit === 'en' || langSplit === 'pt' || langSplit === 'it'){
+    return langSplit
+  } 
+    return 'en'
+} 
 
 
 i18next.init({
   interpolation: {
     escapeValue: false
   },
-  lng: "es",
+  lng: lang(),
   resources: {
     es: {
       global: global_es,
@@ -26,6 +40,14 @@ i18next.init({
     en: {
       global: global_en,
       lectures: lectures_en
+    },
+    pt: {
+      global: global_pt,
+      lectures: lectures_pt
+    },
+    it: {
+      global: global_it,
+      lectures: lectures_it
     }
   },
   react: {
