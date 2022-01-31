@@ -1,5 +1,4 @@
 import {
-   
     IonModal,
     IonButton,
     IonGrid,
@@ -10,20 +9,15 @@ import {
     IonToolbar,
     IonButtons,
     IonIcon,
-    IonTitle
-  
   } from '@ionic/react';
   
   import './InfoModal.css'
-  import prayIcon from '../assets/images/prayIcon.svg'  
-  import fluoLogo from '../assets/images/fluo.svg' 
+
   import logoNew from '../assets/images/logoNew.svg' 
 
 
   import { useTranslation, Trans } from "react-i18next"
-  import { useState, useRef } from 'react';
-import { trendingUpOutline } from 'ionicons/icons';
-import { arrowBackOutline } from 'ionicons/icons';
+  import { arrowBackOutline } from 'ionicons/icons';
 
   interface ModalProps {
     showDonateModal,
@@ -59,17 +53,14 @@ import { arrowBackOutline } from 'ionicons/icons';
             <IonGrid>
               <IonRow class="ion-align-items-around">
                 <IonCol class="columnModal">
-                  <div className="modal_info">
-                    <div className="ion-text-center ">                        
+                  <div className="modal_info">                      
+                    <img className='DonateModal__VCLogo' src={logoNew} alt="app icon" />      
+                    <div className="ion-text-center modal_textContent">                        
                       <Trans>
                        {t('main.donateBody')}
                       </Trans> 
-                    </div>
-              
-                    <IonButton class='donateModal__donateBtn' mode='md' color="primary" shape='round'>{t('main.donateBtn')}</IonButton>   
-      
-                    <div className="ion-text-center">
-                      <img className='DonateModal__VCLogo' src={logoNew} alt="app icon" />                     
+                      <IonButton  class='donateModal__donateBtn' mode='md' color="primary" >{t('main.donateBtn')}</IonButton>   
+
                     </div>
                   </div>
                 </IonCol>

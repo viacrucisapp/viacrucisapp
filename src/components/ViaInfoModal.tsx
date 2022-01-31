@@ -11,15 +11,9 @@ import {
     IonButtons,
     IonIcon
   
-  } from '@ionic/react';
-  
-  import './InfoModal.css'
-  import prayIcon from '../assets/images/prayIcon.svg'  
-  import fluoLogo from '../assets/images/fluo.svg'  
-
-  import { useTranslation, Trans } from "react-i18next"
-  import { useState, useRef } from 'react';
-import { trendingUpOutline } from 'ionicons/icons';
+  } from '@ionic/react';  
+import './InfoModal.css'
+import { useTranslation, Trans } from "react-i18next"
 import { arrowBackOutline } from 'ionicons/icons';
 import logoNew from '../assets/images/logoNew.svg' 
 
@@ -58,23 +52,18 @@ import logoNew from '../assets/images/logoNew.svg'
               <IonRow class="ion-align-items-around">
                 <IonCol class="columnModal">
                   <div className="modal_info">
+                  <img className='DonateModal__VCLogo' src={logoNew} alt="app icon" />                     
 
-                    <div className="ion-text-center">
-                      <img className='DonateModal__VCLogo' src={logoNew} alt="app icon" />                     
-                    </div>
-
-                    <div className="ion-text-center ">
-                    <h2 className='modalSubTitle'>{t('main.viaCrucisInfoTitle')}</h2>                        
-                      <Trans>{t('main.viaCrucisInfo')}</Trans>
-                    </div>
-              
-      
-                    <div className="ion-text-center">
-                      <h2 className='modalSubTitle'>{t('main.howTo')}</h2>
-                      <Trans>
-                       {t('main.howToBody')}
-                      </Trans>                                     
-                    </div>
+                    <div className="ion-text-center modal_textContent">
+                      <div className="">
+                        <h2 className='modalSubTitle'>{t('main.viaCrucisInfoTitle')}</h2>
+                        <Trans>{t('main.viaCrucisInfo')}</Trans>
+                        <h2 className='modalSubTitle'>{t('main.howTo')}</h2>
+                        <Trans>
+                         {t('main.howToBody')}
+                        </Trans>                                     
+                                            </div>
+                      </div>
                   </div>
                 </IonCol>
               </IonRow>
