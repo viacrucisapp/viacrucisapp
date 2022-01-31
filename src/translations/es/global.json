@@ -22,7 +22,11 @@
         "howTo": "Cómo Rezarlo",
         "howToBody": "<p>Antes de cada meditación puede decirse:</p><ul><li>Te alabamos Cristo y te bendecimos,</li><li>Que por tu Santa Cruz redimiste al mundo.</li></ul><p>Al término de cada meditación, puede rezarse un Padrenuestro y un Gloria.</p>",
         "donateBody": "<p>Esta APP es ofrecida con la modalidad pago voluntario, a fin de promover en todo lo posible el rezo del Vía Crucis.</p><p>Tu pago voluntario nos ayudará a continuar difundiendo esta APP y a desarrollar otros proyectos dentro del espíritu de la nueva evangelización.</p><p>¡Muchas gracias!</p>",
-        "donateBtn": "Pago voluntario"    
+        "donateBtn": "Pago voluntario",
+        "aboutViaCard": "Acerca del Via Crucis",
+        "aboutAppCard": "Acerca de ésta app",
+        "moreBtn": "Ver más",
+        "colaborateBtn": "Colabora con nosotros"    
     }
 }
 

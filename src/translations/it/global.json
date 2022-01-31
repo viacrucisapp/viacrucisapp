@@ -2,18 +2,32 @@
     "menu": {
         "language": "Idioma",
         "music": "Musica",
-        "donate": "Donazioni",
+        "donate": "Pagamento volontario",
         "rate": "Valutaci",
-        "info": "Maggiori informazioni",
+        "info": "Informazioni su questa APP",
+        "viaInfo": "A proposito di Via Crucis",
         "musicYes": "Si",
         "musicNo": "No"
     },
     "main": {
-        "stations": "Le stagioni",
-        "privacy": "politica sulla riservatezza",
+        "stations": "Stazioni",
+        "aboutBody": "<p>Le belle meditazioni di questa Via Crucis appartengono al libro postumo di San Josemaría Escrivá e sono state generosamente messe a disposizione dalla Fondazione Studium.</p><p>Josemaría Escrivá è stato un sacerdote fondatore dell'Opus Dei, che ha dedicato la sua vita per diffondere la chiamata universale alla santità. Visse tra il 1902 e il 1975, fu proclamato Santo il 6 ottobre 2002.</p><p>Le illustrazioni di questa APP sono opera del talentuoso artista svizzero Bradi Barth, e generosamente donate dalla fondazione che custodisce la sua lavoro, Herbronnen vzw.</p><p>Questa APP è stata sviluppata da <1><0>Luz libre</0></1>, un'azienda B specializzata nella creazione di contenuti stimolanti.</p>",
+        "privacy": "Politica sulla riservatezza",
         "terms":  "Termini e Condizioni",
         "privacyBody": "Ut qui aliquip eu mollit. Labore id minim nostrud enim. Cillum voluptate ut Lorem aliqua excepteur culpa sint et.",
-        "termsBody": "Ut qui aliquip eu mollit. Labore id minim nostrud enim. Cillum voluptate ut Lorem aliqua excepteur culpa sint et." ,
-        "developed": "Sviluppato da"       
+        "termsBody": "Ut qui aliquip eu mollit. Labore id minim nostrud enim. Cillum voluptate ut Lorem aliqua excepteur culpa sint et.",
+        "developed": "Sviluppato da",
+        "viaCrucisInfoTitle": "Sulla Via Crucis",
+        "viaCrucisInfo": "<p>La Via Crucis (in latino: 'Via Crucis') è una delle devozioni più diffuse tra i cattolici.</p> <p>Si recita solitamente il venerdì santo o i venerdì di quaresima e si riferisce alla momenti vissuti da Gesù dal suo arresto alla crocifissione e alla sepoltura.</p> <p>È un cammino di preghiera, basato sulla meditazione della passione e morte di Gesù Cristo nel suo cammino verso il Monte Calvario.</p>",
+        "howTo": "Come pregarlo",
+        "howToBody": "<p>Prima di ogni meditazione puoi dire:</p><ul><li>Ti lodiamo Cristo e ti benediciamo,</li><li>Che con la tua Santa Croce hai redento il mondo.</li> </ul><p>Al termine di ogni meditazione, puoi pregare un Padre Nostro e una Gloria.</p>",
+        "donateBody": "<p>Questa APP è offerta con la modalità di pagamento volontario, al fine di promuovere il più possibile la preghiera della Via Crucis.</p><p>Il tuo pagamento volontario ci aiuterà a continuare a diffondere questa APP e a svilupparne altre progetti nello spirito della nuova evangelizzazione.</p><p>Grazie mille!</p>",
+        "donateBtn": "Pagamento volontario",
+        "aboutViaCard": "A proposito di Via Crucis",
+        "aboutAppCard": "Informazioni su questa APP",
+        "moreBtn": "Vedi altro",
+        "colaborateBtn": "Collabora con noi"    
     }
 }
+
+

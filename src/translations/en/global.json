@@ -22,7 +22,11 @@
         "howTo": "How to pray to it",
         "howToBody": "<p>Before each meditation you can say:</p><ul><li>We praise you Christ and we bless you,</li><li>That by your Holy Cross you redeemed the world.</li></ul><p>At the end of each meditation, an Our Father and a Glory can be said.</p>",     
         "donateBody": "<p>This APP is offered with the voluntary payment method, in order to promote the recitation of the Way of the Cross as much as possible.</p><p>Your voluntary payment will help us to continue spreading this APP and to develop other projects within the spirit of the new evangelization.</p><p>Thanks a lot!</p>",
-        "donateBtn": "Voluntary payment"    
+        "donateBtn": "Voluntary payment",
+        "aboutViaCard": "About Via Crucis",
+        "aboutAppCard": "About this app",
+        "moreBtn": "More",
+        "colaborateBtn": "Colaborate with us"          
     }
 }
 

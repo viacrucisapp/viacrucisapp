@@ -1,0 +1,33 @@
+{
+    "menu": {
+        "language": "Idioma",
+        "music": "Musica",
+        "donate": "Pagamento voluntário",
+        "rate": "Nos avalie",
+        "info": "Sobre este aplicativo",
+        "viaInfo": "Sobre a Via Crucis",
+        "musicYes": "Sim",
+        "musicNo": "Não"
+    },
+    "main": {
+        "stations": "EEstações",
+        "aboutBody": "<p>As belas meditações desta Via Sacra pertencem ao livro póstumo de São Josemaria Escrivá e foram generosamente disponibilizadas pela Fundação Studium.</p><p>Josemaría Escrivá foi um sacerdote fundador do Opus Dei, que dedicou sua vida difundir o chamado universal à santidade. Ele viveu entre 1902 e 1975, e foi proclamado Santo em 6 de outubro de 2002.</p><p>As ilustrações deste APP são obra do talentoso artista suíço Bradi Barth, e generosamente doadas pela fundação que protege sua work, Herbronnen vzw.</p><p>Este APP foi desenvolvido pela <1><0>Luz libre</0></1>, empresa B especializada na criação de conteúdo inspirador.</p>",
+        "privacy": "Política de privacidade",
+        "terms":  "Termos e Condições",
+        "privacyBody": "Ut qui aliquip eu mollit. Labore id minim nostrud enim. Cillum voluptate ut Lorem aliqua excepteur culpa sint et.",
+        "termsBody": "Ut qui aliquip eu mollit. Labore id minim nostrud enim. Cillum voluptate ut Lorem aliqua excepteur culpa sint et.",
+        "developed": "Desenvolvido por",
+        "viaCrucisInfoTitle": "Sobre a Via Sacra",
+        "viaCrucisInfo": "<p>A Via Crucis (em latim: 'caminho da cruz') é uma das devoções mais difundidas entre os católicos.</p> <p>Geralmente é rezada na Sexta-feira Santa ou nas sextas-feiras da Quaresma e refere-se ao momentos vividos por Jesus desde sua prisão até sua crucificação e sepultamento.</p> <p>É um caminho de oração, baseado na meditação da paixão e morte de Jesus Cristo a caminho do Monte Calvário.</p>",
+        "howTo": "Como rezar",
+        "howToBody": "<p>Antes de cada meditação você pode dizer:</p><ul><li>Nós te louvamos Cristo e te bendizemos,</li><li>Que por sua Santa Cruz você redimiu o mundo.</li> </ul><p>Ao final de cada meditação, você pode rezar um Pai Nosso e um Glória.</p> ",
+        "donateBody": "<p>Este APP é oferecido na modalidade de pagamento voluntário, a fim de promover ao máximo a oração da Via Crucis.</p><p>Seu pagamento voluntário nos ajudará a continuar divulgando este APP e desenvolver outros projetos dentro do espírito da nova evangelização.</p><p>Muito obrigado!</p>",
+        "donateBtn": "Pagamento voluntário",
+        "aboutViaCard": "Sobre a Via Sacra",
+        "aboutAppCard": "Sobre este aplicativo",
+        "moreBtn": "Ver mais",
+        "colaborateBtn": "Colabore conosco"    
+    }
+}
+
+
