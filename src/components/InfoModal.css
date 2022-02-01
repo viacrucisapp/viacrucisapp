@@ -1,11 +1,21 @@
 .columnModal {
-    height: 100vh;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-family: 'Roboto';
-    padding-top: 4em;
+    margin-top: 4em;
+    
+
 }
+.columnModal ul {
+    text-align: left;
+}
+
+.columnModal b {
+    color: #614E48
+}
+
 
 .modal_info {
     height: 100%;
@@ -56,6 +66,7 @@
     width: 200px;
     height: 50px;
     margin-top: 30px;
+    --border-radius: 10px
 }
 
 .modalSubTitle{

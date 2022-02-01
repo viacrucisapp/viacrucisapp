@@ -59,9 +59,8 @@ import logoNew from '../assets/images/logoNew.svg'
           return (
             <div className="modal_textInfo ion-text-center">
               <h2 className='modalSubTitle'> {t('main.terms')} </h2>
-              <p>
-                {t('main.termsBody')}
-              </p>
+              <Trans  t={t} i18nKey='main.termsBody'>                
+              </Trans>
             </div>
           )
 
@@ -69,9 +68,8 @@ import logoNew from '../assets/images/logoNew.svg'
           return (
             <div className="modal_textInfo ion-text-center">
               <h2 className='modalSubTitle'> {t('main.privacy')} </h2>
-              <p>
-                {t('main.privacyBody')}
-              </p>
+              <Trans  t={t} i18nKey='main.privacyBody'>                
+              </Trans>
             </div>
           )
       }

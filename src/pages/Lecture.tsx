@@ -7,7 +7,6 @@ import {
   IonPage, 
   IonToolbar,
   useIonViewWillEnter,
-  useIonViewDidEnter,
   useIonViewWillLeave,
   useIonViewDidLeave,
   IonModal, 
@@ -15,7 +14,7 @@ import {
   Gesture,
   createGesture
  } from '@ionic/react';
-import { useParams, useRouteMatch } from 'react-router';
+import { useRouteMatch } from 'react-router';
 import './Lecture.css';
 import { useTranslation, Trans } from "react-i18next";
 import  imageData  from '../assets/images/imageData'; 
@@ -31,6 +30,8 @@ const Page: React.FC = () => {
   const match: any = useRouteMatch('/lectures/:name');
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [t, i18n] = useTranslation("lectures");
+  const [tGlobal] = useTranslation("global");
+
   const [showModal, setShowModal] = useState(false);
   const [lecturaIndex, setLecturaIndex] = useState<number>(0);
   const [btnLinks, setBtnLinks] = useState<{next?: string , prev?: string }>({});
@@ -101,29 +102,14 @@ const Page: React.FC = () => {
       setNextBtn(false);     
     };
   }
-  
-  function getScroll() {
-    console.log(scrollableRef.current.scrollTop )
-    /*if(scrollableRef.current && heightRef.current && scrollableRef.current.offsetHeight > heightRef.current.offsetHeight) {
-      console.log('TOCA EL TOP!!!!!')
-      console.log(heightRef.current.offsetTop)
-      console.log(scrollableRef.current.offsetTop)
-      console.log(contentRef.current.getScrollElement())
-      return
-    }
-    
-    else {
-      console.log('no toca'); 
-      console.log(heightRef.current)
-    }*/
-  }
+
 
   async function shareLecture() {
     await Share.share({
       title: 'Via Crucis',
-      text: 'Descarga la aplicación y lleva el Via Crucis en tu celular',
-      url: 'https://fluo.digital/',
-      dialogTitle: 'Compartir',
+      text: tGlobal('main.shareDialogBody'),
+      url: 'https://viacrucisapp.carrd.co/',
+      dialogTitle: tGlobal('main.share'),
     });
   }
 
@@ -144,8 +130,6 @@ const scrollingFn = () => {
 }
 
 
-
-/*
 useEffect(() => {
   const gesture: Gesture = createGesture({
     el: contentRef.current!,
@@ -163,25 +147,18 @@ useEffect(() => {
 
 });
 
-
-
-
-
 const onMove = (detail) => {
 
   if(detail.currentX < detail.startX) {
     console.log('izq');
     history.push(btnLinks.next);
-
   }
   if(detail.currentX > detail.startX) {
     console.log('der');
     history.push(btnLinks.prev);
   }
-
 }
 
-*/
   return (
     <IonPage>
       
