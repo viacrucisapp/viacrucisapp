@@ -1,6 +1,6 @@
 {
 	"appId": "com.viacrucisapp",
-	"appName": "via-crucis",
+	"appName": "Via Crucis",
 	"webDir": "build",
 	"bundledWebRuntime": false,
 	"linux" : {

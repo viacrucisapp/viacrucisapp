@@ -59,7 +59,7 @@ import {
                       <Trans>
                        {t('main.donateBody')}
                       </Trans> 
-                      <IonButton  class='donateModal__donateBtn' mode='md' color="primary" >{t('main.donateBtn')}</IonButton>   
+                      <IonButton href='https://viacrucisapp.carrd.co'  class='donateModal__donateBtn' mode='md' color="primary" >{t('main.donateBtn')}</IonButton>   
 
                     </div>
                   </div>

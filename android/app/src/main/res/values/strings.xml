@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">via-crucis</string>
-    <string name="title_activity_main">via-crucis</string>
+    <string name="app_name">Via Crucis</string>
+    <string name="title_activity_main">Via Crucis</string>
     <string name="package_name">com.viacrucisdev</string>
     <string name="custom_url_scheme">com.viacrucisdev</string>
 </resources>

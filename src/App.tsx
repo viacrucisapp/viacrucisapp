@@ -52,7 +52,7 @@ const App: React.FC = () => {
   AppIon.addListener('appStateChange', ({ isActive }) => {
     if(!isActive) {
       setAudioState('menu.musicNo'); 
-      console.log('MINIMIZADA')
+      console.log('CLOSED')
     } else {
       
       
@@ -61,13 +61,10 @@ const App: React.FC = () => {
 
   const audioController = () => {
     
-    if( audioRef.current.paused ){
-      console.log('play'); 
-      console.log(audioRef.current.paused)     
+    if( audioRef.current.paused ){   
       setAudioState('menu.musicYes');      
     }
     else{
-      console.log('stop');     
       setAudioState('menu.musicNo')          
     }
   }
@@ -92,15 +89,9 @@ const pauseAudio = () => {
     }
     // do side effects
     if( audioState === 'menu.musicYes') {
-      console.log('FIREEEEEEEEEEEEEEEEEEE')
-      console.log(`menu music is yes: ${audioState} and audio is paused(true??) ${audioRef.current.paused}`)
       playAudio()
-      console.log(`after playAudio() audio is playing ${!audioRef.current.paused}`)
     } else {
-      console.log(`menu music is no: ${audioState} and audio is playing(false??) ${audioRef.current.paused}`)
       pauseAudio();
-      console.log(`after pauseAudio() audio is paused ${audioRef.current.paused}`)
-
     }
   }, [audioState]);//setShowDonateModal, showDonateModal
   return (

@@ -26,9 +26,7 @@ import { Share } from '@capacitor/share';
 
 const Page: React.FC = () => {
   let history = useHistory();
-  //const isMounted = useRef(true)
   const match: any = useRouteMatch('/lectures/:name');
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [t, i18n] = useTranslation("lectures");
   const [tGlobal] = useTranslation("global");
 
@@ -46,28 +44,20 @@ const Page: React.FC = () => {
     current = languages.list.find(lecture => lecture.title === match.params.name);
     if(current){
       setLecturaIndex(current.id);
-      console.log('enter lecture');
-      console.log(current)
-
       setBtnLinks({
         next: current.id < 13 ? `/lectures/${languages.list[current.id+1].title}` : '/lectures', 
         prev: current.id > 0 ? `/lectures/${languages.list[current.id-1].title}` : '/lectures'
       });
       indexCheck(current);
       scrollToTop();
-      //scrollableRef.current.addEventListener("scroll", getScroll)
       scrollableRef.current.scrollTop = 0      
       scrollableRef.current.style.top = `0px`
-      
     }
     
     else{
-      console.error('LECTURE NOT FOUND')
       history.replace('/lectures')
     }
-    
   }, [match?.params])
-
 
   const scrollToTop = () => {
     contentRef.current && contentRef.current.scrollToTop(500);
@@ -75,20 +65,14 @@ const Page: React.FC = () => {
   }
 
   useIonViewWillLeave(()=>{
-    console.log('will leave lecture');
-    //window.removeEventListener("scroll", getScroll);
     scrollableRef.current.scrollTop = 0;
     scrollableRef.current.style.top = `0px`
-
   }, [contentRef])
-
  
   useIonViewDidLeave(()=>{
-    console.log('did leave lecture');
   }, [match?.params])
 
   const indexCheck = (current) => {
-    console.log('indexCheck')
     if(current.id <= 0){
       setBackBtn(true);     
     };
@@ -103,7 +87,6 @@ const Page: React.FC = () => {
     };
   }
 
-
   async function shareLecture() {
     await Share.share({
       title: 'Via Crucis',
@@ -116,19 +99,14 @@ const Page: React.FC = () => {
 const scrollingFn = () => {
   
   if(scrollableRef.current.scrollTop < 50) {    
-        //heightRef.current.style.transform = `translateY(-${scrollableRef.current.scrollTop}px)`;
         heightRef.current.style.marginTop = `-${scrollableRef.current.scrollTop}px`;
         heightRef.current.style.borderRadius= `${scrollableRef.current.scrollTop/2}px`
-        //scrollableRef.current.style.top = `${scrollableRef.current.scrollTop}px`
   }
   else {
-    //console.log(scrollableRef.current.scrollTop);  
     heightRef.current.style.marginTop = `-50px`;
     heightRef.current.style.borderRadius= `25px`
   }
-  
 }
-
 
 useEffect(() => {
   const gesture: Gesture = createGesture({
@@ -137,7 +115,6 @@ useEffect(() => {
     threshold: 70,
     gesturePriority: 42,
     onMove: (detail: any) => {
-      console.log('test');
       onMove(detail);
     }
   });
@@ -150,11 +127,9 @@ useEffect(() => {
 const onMove = (detail) => {
 
   if(detail.currentX < detail.startX) {
-    console.log('izq');
     history.push(btnLinks.next);
   }
   if(detail.currentX > detail.startX) {
-    console.log('der');
     history.push(btnLinks.prev);
   }
 }
@@ -206,9 +181,9 @@ const onMove = (detail) => {
                 style={ { visibility: backBtnDisable ? 'hidden' : 'visible'} }
               >
                 {languages.list[lecturaIndex-1] ? languages.list[lecturaIndex-1].title : '-'}
-                <IonIcon slot="start" icon={chevronBackOutline}  />
-                
+                <IonIcon slot="start" icon={chevronBackOutline}  />               
               </IonButton>
+
               <IonButton 
                 onClick={() => shareLecture()} 
                 size="default"
@@ -219,7 +194,6 @@ const onMove = (detail) => {
               >
                 <IonIcon slot='icon-only'   icon={paperPlaneOutline} />                
               </IonButton>
-
               
               <IonButton 
                 size="default" 
@@ -234,8 +208,7 @@ const onMove = (detail) => {
                 mode="md"
               >  
                 {languages.list[lecturaIndex+1] ? languages.list[lecturaIndex+1].title : '-'}
-                <IonIcon slot="end" icon={chevronForwardOutline}  />
-                
+                <IonIcon slot="end" icon={chevronForwardOutline}  />    
               </IonButton>
               
             </div>
