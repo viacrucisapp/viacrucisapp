@@ -8,6 +8,8 @@ import DonateModal from './components/DonateModal'
 import Lecture from './pages/Lecture';
 import Home from './pages/Home';
 import { App as AppIon } from '@capacitor/app'
+import { StatusBar, Style } from '@capacitor/status-bar';
+import { SplashScreen } from '@capacitor/splash-screen';
 
 
 
@@ -48,13 +50,20 @@ const App: React.FC = () => {
   setupIonicReact({
     mode: 'md'
   });
+  const hideStatusBar = async () => {
+    await StatusBar.setOverlaysWebView({ overlay: true }).catch(()=>{console.log('web')});
+    await StatusBar.setStyle({ style: Style.Light }).catch(()=>{console.log('web')});
+
+  };  
+
+
 
   AppIon.addListener('appStateChange', ({ isActive }) => {
     if(!isActive) {
       setAudioState('menu.musicNo'); 
       console.log('CLOSED')
     } else {
-      
+      hideStatusBar();
       
     };
   });
@@ -85,6 +94,7 @@ const pauseAudio = () => {
   useLayoutEffect(() => {
     if (firstUpdate.current) {
       firstUpdate.current = false;
+      hideStatusBar();
       return;
     }
     // do side effects

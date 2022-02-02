@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { I18nextProvider } from "react-i18next";
 import i18next from "i18next";
 
+
 import global_es from "./translations/es/global.json"
 import global_en from "./translations/en/global.json"
 import global_pt from "./translations/pt/global.json"
@@ -25,6 +26,7 @@ const lang = function() {
   } 
     return 'en'
 } 
+
 
 
 i18next.init({

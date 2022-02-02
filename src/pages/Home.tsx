@@ -1,4 +1,4 @@
-import { IonButtons, IonContent, IonMenuButton, IonPage, IonTitle, IonToolbar,  IonButton} from '@ionic/react';
+import { IonButtons, IonHeader, IonContent, IonMenuButton, IonPage, IonTitle, IonToolbar,  IonButton} from '@ionic/react';
 
 import './Home.css';
 import { useTranslation } from "react-i18next";
@@ -30,16 +30,17 @@ const Home: React.FC<HomeProps> = ({showModal, showViaInfoModal, showDonateModal
 
 
   return (
-    <IonPage>
-    <IonToolbar  mode="md">
-        
-        <IonTitle class="toolbarTitle" color="tertiary" size="large"><img src={viaCrucisLogo} /></IonTitle>
-        <IonButtons slot="end">
-        <IonMenuButton />
-        </IonButtons>
-    </IonToolbar>
-
-      <IonContent forceOverscroll={false} class="home_bg mainContent" fullscreen >
+    <IonPage class="home__pageBg">
+    <IonHeader mode="md" className="ion-no-border">
+      <IonToolbar  mode="md">
+          
+          <IonTitle class="toolbarTitle" color="tertiary" size="large"><img src={viaCrucisLogo} /></IonTitle>
+          <IonButtons slot="end">
+          <IonMenuButton />
+          </IonButtons>
+      </IonToolbar>
+    </IonHeader>
+      <IonContent forceOverscroll={false} class="home_bg mainContent">
         <Swiper 
           centeredSlides={true}
           loop={true}

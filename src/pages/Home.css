@@ -4,8 +4,12 @@ ion-title.title-large, ion-title.title-large .ios  {
     
   }
 
+  .home__pageBg {
+    padding-top: 0 !important;
+
+  }
   .home_bg {
-    
+    --padding-top: 100px;
   }
   .home_bg::part(scroll) {
     padding-inline-start: 0;
@@ -33,8 +37,8 @@ ion-title.title-large, ion-title.title-large .ios  {
   ion-toolbar, ion-toolbar.md {
     --padding-end: 12px;
     --padding-start: 12px;
-    --padding-top: 24px;
-    --padding-bottom: 24px;
+    --padding-top: 25px;
+    --padding-bottom: 25px;
   }
 
   .mainContent, .mainContent.md {
