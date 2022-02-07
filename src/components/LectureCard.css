@@ -1,6 +1,7 @@
 .lecture-card {
     /*height: 110px;*/  
-    box-shadow: none;
+    -webkit-box-shadow: none;  
+            box-shadow: none;
     border-radius: 13px;
     font-family: 'Roboto', sans-serif;
 }
@@ -9,17 +10,11 @@ ion-card-content {
     height: 110px;
 }
 
-
-
 .lecture-card__image {   
     height: 100%;
-    object-fit:cover;
+    -o-object-fit:cover;
+       object-fit:cover;
 
-}
-
-.lecture-card__image::part(image) {   
-  
-    
 }
 
 :root {

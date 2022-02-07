@@ -9,11 +9,13 @@ ion-title.title-large, ion-title.title-large .ios  {
 
   }
   .home_bg {
-    --padding-top: 100px;
+    --padding-top: 130px;
   }
   .home_bg::part(scroll) {
-    padding-inline-start: 0;
-    padding-inline-end: 0;
+    -webkit-padding-start: 0;
+            padding-inline-start: 0;
+    -webkit-padding-end: 0;
+            padding-inline-end: 0;
     height: 100vh;
     position: relative;
     /*
@@ -29,22 +31,19 @@ ion-title.title-large, ion-title.title-large .ios  {
   }
   ion-menu-button, ion-menu-button.ios {
     font-size: 30px ;
-    border-radius: 200px !important;
-    
-    
+    border-radius: 200px !important;    
   }
 
   ion-toolbar, ion-toolbar.md {
     --padding-end: 12px;
     --padding-start: 12px;
-    --padding-top: 25px;
-    --padding-bottom: 25px;
+    --padding-top: 40px;
+    --padding-bottom: 20px;
   }
 
   .mainContent, .mainContent.md {
     --padding-start: 12px;
-    --padding-end: 12px;
-    
+    --padding-end: 12px;   
   }
 
   .lecture-card:first-child {
@@ -61,6 +60,8 @@ ion-title.title-large, ion-title.title-large .ios  {
    width: 100%;
  }
  .swiper-slide {
+   -webkit-transition: all 1s ease-out;
+   -o-transition: all 1s ease-out;
    transition: all 1s ease-out;
    z-index: 999;
  }
@@ -68,7 +69,11 @@ ion-title.title-large, ion-title.title-large .ios  {
 
  .swiper-slide.swiper-slide-next .slider-card,
  .swiper-slide.swiper-slide-prev .slider-card {
-  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   opacity: 0.4;
  }

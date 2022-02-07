@@ -77,9 +77,9 @@ import logoNew from '../assets/images/logoNew.svg'
 
     return (
       
-        <IonModal onDidDismiss={() => {closeModal()}} class=""  isOpen={showModal}>
+        <IonModal onDidDismiss={() => {closeModal()}}  isOpen={showModal}>
           <IonHeader mode="md" translucent className="ion-no-border">
-            <IonToolbar mode='md'>
+            <IonToolbar color={modalScreen !== 'info' ? 'medium' : 'transparent'} mode='md'>
 
               <IonButtons slot="start">
                 <IonButton mode='md' onClick={modalScreen !== 'info' ? () => {setModalScreen('info')} : () => {closeModal()}}>

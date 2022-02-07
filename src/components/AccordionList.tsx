@@ -1,7 +1,8 @@
-import { IonItem, IonLabel, IonMenuToggle } from '@ionic/react';
+import { IonItem, IonLabel, IonMenuToggle, isPlatform } from '@ionic/react';
 import { useTranslation } from "react-i18next"
 import { useState } from 'react';
 import './AccordionList.css';
+import { AppRate } from '@awesome-cordova-plugins/app-rate';
 
 interface AccordionListProps {
     audioController: Function;
@@ -19,12 +20,19 @@ const languages: { id: string, label: string }[] = [
     //{ "id": "de", "label": "Deutsch" },
     //{ "id": "fr", "label": "Français" }        
 ];
+function rateApp() {
+
+       if(isPlatform('android')){
+        window.open('market://details?id=com.viacrucisdev', '_blank' )
+       };
+       if(isPlatform('ios')){
+        window.open('itms-apps://itunes.apple.com/app/id1608439337')
+        }
+}
 
 export const AccordionList:React.FC<AccordionListProps> = ({audioController, audioState, showModal, showViaInfoModal, showDonateModal}) => {
-    
 
     const [clicked, setClicked] = useState(undefined);   
-
     const showel = e => {  
         if (clicked === e.currentTarget.id) {
             return setClicked(null)
@@ -33,7 +41,6 @@ export const AccordionList:React.FC<AccordionListProps> = ({audioController, aud
     }
     const [t, i18n] = useTranslation("global");
     
-
     return (
        <div>
 
@@ -78,7 +85,7 @@ export const AccordionList:React.FC<AccordionListProps> = ({audioController, aud
                     </IonItem>
             </div>
             </IonMenuToggle>
-            <div className="listGroup" id="rate" onClick={(e) => {showel(e)}}>
+            <div className="listGroup" id="rate" onClick={(e) => {showel(e); rateApp()}}>
                     <IonItem detail={false} button className="item-stable" lines="none">
                             <IonLabel>{t('menu.rate')}</IonLabel>
                     </IonItem>
@@ -87,7 +94,5 @@ export const AccordionList:React.FC<AccordionListProps> = ({audioController, aud
             
        </div>
 
-
-       
     )
 }

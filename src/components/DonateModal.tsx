@@ -34,7 +34,7 @@ import {
 
     return (
             
-        <IonModal onDidDismiss={() => {closeModal()}} class=""  isOpen={showDonateModal}>
+        <IonModal onDidDismiss={() => {closeModal()}} isOpen={showDonateModal}>
           <IonHeader mode="md" translucent className="ion-no-border">
             <IonToolbar mode='md'>
 

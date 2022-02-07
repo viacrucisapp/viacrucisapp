@@ -1,5 +1,5 @@
 {
-	"appId": "com.viacrucisapp",
+	"appId": "com.viacrucisdev",
 	"appName": "Via Crucis",
 	"webDir": "build",
 	"bundledWebRuntime": false,
@@ -12,7 +12,7 @@
 		  "launchAutoHide": true,
 		  "backgroundColor": "#ffffffff",
 		  "androidSplashResourceName": "splash",
-		  "androidScaleType": "CENTER_CROP",
+		  "androidScaleType": "CENTER",
 		  "showSpinner": false,
 		  "androidSpinnerStyle": "large",
 		  "iosSpinnerStyle": "small",

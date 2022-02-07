@@ -31,7 +31,7 @@ const Home: React.FC<HomeProps> = ({showModal, showViaInfoModal, showDonateModal
 
   return (
     <IonPage class="home__pageBg">
-    <IonHeader mode="md" className="ion-no-border">
+    <IonHeader mode="md" class="ion-no-border">
       <IonToolbar  mode="md">
           
           <IonTitle class="toolbarTitle" color="tertiary" size="large"><img src={viaCrucisLogo} /></IonTitle>
@@ -40,7 +40,7 @@ const Home: React.FC<HomeProps> = ({showModal, showViaInfoModal, showDonateModal
           </IonButtons>
       </IonToolbar>
     </IonHeader>
-      <IonContent forceOverscroll={false} class="home_bg mainContent">
+      <IonContent forceOverscroll={false} class="home_bg mainContent" fullscreen={false}>
         <Swiper 
           centeredSlides={true}
           loop={true}

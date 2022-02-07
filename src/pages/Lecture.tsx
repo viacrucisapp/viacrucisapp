@@ -12,13 +12,14 @@ import {
   IonModal, 
   IonIcon,
   Gesture,
-  createGesture
+  createGesture,
+  NavContext
  } from '@ionic/react';
 import { useRouteMatch } from 'react-router';
 import './Lecture.css';
 import { useTranslation, Trans } from "react-i18next";
 import  imageData  from '../assets/images/imageData'; 
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, useContext } from 'react';
 import languages from '../translations/es/lectures.json';
 import { useHistory } from 'react-router-dom';
 import { arrowBackOutline, chevronBackOutline, chevronForwardOutline, paperPlaneOutline } from 'ionicons/icons';
@@ -38,6 +39,10 @@ const Page: React.FC = () => {
   const contentRef = useRef<HTMLIonContentElement | null>(null);
   const heightRef = useRef<HTMLDivElement | null>(null);
   const scrollableRef = useRef<HTMLDivElement | null>(null);
+  const prevBtnRef = useRef<HTMLIonButtonElement| null>(null);
+  const nextBtnRef = useRef<HTMLIonButtonElement | null>(null);
+  const {navigate} = useContext(NavContext)
+
   
   useIonViewWillEnter(()=>{
     let current;
@@ -127,10 +132,10 @@ useEffect(() => {
 const onMove = (detail) => {
 
   if(detail.currentX < detail.startX) {
-    history.push(btnLinks.next);
+    navigate(btnLinks.next, 'forward')
   }
   if(detail.currentX > detail.startX) {
-    history.push(btnLinks.prev);
+    navigate(btnLinks.prev, 'back')
   }
 }
 
@@ -174,6 +179,7 @@ const onMove = (detail) => {
                 size="default" 
                 disabled={backBtnDisable} 
                 color="primary" 
+                ref={prevBtnRef}
                 routerLink={btnLinks.prev}                             
                 routerDirection="back"
                 class="lecture_navBtn"
@@ -199,7 +205,7 @@ const onMove = (detail) => {
                 size="default" 
                 disabled={nextBtnDisable} 
                 color="primary" 
-                
+                ref={nextBtnRef}
                 routerLink={btnLinks.next}
                 routerDirection="forward"
                 class="lecture_navBtn"

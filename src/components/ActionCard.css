@@ -5,29 +5,7 @@
     font-family: 'Roboto', sans-serif;    
     position: relative;
     --background: rgba(255, 255, 255, 0.75);
-
 }
-
-ion-card-content {
-    
-}
-/*
-.action-card__grid {
-    height: 100%;
-}
-
-
-.action-card__image {   
-    height: 80%;
-    width: 100%;
-    object-fit:cover;
-    bottom: 0;
-    position: absolute;
-
-}
-
-
-*/
 
 .action-card__image {   
     height: 90%;
@@ -35,19 +13,15 @@ ion-card-content {
     object-fit:contain;
     bottom: 0;
     position: absolute;
-
 }
+
 .action-card__image-container {
     position: relative;
 }
 
-
-
 .action-card__image::part(image) {  
     bottom: -5px;
-    position: absolute; 
-  
-    
+    position: absolute;  
 }
 :root {
     --ion-grid-padding: 0;
@@ -63,24 +37,18 @@ h2.action-card__title{
 h3.action-card__text{    
     font-size: 1.05rem;
     color:#444;
-    line-height: 1.2rem;
-   
+    line-height: 1.2rem;  
 }
-
-
 
 @media (max-height: 690px) { 
     
     .action-card {
         height: 100px;
         margin-top: 15px;
-        margin-bottom: 15px;
-        
-        
+        margin-bottom: 15px;  
     }
 
     .action-card .card-content-ios {
         padding-top: 10px;
-    }
-    
- }
+    }    
+}
