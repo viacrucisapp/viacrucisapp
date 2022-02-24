@@ -39,8 +39,9 @@ import logoNew from '../assets/images/logoNew.svg'
       switch (modalScreen) {
         case 'info':
           return (
+            
             <div className="modal_info">
-
+            <input style={{'display': 'none'}} />
                
                 <img className='DonateModal__VCLogo' src={logoNew} alt="app icon" /> 
                 <div className="ion-text-center modal_textContent">                    

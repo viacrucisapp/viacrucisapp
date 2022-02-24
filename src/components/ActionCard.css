@@ -27,11 +27,15 @@
     --ion-grid-padding: 0;
     --ion-grid-column-padding: 0;
 }
-h2.action-card__title{    
+
+.action-card__content {
+    padding-left: 2rem;
+}
+h2.action-card__title{   
+    width: 6em; 
     font-weight: 700 ;
-    font-size: 1rem ;
+    font-size: 1.2rem ;
     color:#614E48;
-    white-space: nowrap;
 }
 
 h3.action-card__text{    
@@ -43,12 +47,8 @@ h3.action-card__text{
 @media (max-height: 690px) { 
     
     .action-card {
-        height: 100px;
+        height: 90px;
         margin-top: 15px;
         margin-bottom: 15px;  
     }
-
-    .action-card .card-content-ios {
-        padding-top: 10px;
-    }    
 }

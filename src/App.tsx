@@ -9,9 +9,6 @@ import Lecture from './pages/Lecture';
 import Home from './pages/Home';
 import { App as AppIon } from '@capacitor/app'
 import { StatusBar, Style } from '@capacitor/status-bar';
-import { SplashScreen } from '@capacitor/splash-screen';
-
-
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';

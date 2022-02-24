@@ -65,12 +65,12 @@
     font-size: 0.8rem;
 }
 
-.modal_info ul {
+.modal_info ul, .columnModal ul {
     text-align: start;
     list-style: none;
 }
 
-.modal_info ul li::before {
+.modal_info ul li::before, .columnModal ul li::before {
     content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
     color: #614E48; /* Change the color */
     font-weight: bold; /* If you want it to be bold */

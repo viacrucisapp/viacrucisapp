@@ -2,7 +2,7 @@ import { IonItem, IonLabel, IonMenuToggle, isPlatform } from '@ionic/react';
 import { useTranslation } from "react-i18next"
 import { useState } from 'react';
 import './AccordionList.css';
-import { AppRate } from '@awesome-cordova-plugins/app-rate';
+import { Share } from '@capacitor/share';
 
 interface AccordionListProps {
     audioController: Function;
@@ -30,6 +30,8 @@ function rateApp() {
         }
 }
 
+
+
 export const AccordionList:React.FC<AccordionListProps> = ({audioController, audioState, showModal, showViaInfoModal, showDonateModal}) => {
 
     const [clicked, setClicked] = useState(undefined);   
@@ -40,6 +42,15 @@ export const AccordionList:React.FC<AccordionListProps> = ({audioController, aud
         setClicked(e.currentTarget.id)
     }
     const [t, i18n] = useTranslation("global");
+
+    async function shareApp() {
+        await Share.share({
+          title: 'Via Crucis',
+          text: t('main.shareDialogBody'),
+          url: 'https://viacrucisapp.carrd.co/',
+          dialogTitle: t('main.share'),
+        }).catch(error => console.log('Device not compatible with share'));
+      }
     
     return (
        <div>
@@ -85,12 +96,20 @@ export const AccordionList:React.FC<AccordionListProps> = ({audioController, aud
                     </IonItem>
             </div>
             </IonMenuToggle>
+            <IonMenuToggle autoHide={false} > 
             <div className="listGroup" id="rate" onClick={(e) => {showel(e); rateApp()}}>
                     <IonItem detail={false} button className="item-stable" lines="none">
                             <IonLabel>{t('menu.rate')}</IonLabel>
                     </IonItem>
             </div>
-
+            </IonMenuToggle>
+            <IonMenuToggle autoHide={false} >  
+            <div className="listGroup" id="donate" onClick={(e) => {showel(e); shareApp()}}>
+                    <IonItem detail={false} button className="item-stable" lines="none">
+                            <IonLabel>{t('menu.share')}</IonLabel>
+                    </IonItem>
+            </div>
+            </IonMenuToggle>
             
        </div>
 

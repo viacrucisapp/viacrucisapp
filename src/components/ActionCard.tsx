@@ -16,13 +16,12 @@ export const ActionCard = ({body, image, actionLink} : ActionCardProps) => {
     const [t, i18n] = useTranslation("global");
 
     return (
-        <IonCard className="action-card" mode="ios" >
+        <IonCard button className="action-card" mode="ios" onClick={(e) => {actionLink()}}>
             <IonGrid class="action-card__grid">
             <IonRow class="action-card__grid">         
                 <IonCol size="8">
-                    <IonCardContent>
+                    <IonCardContent class="action-card__content">
                         <h2 className="action-card__title">{t(body)}</h2> 
-                        <IonButton color="primary"  onClick={(e) => {actionLink()}}>{t('main.moreBtn')} </IonButton>
                     </IonCardContent>
                 </IonCol>
                 <IonCol size="4" class="action-card__image-container">

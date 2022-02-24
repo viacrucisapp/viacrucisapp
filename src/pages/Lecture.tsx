@@ -23,7 +23,6 @@ import { useState, useRef, useEffect, useContext } from 'react';
 import languages from '../translations/es/lectures.json';
 import { useHistory } from 'react-router-dom';
 import { arrowBackOutline, chevronBackOutline, chevronForwardOutline, paperPlaneOutline } from 'ionicons/icons';
-import { Share } from '@capacitor/share';
 
 const Page: React.FC = () => {
   let history = useHistory();
@@ -92,14 +91,6 @@ const Page: React.FC = () => {
     };
   }
 
-  async function shareLecture() {
-    await Share.share({
-      title: 'Via Crucis',
-      text: tGlobal('main.shareDialogBody'),
-      url: 'https://viacrucisapp.carrd.co/',
-      dialogTitle: tGlobal('main.share'),
-    });
-  }
 
 const scrollingFn = () => {
   
@@ -188,17 +179,6 @@ const onMove = (detail) => {
               >
                 {languages.list[lecturaIndex-1] ? languages.list[lecturaIndex-1].title : '-'}
                 <IonIcon slot="start" icon={chevronBackOutline}  />               
-              </IonButton>
-
-              <IonButton 
-                onClick={() => shareLecture()} 
-                size="default"
-                color="primary" 
-                class="lecture_navBtn share" 
-                mode="md"     
-                style={ { borderRadius: '200px'} }   
-              >
-                <IonIcon slot='icon-only'   icon={paperPlaneOutline} />                
               </IonButton>
               
               <IonButton 
