@@ -133,7 +133,7 @@ const onMove = (detail) => {
   return (
     <IonPage>
       
-      <IonHeader mode="md" className="ion-no-border">
+      <IonHeader mode="md" className="ion-no-border lecture_header">
         <IonToolbar mode="md" >
         <IonButtons slot="start">
           <IonButton mode="md" routerLink="/lectures" routerDirection="back" style={{backgroundColor: 'rgba(255, 255, 255, 0.5)', borderRadius: '200px'}}>
@@ -180,6 +180,7 @@ const onMove = (detail) => {
                 {languages.list[lecturaIndex-1] ? languages.list[lecturaIndex-1].title : '-'}
                 <IonIcon slot="start" icon={chevronBackOutline}  />               
               </IonButton>
+
               
               <IonButton 
                 size="default" 
@@ -201,10 +202,6 @@ const onMove = (detail) => {
             <div className="bottomFade"></div>  
           </div>
         </div>
-        <IonModal isOpen={showModal}>
-          <p>This is modal content</p>
-          <IonButton onClick={() => setShowModal(false)}>Close Modal</IonButton>
-        </IonModal> 
       </IonContent>
     </IonPage>
   );

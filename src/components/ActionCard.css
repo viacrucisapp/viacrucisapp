@@ -1,28 +1,32 @@
 .action-card {
-    /*height: 119px;*/
     box-shadow: none;
-    border-radius: 13px;
+    border-radius: 16px;
     font-family: 'Roboto', sans-serif;    
     position: relative;
-    --background: rgba(255, 255, 255, 0.75);
+    --background: rgba(255, 255, 255, 0.2);
+    box-shadow: 1px 10px 25px rgba(0, 0, 0, 0.1);
+    margin-inline: 28px;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
 }
 
 .action-card__image {   
-    height: 90%;
-    width: 100%;
-    object-fit:contain;
-    bottom: 0;
-    position: absolute;
+    height: 110px;
+    width: 110px;
+    object-fit:cover;        
+    z-index: 9;
+    overflow: visible;
 }
 
 .action-card__image-container {
-    position: relative;
+    display: flex;
+    justify-content: end;
+    overflow: visible;
+    padding-right: 0.5rem;
 }
 
-.action-card__image::part(image) {  
-    bottom: -5px;
-    position: absolute;  
-}
 :root {
     --ion-grid-padding: 0;
     --ion-grid-column-padding: 0;
@@ -30,8 +34,13 @@
 
 .action-card__content {
     padding-left: 2rem;
+    height: initial;
+    display: flex;
+    align-items: center;
+    padding-top: auto;
+    height: 100%;
 }
-h2.action-card__title{   
+h2.action-card__title{  
     width: 6em; 
     font-weight: 700 ;
     font-size: 1.2rem ;
@@ -47,8 +56,14 @@ h3.action-card__text{
 @media (max-height: 690px) { 
     
     .action-card {
-        height: 90px;
+        height: 100px;
         margin-top: 15px;
         margin-bottom: 15px;  
+    }
+    .action-card__content {
+        height: auto;
+    }
+    .action-card__image {  
+        bottom: 10;
     }
 }

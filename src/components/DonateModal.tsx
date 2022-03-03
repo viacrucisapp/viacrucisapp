@@ -40,7 +40,7 @@ import {
 
               <IonButtons slot="start">
                 <IonButton mode='md' onClick={() => {closeModal()}}>
-                  <IonIcon mode='md' slot="icon-only" icon={arrowBackOutline}  >
+                  <IonIcon color='dark' mode='md' slot="icon-only" icon={arrowBackOutline}  >
                   </IonIcon>
                   
                 </IonButton>

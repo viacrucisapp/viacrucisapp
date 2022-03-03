@@ -38,7 +38,7 @@ import logoNew from '../assets/images/logoNew.svg'
 
               <IonButtons slot="start">
                 <IonButton mode='md' onClick={() => {closeModal()}}>
-                  <IonIcon mode='md' slot="icon-only" icon={arrowBackOutline}  >
+                  <IonIcon color='dark' mode='md' slot="icon-only" icon={arrowBackOutline}  >
                   </IonIcon>
                   
                 </IonButton>
@@ -55,15 +55,15 @@ import logoNew from '../assets/images/logoNew.svg'
                   <img className='DonateModal__VCLogo' src={logoNew} alt="app icon" />                     
 
                     <div className="ion-text-center modal_textContent">
-                      <div className="">
+                      <div>
                         <h2 className='modalSubTitle'>{t('main.viaCrucisInfoTitle')}</h2>
                         <Trans>{t('main.viaCrucisInfo')}</Trans>
                         <h2 className='modalSubTitle'>{t('main.howTo')}</h2>
                         <Trans>
                          {t('main.howToBody')}
                         </Trans>                                     
-                                            </div>
                       </div>
+                    </div>
                   </div>
                 </IonCol>
               </IonRow>

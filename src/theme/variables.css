@@ -111,6 +111,11 @@ http://ionicframework.com/docs/theming/ */
   --ion-toolbar-background:transparent;
   
   --ion-font-family: 'Roboto', sans-serif;
+
+  --ion-color-black: #000000;
+
+  --info-gradient: linear-gradient(180deg, rgba(247,246,241,1) 0%, rgba(247,246,241,1) 80%, rgba(247,246,241,0.35) 95%, rgba(247,246,241,0) 100%);
+
 }
 
 

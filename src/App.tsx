@@ -48,9 +48,11 @@ const App: React.FC = () => {
     mode: 'md'
   });
   const hideStatusBar = async () => {
+    // await StatusBar.hide().catch(()=>{console.log('web')})
+    
     await StatusBar.setOverlaysWebView({ overlay: true }).catch(()=>{console.log('web')});
     await StatusBar.setStyle({ style: Style.Light }).catch(()=>{console.log('web')});
-
+    
   };  
 
 

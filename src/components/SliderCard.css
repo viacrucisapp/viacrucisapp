@@ -2,7 +2,7 @@
 
 .slider-card {
     height: 65vw;
-    width: 65vw;
+    width: 80vw;
 
     -webkit-box-shadow: none;
 
@@ -47,19 +47,21 @@ h3.slider-card__text{
 
 }
 
+
+
 @media (max-height: 690px) { 
     
     .slider-card {
-        height: 60vw;
-        width: 60vw;
+        height: 50vw;
+        width: 80vw;
     }    
 }
-
-@media (min-width: 768px) { 
+/*
+@media (max-height: 630px) { 
     
     .slider-card {
-        height: 500px;
-        width: 500px;
-    }
-    
- }
+        height: 45vw;
+        width: 80vw;
+    }    
+}*/
+

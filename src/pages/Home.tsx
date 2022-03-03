@@ -1,4 +1,4 @@
-import { IonButtons, IonHeader, IonContent, IonMenuButton, IonPage, IonTitle, IonToolbar,  IonButton} from '@ionic/react';
+import { IonButtons, IonHeader, IonContent, IonMenuButton, IonPage, IonTitle, IonToolbar,  IonButton, IonGrid} from '@ionic/react';
 
 import './Home.css';
 import { useTranslation } from "react-i18next";
@@ -6,9 +6,10 @@ import { SliderCard } from '../components/SliderCard';
 import  imageData  from '../assets/images/imageData';
 import { Ilectures} from "../common/types" 
 import { Swiper, SwiperSlide } from 'swiper/react/swiper-react.js';
-
+import { EffectCoverflow } from 'swiper'
 import 'swiper/swiper-bundle.min.css'
 import '@ionic/react/css/ionic-swiper.css';
+
 
 import viaCrucisLogo from "../assets/images/viaCrucisAppLogo.svg"
 import { ActionCard } from '../components/ActionCard';
@@ -31,6 +32,7 @@ const Home: React.FC<HomeProps> = ({showModal, showViaInfoModal, showDonateModal
 
   return (
     <IonPage class="home__pageBg">
+    
     <IonHeader mode="md" class="ion-no-border">
       <IonToolbar  mode="md">
           
@@ -41,29 +43,35 @@ const Home: React.FC<HomeProps> = ({showModal, showViaInfoModal, showDonateModal
       </IonToolbar>
     </IonHeader>
       <IonContent forceOverscroll={false} class="home_bg mainContent" fullscreen={false}>
-        <Swiper 
-          centeredSlides={true}
-          loop={true}
-          slidesPerView={1.5}
-          spaceBetween={1}
-          speed={500}
-          
-        >
-          
-        {
-                  
-          arrayLectures.map((lecture, index) => (
-            <SwiperSlide key={index}>
-              <SliderCard images={imageData}  lecture={lecture}/>
-            </SwiperSlide>
-            
-          ))
-        }
-        </Swiper>
+        <IonGrid>
+          <Swiper 
+            centeredSlides={true}
+            loop={true}
+            slidesPerView= {1.25}
+            spaceBetween={5}
+            speed={500}
+         
 
-        <ActionCard body='main.aboutViaCard' image={aboutVia} actionLink={showViaInfoModal} ></ActionCard>
-        <ActionCard body='main.aboutAppCard' image={aboutApp} actionLink={showModal} ></ActionCard>
-        <IonButton class="home_donateBtn" color="tertiary" onClick={(e) => {showDonateModal()}} mode='ios'  expand='block' >{tMain('main.colaborateBtn')}</IonButton>
+            
+            
+            
+          >
+            
+          {
+                    
+            arrayLectures.map((lecture, index) => (
+              <SwiperSlide key={index}>
+                <SliderCard images={imageData}  lecture={lecture}/>
+              </SwiperSlide>
+              
+            ))
+          }
+          </Swiper>
+
+          <ActionCard body='main.aboutViaCard' image={aboutVia} actionLink={showViaInfoModal} ></ActionCard>
+          <ActionCard body='main.aboutAppCard' image={aboutApp} actionLink={showModal} ></ActionCard>
+          <IonButton class="home_donateBtn" color="tertiary" onClick={(e) => {showDonateModal()}} mode='ios'  expand='block' >{tMain('main.colaborateBtn')}</IonButton>
+        </IonGrid>
       </IonContent>
     </IonPage>
   );

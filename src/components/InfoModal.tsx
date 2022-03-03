@@ -79,12 +79,12 @@ import logoNew from '../assets/images/logoNew.svg'
     return (
       
         <IonModal onDidDismiss={() => {closeModal()}}  isOpen={showModal}>
-          <IonHeader mode="md" translucent className="ion-no-border">
-            <IonToolbar color={modalScreen !== 'info' ? 'medium' : 'transparent'} mode='md'>
+          <IonHeader style={{background: modalScreen !== 'info' ? 'var(--info-gradient)' : 'transparent' }}  mode="md" translucent className="ion-no-border">
+            <IonToolbar mode='md'>
 
               <IonButtons slot="start">
                 <IonButton mode='md' onClick={modalScreen !== 'info' ? () => {setModalScreen('info')} : () => {closeModal()}}>
-                  <IonIcon mode='md' slot="icon-only" icon={arrowBackOutline}  >
+                  <IonIcon color='dark' mode='md' slot="icon-only" icon={arrowBackOutline}  >
                   </IonIcon>
                   
                 </IonButton>

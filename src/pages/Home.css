@@ -3,41 +3,48 @@ ion-title.title-large, ion-title.title-large .ios  {
     margin-left: -4px;
     
   }
-
+/*
   .home__pageBg {
     padding-top: 0 !important;
 
   }
-  .home_bg {
-    --padding-top: 110px;
-  }
+*/
   .home_bg::part(scroll) {
     -webkit-padding-start: 0;
             padding-inline-start: 0;
     -webkit-padding-end: 0;
             padding-inline-end: 0;
-    height: 100vh;
+    /*
     position: relative;
+    */
     /*
     display: grid;
     grid-template-rows:40% auto auto  ;
     */
   }
 
-  .home_bg::part(background) {
+  .home__pageBg {
     background: url('../assets/images/backgroundHome.png');
     background-size: 100% 100vh;
     background-repeat: no-repeat;
+  }
+  .home_bg::part(background) {
+    background-color: transparent;
   }
   ion-menu-button, ion-menu-button.ios {
     font-size: 30px ;
     border-radius: 200px !important;    
   }
+  ion-header {
+    padding-top: calc(constant(safe-area-inset-top) + 25px);
+    padding-top: calc(env(safe-area-inset-top) + 25px);
+    
+  }
 
   ion-toolbar, ion-toolbar.md {
-    --padding-end: 12px;
-    --padding-start: 12px;
-    --padding-top: 40px;
+    --padding-end: 25px;
+    --padding-start: 25px;
+    --padding-top: 25px;
     --padding-bottom: 20px;
   }
 
@@ -46,18 +53,18 @@ ion-title.title-large, ion-title.title-large .ios  {
     --padding-end: 12px;   
   }
 
-  .lecture-card:first-child {
-    margin-top: 0;
-  }
-
  .home_donateBtn {
-  margin-inline: 16px;
+  margin-inline: 28px;
   position: relative;
   bottom: 0;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
  }
 
  .swiper {
    width: 100%;
+ 
  }
  .swiper-slide {
    -webkit-transition: all 1s ease-out;
@@ -81,8 +88,8 @@ ion-title.title-large, ion-title.title-large .ios  {
 
  @media (max-height: 690px) { 
     
-  .swiper {
+  /*.swiper {
      margin-top: -20px;
-  }
+  }*/
   
 }

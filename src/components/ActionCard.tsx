@@ -19,12 +19,12 @@ export const ActionCard = ({body, image, actionLink} : ActionCardProps) => {
         <IonCard button className="action-card" mode="ios" onClick={(e) => {actionLink()}}>
             <IonGrid class="action-card__grid">
             <IonRow class="action-card__grid">         
-                <IonCol size="8">
+                <IonCol size="7">
                     <IonCardContent class="action-card__content">
                         <h2 className="action-card__title">{t(body)}</h2> 
                     </IonCardContent>
                 </IonCol>
-                <IonCol size="4" class="action-card__image-container">
+                <IonCol size="5" class="action-card__image-container">
                     <IonImg className="action-card__image" alt="Artist painting" src={image} />
                 </IonCol>
             </IonRow>
