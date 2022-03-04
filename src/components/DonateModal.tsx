@@ -9,6 +9,7 @@ import {
     IonToolbar,
     IonButtons,
     IonIcon,
+    isPlatform,
   } from '@ionic/react';
   
   import './InfoModal.css'
@@ -35,7 +36,7 @@ import {
     return (
             
         <IonModal onDidDismiss={() => {closeModal()}} isOpen={showDonateModal}>
-          <IonHeader mode="md" translucent className="ion-no-border">
+          <IonHeader mode={isPlatform('ios') ? 'ios' : 'md'} translucent className="ion-no-border">
             <IonToolbar mode='md'>
 
               <IonButtons slot="start">

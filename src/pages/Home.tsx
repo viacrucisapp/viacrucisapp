@@ -1,4 +1,4 @@
-import { IonButtons, IonHeader, IonContent, IonMenuButton, IonPage, IonTitle, IonToolbar,  IonButton, IonGrid} from '@ionic/react';
+import { IonButtons, IonHeader, IonContent, IonMenuButton, IonPage, IonTitle, IonToolbar,  IonButton, IonGrid, isPlatform} from '@ionic/react';
 
 import './Home.css';
 import { useTranslation } from "react-i18next";
@@ -33,7 +33,7 @@ const Home: React.FC<HomeProps> = ({showModal, showViaInfoModal, showDonateModal
   return (
     <IonPage class="home__pageBg">
     
-    <IonHeader mode="md" class="ion-no-border">
+    <IonHeader mode={isPlatform('ios') ? 'ios' : 'md'} class="ion-no-border">
       <IonToolbar  mode="md">
           
           <IonTitle class="toolbarTitle" color="tertiary" size="large"><img src={viaCrucisLogo} /></IonTitle>

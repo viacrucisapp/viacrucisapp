@@ -35,10 +35,14 @@ ion-title.title-large, ion-title.title-large .ios  {
     font-size: 30px ;
     border-radius: 200px !important;    
   }
-  ion-header {
+  ion-header.md {
     padding-top: calc(constant(safe-area-inset-top) + 25px);
     padding-top: calc(env(safe-area-inset-top) + 25px);
     
+  }
+
+  ion-header.ios {
+    padding-top: 0 !important;
   }
 
   ion-toolbar, ion-toolbar.md {
@@ -50,7 +54,9 @@ ion-title.title-large, ion-title.title-large .ios  {
 
   .mainContent, .mainContent.md {
     --padding-start: 12px;
-    --padding-end: 12px;   
+    --padding-end: 12px;
+    background-color: transparent;  
+    background: transparent; 
   }
 
  .home_donateBtn {

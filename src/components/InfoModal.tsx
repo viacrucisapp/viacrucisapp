@@ -9,7 +9,8 @@ import {
     IonHeader,
     IonToolbar,
     IonButtons,
-    IonIcon
+    IonIcon,
+    isPlatform
   
   } from '@ionic/react';
   
@@ -46,7 +47,7 @@ import logoNew from '../assets/images/logoNew.svg'
                 <img className='DonateModal__VCLogo' src={logoNew} alt="app icon" /> 
                 <div className="ion-text-center modal_textContent">                    
                       <Trans  t={t} i18nKey="main.aboutBody">
-                       Text <a href="http://luzlibre.com.ar/"><u>Luz Libre</u></a> Text
+                       Text <a href="https://opusdei.org/es-ar/"><u>Opus Dei</u></a> Text <a href="http://luzlibre.com.ar/"><u>Luz Libre</u></a> Text
                       </Trans>  
                     <p className='legalLinks' onClick={() => {setModalScreen('privacy')}}><u>{t('main.privacy')}</u></p>
                     <p className='legalLinks' onClick={() => {setModalScreen('terms')}}><u>{t('main.terms')}</u></p>
@@ -79,7 +80,7 @@ import logoNew from '../assets/images/logoNew.svg'
     return (
       
         <IonModal onDidDismiss={() => {closeModal()}}  isOpen={showModal}>
-          <IonHeader style={{background: modalScreen !== 'info' ? 'var(--info-gradient)' : 'transparent' }}  mode="md" translucent className="ion-no-border">
+          <IonHeader style={{background: modalScreen !== 'info' ? 'var(--info-gradient)' : 'transparent' }}  mode={isPlatform('ios') ? 'ios' : 'md'} translucent className="ion-no-border">
             <IonToolbar mode='md'>
 
               <IonButtons slot="start">

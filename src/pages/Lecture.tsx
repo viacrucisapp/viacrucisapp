@@ -13,7 +13,8 @@ import {
   IonIcon,
   Gesture,
   createGesture,
-  NavContext
+  NavContext,
+  isPlatform
  } from '@ionic/react';
 import { useRouteMatch } from 'react-router';
 import './Lecture.css';
@@ -133,7 +134,7 @@ const onMove = (detail) => {
   return (
     <IonPage>
       
-      <IonHeader mode="md" className="ion-no-border lecture_header">
+      <IonHeader mode={isPlatform('ios') ? 'ios' : 'md'} className="ion-no-border lecture_header">
         <IonToolbar mode="md" >
         <IonButtons slot="start">
           <IonButton mode="md" routerLink="/lectures" routerDirection="back" style={{backgroundColor: 'rgba(255, 255, 255, 0.5)', borderRadius: '200px'}}>
