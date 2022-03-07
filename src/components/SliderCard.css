@@ -1,7 +1,7 @@
 
 
 .slider-card {
-    height: 65vw;
+    height: 45vh;
     width: 80vw;
 
     -webkit-box-shadow: none;
@@ -14,6 +14,7 @@
     margin: 0 auto;
     --background: transparent;
     background-size: cover;
+    
 }
 
 
@@ -27,8 +28,8 @@
     left: 0;
 }
 h2.slider-card__title{    
-    font-weight: 700 ;
-    font-size: 1.2rem ;
+    font-weight: 400 ;
+    font-size: 1.7rem ;
     color:white;   
 }
 
@@ -49,10 +50,18 @@ h3.slider-card__text{
 
 
 
+@media (max-height: 740px) { 
+    
+    .slider-card {
+        height: 40vh;
+        width: 80vw;
+    }    
+}
+
 @media (max-height: 690px) { 
     
     .slider-card {
-        height: 50vw;
+        height: 35vh;
         width: 80vw;
     }    
 }
