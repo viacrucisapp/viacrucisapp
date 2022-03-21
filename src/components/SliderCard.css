@@ -3,9 +3,7 @@
 .slider-card {
     height: 45vh;
     width: 80vw;
-
     -webkit-box-shadow: none;
-
             box-shadow: none;
     border-radius: 13px;
     font-family: 'Roboto', sans-serif;
@@ -14,7 +12,8 @@
     margin: 0 auto;
     --background: transparent;
     background-size: cover;
-    
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 
@@ -35,6 +34,7 @@ h2.slider-card__title{
 
 h3.slider-card__text{    
     font-size: 1rem;
+    font-weight: 700;
     color:white;
     line-height: 1.2rem;
    
@@ -44,8 +44,21 @@ h3.slider-card__text{
     bottom: 0.8rem;
     position: absolute;
     width: 100%;
+    z-index: 2;
    
 
+}
+
+.slider-card__gradient {
+    position: absolute;
+    bottom: 0;
+    height: 110px;
+    z-index: 1;
+    right: 0;
+    left: 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(196, 196, 196, 0)), to(rgba(0, 0, 0, 0.98)));
+    background: -o-linear-gradient(top, rgba(196, 196, 196, 0) 0%, rgba(0, 0, 0, 0.98) 100%);
+    background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, rgba(0, 0, 0, 0.98) 100%);
 }
 
 

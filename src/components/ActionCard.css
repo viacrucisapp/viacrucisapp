@@ -19,6 +19,7 @@
     overflow: visible;
     position: absolute;
     right: 0.5rem;
+    margin-top: 3px;
 }
 
 .action-card__image-container {

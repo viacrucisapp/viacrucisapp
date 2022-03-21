@@ -31,7 +31,7 @@
         -ms-flex-direction: column;
             flex-direction: column;
     
-    padding: 0 1.5em;
+    padding: 0 1.5em 1em 1.5em;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -99,7 +99,7 @@
 }
 
 .DonateModal__VCLogo {
-    width: 60px;
+    width: 50px;
     top: 0;
     position: relative;
     text-align: center;
@@ -107,7 +107,7 @@
     right: 0; 
     margin-left: auto; 
     margin-right: auto;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     
 
 }

@@ -18,6 +18,7 @@ export const SliderCard = ({lecture, images} : LectureCardProps) => {
                 <h2 className="slider-card__title">{t(lecture.title)}</h2> 
                 <h3 color="primary" className="slider-card__text">{t(lecture.subTitle)}</h3>
             </IonCardContent>
+            <div className="slider-card__gradient"></div>
         </IonCard>
         
     )

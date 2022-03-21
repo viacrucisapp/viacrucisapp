@@ -52,6 +52,7 @@ import logoNew from '../assets/images/logoNew.svg'
                     <p className='legalLinks' onClick={() => {setModalScreen('privacy')}}><u>{t('main.privacy')}</u></p>
                     <p className='legalLinks' onClick={() => {setModalScreen('terms')}}><u>{t('main.terms')}</u></p>
                 </div>
+                <IonButton class="home_donateBtn" color="tertiary" href="https://viacrucisapp.carrd.co" mode='ios' expand='block' >{t('main.colaborateBtn')}</IonButton>
           
   
               </div>
