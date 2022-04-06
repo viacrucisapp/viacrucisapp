@@ -49,12 +49,7 @@ const Home: React.FC<HomeProps> = ({showModal, showViaInfoModal, showDonateModal
             loop={true}
             slidesPerView= {1.25}
             spaceBetween={5}
-            speed={500}
-         
-
-            
-            
-            
+            speed={500} 
           >
             
           {
@@ -62,8 +57,7 @@ const Home: React.FC<HomeProps> = ({showModal, showViaInfoModal, showDonateModal
             arrayLectures.map((lecture, index) => (
               <SwiperSlide key={index}>
                 <SliderCard images={imageData}  lecture={lecture}/>
-              </SwiperSlide>
-              
+              </SwiperSlide>           
             ))
           }
           </Swiper>

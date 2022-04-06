@@ -50,7 +50,7 @@ const Page: React.FC = () => {
     if(current){
       setLecturaIndex(current.id);
       setBtnLinks({
-        next: current.id < 13 ? `/lectures/${languages.list[current.id+1].title}` : '/lectures', 
+        next: current.id < 14 ? `/lectures/${languages.list[current.id+1].title}` : '/lectures', 
         prev: current.id > 0 ? `/lectures/${languages.list[current.id-1].title}` : '/lectures'
       });
       indexCheck(current);
@@ -81,13 +81,13 @@ const Page: React.FC = () => {
     if(current.id <= 0){
       setBackBtn(true);     
     };
-    if(current.id >= 13){
+    if(current.id >= 14){
       setNextBtn(true);      
     };
     if(current.id > 0){
       setBackBtn(false);     
     };
-    if(current.id < 13){
+    if(current.id < 14){
       setNextBtn(false);     
     };
   }

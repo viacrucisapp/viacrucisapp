@@ -2,97 +2,104 @@
     "list" : [
         {
         "id": 0,
+        "title": " ",
+        "station": "Estación cero",
+        "subTitle": "Oración introductoria",            
+        "body": "<p>Señor mío y Dios mío,</p><p>bajo la mirada amorosa de nuestra Madre,</p><p>nos disponemos a acompañarte</p><p>por el camino de dolor,</p><p>que fue precio de nuestro rescate.</p><p>Queremos sufrir todo lo que Tú sufriste,</p><p>ofrecerte nuestro pobre corazón, contrito,</p><p>porque eres inocente y vas a morir por nosotros,</p><p>que somos los únicos culpables.</p><p>Madre mía, Virgen dolorosa,</p><p>ayúdame a revivir aquellas horas amargas</p><p>que tu Hijo quiso pasar en la tierra,</p><p>para que nosotros, hechos de un puñado de lodo,</p><p>viviésemos al fin</p><p>in libertatem gloriæ filiorum Dei,</p><p>en la libertad y gloria de los hijos de Dios.</p>"            
+        },
+        {
+        "id": 1,
         "title": "I",
         "station": "Primera estación",
         "subTitle": "Condenan a muerte a Jesús",            
         "body": "<p><i>— Te alabamos Cristo y te bendecimos</i></p><p><i>— Que por tu Santa Cruz redimiste al mundo.</i></p><p> Han pasado ya las diez de la mañana. El proceso está llegando a su fin. No ha habido pruebas concluyentes. El juez sabe que sus enemigos se lo han entregado por envidia, e intenta un recurso absurdo: la elección entre Barrabás, un malhechor acusado de robo con homicidio, y Jesús, que se dice Cristo. El pueblo elige a Barrabás. Pilatos exclama:</p><p> <i>—¿Qué he de hacer, pues, de Jesús?</i> (Mt XXVII,22).</p><p> Contestan todos: <i>—¡Crucifícale!</i> </p><p> El juez insiste: —Pero ¿qué mal ha hecho?</p><p> Y de nuevo responden a gritos: <i>—¡Crucifícale!, ¡crucifícale!</i> </p><p> Se asusta Pilatos ante el creciente tumulto. Manda entonces traer agua, y se lava las manos a la vista del pueblo, mientras dice:</p><p> <i>—Inocente soy de la sangre de este justo; vosotros veréis</i> (Mt XXVII,24).</p><p> Y después de haber hecho azotar a Jesús, lo entrega para que lo crucifiquen. Se hace el silencio en aquellas gargantas embravecidas y posesas. Como si Dios estuviese ya vencido.</p><p> Jesús está solo. Quedan lejanos aquellos días en que la palabra del Hombre-Dios ponía luz y esperanza en los corazones, aquellas largas procesiones de enfermos que eran curados, los clamores triunfales de Jerusalén cuando llegó el Señor montado en un manso pollino. ¡Si los hombres hubieran querido dar otro curso al amor de Dios! ¡Si tú y yo hubiésemos conocido el día del Señor!</p> <p><i>(Padre Nuestro, Ave María y Gloria)</i></p>"       
         },
         {
-        "id": 1,
+        "id": 2,
         "title": "II",
         "station": "Segunda estación",
         "subTitle": "Jesús carga con la cruz",            
         "body": "<p><i>— Te alabamos Cristo y te bendecimos</i></p><p><i>— Que por tu Santa Cruz redimiste al mundo.</i></p><p> Fuera de la ciudad, al noroeste de Jerusalén, hay un pequeño collado: Gólgota se llama en arameo; <i>locus Calvariæ</i>, en latín: lugar de las Calaveras o Calvario.</p><p> Jesús se entrega inerme a la ejecución de la condena. No se le ha de ahorrar nada, y cae sobre sus hombros el peso de la cruz infamante. Pero la Cruz será, por obra de amor, el trono de su realeza.</p><p> Las gentes de Jerusalén y los forasteros venidos para la Pascua se agolpan por las calles de la ciudad, para ver pasar a Jesús Nazareno, el Rey de los judíos. Hay un tumulto de voces; y a intervalos, cortos silencios: tal vez cuando Cristo fija los ojos en alguien:</p><p> <i>—Si alguno quiere venir en pos de mí, tome su cruz de cada día y sígame</i> (Mt XVI,24).</p><p> ¡Con qué amor se abraza Jesús al leño que ha de darle muerte!</p><p> ¿No es verdad que en cuanto dejas de tener miedo a la Cruz, a eso que la gente llama cruz, cuando pones tu voluntad en aceptar la Voluntad divina, eres feliz, y se pasan todas las preocupaciones, los sufrimientos físicos o morales?</p><p> Es verdaderamente suave y amable la Cruz de Jesús. Ahí no cuentan las penas; sólo la alegría de saberse corredentores con El.</p><p><i>(Padre Nuestro, Ave María y Gloria)</i></p>"          
         },
          {
-        "id": 2,
+        "id": 3,
         "title": "III",
         "station": "Tercera estación",
         "subTitle": "Cae Jesús por primera vez",            
         "body": "<p><i>— Te alabamos Cristo y te bendecimos</i></p><p><i>— Que por tu Santa Cruz redimiste al mundo.</i></p><p> La Cruz hiende, destroza con su peso los hombros del Señor.</p><p> La turbamulta ha ido agigantándose. Los legionarios apenas pueden contener la encrespada, enfurecida muchedumbre que, como río fuera de cauce, afluye por las callejuelas de Jerusalén.</p><p> El cuerpo extenuado de Jesús se tambalea ya bajo la Cruz enorme. De su Corazón amorosísimo llega apenas un aliento de vida a sus miembros llagados.</p><p> A derecha e izquierda, el Señor ve esa multitud que anda como ovejas sin pastor. Podría llamarlos uno a uno, por sus nombres, por nuestros nombres. Ahí están los que se alimentaron en la multiplicación de los panes y de los peces, los que fueron curados de sus dolencias, los que adoctrinó junto al lago y en la montaña y en los pórticos del Templo.</p><p> Un dolor agudo penetra en el alma de Jesús, y el Señor se desploma extenuado.</p><p> Tú y yo no podemos decir nada: ahora ya sabemos por qué pesa tanto la Cruz de Jesús. Y lloramos nuestras miserias y también la ingratitud tremenda del corazón humano. Del fondo del alma nace un acto de contrición verdadera, que nos saca de la postración del pecado. Jesús ha caído para que nosotros nos levantemos: una vez y siempre.</p><p><i>(Padre Nuestro, Ave María y Gloria)</i></p>"            
         },
          {
-        "id": 3,
+        "id": 4,
         "title": "IV",
         "station": "Cuarta estación",
         "subTitle": "Jesús encuentra a María, su Santísima Madre",            
         "body": "<p><i>— Te alabamos Cristo y te bendecimos</i></p><p><i>— Que por tu Santa Cruz redimiste al mundo.</i></p><p> Apenas se ha levantado Jesús de su primera caída, cuando encuentra a su Madre Santísima, junto al camino por donde El pasa.</p><p> Con inmenso amor mira María a Jesús, y Jesús mira a su Madre; sus ojos se encuentran, y cada corazón vierte en el otro su propio dolor. El alma de María queda anegada en amargura, en la amargura de JesuCristo.</p><p> <i>¡Oh vosotros cuantos pasáis por el camino: mirad y ved si hay dolor comparable a mi dolor! </i> (Lam I,12).</p><p> Pero nadie se da cuenta, nadie se fija; sólo Jesús.</p><p> Se ha cumplido la profecía de Simeón: <i>una espada traspasará tu alma</i> (Lc II,35).</p><p> En la oscura soledad de la Pasión, Nuestra Señora ofrece a su Hijo un bálsamo de ternura, de unión, de fidelidad; un sí a la voluntad divina.</p><p> De la mano de María, tú y yo queremos también consolar a Jesús, aceptando siempre y en todo la Voluntad de su Padre, de nuestro Padre.</p><p> Sólo así gustaremos de la dulzura de la Cruz de Cristo, y la abrazaremos con la fuerza del amor, llevándola en triunfo por todos los caminos de la tierra.</p><p><i>(Padre Nuestro, Ave María y Gloria)</i></p>"            
         },
          {
-        "id": 4,
+        "id": 5,
         "title": "V",
         "station": "Quinta estación",
         "subTitle": "Simón ayuda a llevar la cruz de Jesús",            
         "body": "<p><i>— Te alabamos Cristo y te bendecimos</i></p><p><i>— Que por tu Santa Cruz redimiste al mundo.</i></p><p>Jesús está extenuado. Su paso se hace más y más torpe, y la soldadesca tiene prisa por acabar; de modo que, cuando salen de la ciudad por la puerta Judiciaria, requieren a un hombre que venía de una granja, llamado Simón de Cirene, padre de Alejandro y de Rufo, y le fuerzan a que lleve la cruz de Jesús (cfr. Mc XV,21).</p><p>En el conjunto de la Pasión, es bien poca cosa lo que supone esta ayuda. Pero a Jesús le basta una sonrisa, una palabra, un gesto, un poco de amor para derramar copiosamente su gracia sobre el alma del amigo. Años más tarde, los hijos de Simón, ya cristianos, serán conocidos y estimados entre sus hermanos en la fe. Todo empezó por un encuentro inopinado con la Cruz.</p><p> <i>Me presenté a los que no preguntaban por mí, me hallaron los que no me buscaban</i> (Is LXV,1).</p><p>A veces la Cruz aparece sin buscarla: es Cristo que pregunta por nosotros. Y si acaso ante esa Cruz inesperada, y tal vez por eso más oscura, el corazón mostrara repugnancia... no le des consuelos. Y, lleno de una noble compasión, cuando los pida, dile despacio, como en confidencia: corazón, ¡corazón en la Cruz!, ¡corazón en la Cruz!</p><p><i>(Padre Nuestro, Ave María y Gloria)</i></p>"            
         },
          {
-        "id": 5,
+        "id": 6,
         "title": "VI",
         "station": "Sexta estación",
         "subTitle": "Una piadosa mujer enjuga el rostro de Jesús",            
         "body": "<p><i>— Te alabamos Cristo y te bendecimos</i></p><p><i>— Que por tu Santa Cruz redimiste al mundo.</i></p><p> <i>No hay en él parecer, no hay hermosura que atraiga las miradas, ni belleza que agrade. Despreciado, desecho de los hombres, varón de dolores, conocedor de todos los quebrantos, ante quien se vuelve el rostro, menospreciado, estimado en nada</i> (Is LIII,2-3).</p><p>Y es el Hijo de Dios que pasa, loco... ¡loco de Amor!</p><p>Una mujer, Verónica de nombre, se abre paso entre la muchedumbre, llevando un lienzo blanco plegado, con el que limpia piadosamente el rostro de Jesús. El Señor deja grabada su Santa Faz en las tres partes de ese velo.</p><p>El rostro bienamado de Jesús, que había sonreído a los niños y se transfiguró de gloria en el Tabor, está ahora como oculto por el dolor. Pero este dolor es nuestra purificación; ese sudor y esa sangre que empañan y desdibujan sus facciones, nuestra limpieza.</p><p>Señor, que yo me decida a arrancar, mediante la penitencia, la triste careta que me he forjado con mis miserias... Entonces, sólo entonces, por el camino de la contemplación y de la expiación, mi vida irá copiando fielmente los rasgos de tu vida. Nos iremos pareciendo más y más a Ti.</p><p> <i>Seremos otros Cristos, el mismo Cristo, ipse Christus.</i> </p><p><i>(Padre Nuestro, Ave María y Gloria)</i></p>"            
         },
          {
-        "id": 6,
+        "id": 7,
         "title": "VII",
         "station": "Séptima estación",
         "subTitle": "Cae Jesús por segunda vez",            
         "body": "<p><i>— Te alabamos Cristo y te bendecimos</i></p><p><i>— Que por tu Santa Cruz redimiste al mundo.</i></p><p>Ya fuera de la muralla, el cuerpo de Jesús vuelve a abatirse a causa de la flaqueza, cayendo por segunda vez, entre el griterío de la muchedumbre y los empellones de los soldados.</p><p>La debilidad del cuerpo y la amargura del alma han hecho que Jesús caiga de nuevo. Todos los pecados de los hombres —los míos también— pesan sobre su Humanidad Santísima.</p><p> <i>Fue él quien tomó sobre sí nuestras enfermedades y cargó con nuestros dolores, y nosotros le tuvimos por castigado, herido de Dios y humillado. Fue traspasado por nuestras iniquidades y molido por nuestros pecados. El castigo de nuestra salvación pesó sobre él, y en sus llagas hemos sido curados</i> (Is LIII,4-5).</p><p>Desfallece Jesús, pero su caída nos levanta, su muerte nos resucita.</p><p>A nuestra reincidencia en el mal, responde Jesús con su insistencia en redimirnos, con abundancia de perdón. Y, para que nadie desespere, vuelve a alzarse fatigosamente abrazado a la Cruz.</p><p>Que los tropiezos y derrotas no nos aparten ya más de El. Como el niño débil se arroja compungido en los brazos recios de su padre, tú y yo nos asiremos al yugo de Jesús. Sólo esa contrición y esa humildad transformarán nuestra flaqueza humana en fortaleza divina.</p><p><i>(Padre Nuestro, Ave María y Gloria)</i></p>"            
         },
          {
-        "id": 7,
+        "id": 8,
         "title": "VIII",
         "station": "Octava estación",
         "subTitle": "Jesús consuela a las hijas de Jerusalén",            
         "body": "<p><i>— Te alabamos Cristo y te bendecimos</i></p><p><i>— Que por tu Santa Cruz redimiste al mundo.</i></p><p>Entre las gentes que contemplan el paso del Señor, hay unas cuantas mujeres que no pueden contener su compasión y prorrumpen en lágrimas, recordando acaso aquellas jornadas gloriosas de JesuCristo, cuando todos exclamaban maravillados: bene omnia fecit (Mc VII,37), todo lo ha hecho bien.</p><p>Pero el Señor quiere enderezar ese llanto hacia un motivo más sobrenatural, y las invita a llorar por los pecados, que son la causa de la Pasión y que atraerán el rigor de la justicia divina:</p><p> <i>—Hijas de Jerusalén, no lloréis por mí, llorad por vosotras y por vuestros hijos... Pues si al árbol verde le tratan de esta manera, ¿en el seco qué se hará?</i> (Lc XXIII,28,31).</p><p>Tus pecados, los míos, los de todos los hombres, se ponen en pie. Todo el mal que hemos hecho y el bien que hemos dejado de hacer. El panorama desolador de los delitos e infamias sin cuento, que habríamos cometido, si El, Jesús, no nos hubiera confortado con la luz de su mirada amabilísima.</p><p>¡Qué poco es una vida para reparar!</p><p><i>(Padre Nuestro, Ave María y Gloria)</i></p>"            
         },
          {
-        "id": 8,
+        "id": 9,
         "title": "IX",
         "station": "Novena estación",
         "subTitle": "Jesús cae por tercera vez",            
         "body": "<p><i>— Te alabamos Cristo y te bendecimos</i></p><p><i>— Que por tu Santa Cruz redimiste al mundo.</i></p><p>El Señor cae por tercera vez, en la ladera del Calvario, cuando quedan sólo cuarenta o cincuenta pasos para llegar a la cumbre. Jesús no se sostiene en pie: le faltan las fuerzas, y yace agotado en tierra.</p><p> <i>Se entregó porque quiso; maltratado, no abrió boca, como cordero llevado al matadero, como oveja muda ante los trasquiladores</i> (Is LIII,7).</p><p>Todos contra El...: los de la ciudad y los extranjeros, y los fariseos y los soldados y los príncipes de los sacerdotes... Todos verdugos. Su Madre —mi Madre—, María, llora.</p><p>¡Jesús cumple la voluntad de su Padre! Pobre: desnudo. Generoso: ¿qué le falta por entregar? <i>Dilexit me, et tradidit semetipsum pro me</i> (Gal II,20), me amó y se entregó hasta la muerte por mí.</p><p>¡Dios mío!, que odie el pecado, y me una a Ti, abrazándome a la Santa Cruz, para cumplir a mi vez tu Voluntad amabilísima..., desnudo de todo afecto terreno, sin más miras que tu gloria..., generosamente, no reservándome nada, ofreciéndome contigo en perfecto holocausto.</p><p><i>(Padre Nuestro, Ave María y Gloria)</i></p>"            
         },
          {
-        "id": 9,
+        "id": 10,
         "title": "X",
         "station": "Décima estación",
         "subTitle": "Despojan a Jesús de sus vestiduras",            
         "body": "<p><i>— Te alabamos Cristo y te bendecimos</i></p><p><i>— Que por tu Santa Cruz redimiste al mundo.</i></p><p>Al llegar el Señor al Calvario, le dan a beber un poco de vino mezclado con hiel, como un narcótico, que disminuya en algo el dolor de la crucifixión. Pero Jesús, habiéndolo gustado para agradecer ese piadoso servicio, no ha querido beberlo (cfr. Mt XXVII,34). Se entrega a la muerte con la plena libertad del Amor.</p><p>Luego, los soldados despojan a Cristo de sus vestidos.</p><p> <i>Desde la planta de los pies hasta la cabeza, no hay en él nada sano. Heridas, hinchazones, llagas podridas, ni curadas, ni vendadas, ni suavizadas con aceite (Is I,6).</i> </p><p>Los verdugos toman sus vestidos y los dividen en cuatro partes. Pero la túnica es sin costura, por lo que dicen:</p><p> <i>—No la dividamos; mas echemos suertes para ver de quién será</i> (Ioh XIX,24).</p><p>De este modo se ha vuelto a cumplir la Escritura: <i>partieron entre sí mis vestidos y sortearon mi túnica</i> (Ps XXI,19).</p><p>Es el expolio, el despojo, la pobreza más absoluta. Nada ha quedado al Señor, sino un madero.</p><p>Para llegar a Dios, Cristo es el camino; pero Cristo está en la Cruz, y para subir a la Cruz hay que tener el corazón libre, desasido de las cosas de la tierra.</p><p><i>(Padre Nuestro, Ave María y Gloria)</i></p>"            
         },
          {
-        "id": 10,
+        "id": 11,
         "title": "XI",
         "station": "Decimoprimera estación",
         "subTitle": "Jesús es clavado en la cruz",            
         "body": "<p><i>— Te alabamos Cristo y te bendecimos</i></p><p><i>— Que por tu Santa Cruz redimiste al mundo.</i></p><p>Ahora crucifican al Señor, y junto a El a dos ladrones, uno a la derecha y otro a la izquierda. Entretanto Jesús dice:</p><p> <i>—Padre, perdónales porque no saben lo que hacen</i> (Lc XXIII,34).</p><p>Es el Amor lo que ha llevado a Jesús al Calvario. Y ya en la Cruz, todos sus gestos y todas sus palabras son de amor, de amor sereno y fuerte.</p><p>Con ademán de Sacerdote Eterno, sin padre ni madre, sin genealogía (cfr. Heb VII,3), abre sus brazos a la humanidad entera.</p><p>Junto a los martillazos que enclavan a Jesús, resuenan las palabras proféticas de la Escritura Santa: <i>han taladrado mis manos y mis pies. Puedo contar todos mis huesos, y ellos me miran y contemplan</i> (Ps XXI,17-18).</p><p> <i>—¡Pueblo mío! ¿Qué te hice o en qué te he contristado? ¡Respóndeme!</i> (Mich VI,3).</p><p>Y nosotros, rota el alma de dolor, decimos sinceramente a Jesús: soy tuyo, y me entrego a Ti, y me clavo en la Cruz gustosamente, siendo en las encrucijadas del mundo un alma entregada a Ti, a tu gloria, a la Redención, a la corredención de la humanidad entera.</p><p><i>(Padre Nuestro, Ave María y Gloria)</i></p>"            
         },
          {
-        "id": 11,
+        "id": 12,
         "title": "XII",
         "station": "Decimosegunda estación",
         "subTitle": "Muerte de Jesús en la Cruz",            
         "body": "<p><i>— Te alabamos Cristo y te bendecimos</i></p><p><i>— Que por tu Santa Cruz redimiste al mundo.</i></p><p>En la parte alta de la Cruz está escrita la causa de la condena: Jesús Nazareno Rey de los judíos (Ioh XIX,19). Y todos los que pasan por allí, le injurian y se mofan de El.</p><p> <i>—Si es el rey de Israel, baje ahora de la cruz (Mt XXVII, 42).</i> </p><p>Uno de los ladrones sale en su defensa:</p><p> <i>—Este ningún mal ha hecho...</i> (Lc XXIII,41).</p><p>Luego dirige a Jesús una petición humilde, llena de fe:</p><p>—<i>Señor, acuérdate de mí cuando estés en tu reino</i> (Lc XXIII,42).</p><p>—<i>En verdad te digo que hoy mismo estarás conmigo en el paraíso</i> (Lc XXIII,43).</p><p>Junto a la Cruz está su Madre, María, con otras santas mujeres. Jesús la mira, y mira después al discípulo que Él ama, y dice a su Madre:</p><p>—<i>Mujer, ahí tienes a tu hijo.</i> </p><p>Luego dice al discípulo:</p><p>—<i>Ahí tienes a tu madre</i> (Ioh XIX, 26-27).</p><p>Se apaga la luminaria del cielo, y la tierra queda sumida en tinieblas. Son cerca de las tres, cuando Jesús exclama:</p><p>—<i>Elí, Elí, lamma sabachtani?! Esto es: Dios mío, Dios mío, ¿por qué me has abandonado?</i> (Mt XXVII,46).</p><p>Después, sabiendo que todas las cosas están a punto de ser consumadas, para que se cumpla la Escritura, dice:</p><p>—<i>Tengo sed</i> (Ioh XIX,28).</p><p>Los soldados empapan en vinagre una esponja, y poniéndola en una caña de hisopo se la acercan a la boca. Jesús sorbe el vinagre, y exclama:</p><p>—<i>Todo está cumplido</i> (Ioh XIX,30).</p><p>El velo del templo se rasga, y tiembla la tierra, cuando clama el Señor con una gran voz:</p><p>—<i>Padre, en tus manos encomiendo mi espíritu</i> (Lc XXIII,46).</p><p>Y expira.</p><p>Ama el sacrificio, que es fuente de vida interior. Ama la Cruz, que es altar del sacrificio. Ama el dolor, hasta beber, como Cristo, las heces del cáliz.</p><p><i>(Padre Nuestro, Ave María y Gloria)</i></p>"            
         },
          {
-        "id": 12,
+        "id": 13,
         "title": "XIII",
         "station": "Decimotercera estación",
         "subTitle": "Desclavan a Jesús y lo entregan a su Madre",            
         "body": "<p><i>— Te alabamos Cristo y te bendecimos</i></p><p><i>— Que por tu Santa Cruz redimiste al mundo.</i></p><p>Anegada en dolor, está María junto a la Cruz. Y Juan, con Ella. Pero se hace tarde, y los judíos instan para que se quite al Señor de allí.</p><p>Después de haber obtenido de Pilatos el permiso que la ley romana exige para sepultar a los condenados, llega al Calvario <i>un senador llamado José, varón virtuoso y justo, oriundo de Arimatea. El no ha consentido en la condena, ni en lo que los otros han ejecutado. Al contrario, es de los que esperan en el reino de Dios (Lc XXIII,50-51). Con él viene también Nicodemo, aquel mismo que en otra ocasión había ido de noche a encontrar a Jesús, y trae consigo una confección de mirra y áloe, cosa de cien libras</i> (Ioh XIX,39).</p><p>Ellos no eran conocidos públicamente como discípulos del Maestro; no se habían hallado en los grandes milagros, ni le acompañaron en su entrada triunfal en Jerusalén. Ahora, en el momento malo, cuando los demás han huido, no temen dar la cara por su Señor.</p><p>Entre los dos toman el cuerpo de Jesús y lo dejan en brazos de su Santísima Madre. Se renueva el dolor de María.</p><p> <i>—¿A dónde se fue tu amado, oh la más hermosa de las mujeres? ¿A dónde se marchó el que tú quieres, y le buscaremos contigo?</i> (Cant V,17).</p><p>La Virgen Santísima es nuestra Madre, y no queremos ni podemos dejarla sola.</p><p><i>(Padre Nuestro, Ave María y Gloria)</i></p>"            
         },
          {
-        "id": 13,
+        "id": 14,
         "title": "XIV",
         "station": "Decimocuarta estación",
         "subTitle": "Dan sepultura al cuerpo de Jesús",            

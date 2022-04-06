@@ -2,97 +2,104 @@
     "list" : [
         {
         "id": 0,
+        "title": " ",
+        "station": "Zero station",
+        "subTitle": "Opening prayer",            
+        "body": "<p>My Lord and my God,</p><p>under the loving eyes of our Mother,</p><p>we are making ready to accompany you</p><p>along this path of sorrow,</p><p>which was the price for our redemption.</p><p>We wish to suffer all that You suffered,</p><p>to offer you our poor, contrite hearts,</p><p>because you are innocent, and yet</p><p>you are going to die for us,</p><p>who are the only really guilty ones.</p><p>My Mother, Virgin of sorrows,</p><p>help me to relive those bitter hours</p><p>which your Son wished to spend on earth,</p><p>so that we, who were made from a handful of clay,</p><p>may finally live</p><p>in libertatem gloriae filiorum Dei,</p><p>in the freedom and glory of the children of God.</p>"            
+        },
+        {
+        "id": 1,
         "title": "I",
         "station": "First station",
         "subTitle": "Jesus is condemned to death",            
         "body": "<p><i>— We adore you, O Christ, and we bless you</i></p><p><i>— Because by your holy cross you have redeemed the world.</i></p><p>It is after ten in the morning. The trial is moving to its close. There has been no conclusive evidence. The judge knows that his enemies have handed Jesus over to him out of envy, and he tries an absurd move: a choice between Barabbas, a criminal accused of robbery and murder, and Jesus, who says he is Christ. The people choose Barabbas, and Pilate exclaims:</p><p><i>What am I to do then, with Jesus?</i> (Matt 27:22).</p><p>They all reply: <i>Crucify him!</i></p><p>The judge insists: <i>Why, what evil has he done?</i></p><p>Once again they respond, shouting: <i>Crucify him! Crucify him!</i></p><p>Pilate is frightened by the growing uproar. So he sends for water, and washes his hands in the sight of the people, saying as he does so:</p><p><i>I am innocent of the blood of this just man; it is your affair</i> (Matt 27:24).</p><p>And having had Jesus scourged, he hands him over to them to be crucified. Their frenzied and possessed throats fall silent. As if God had already been vanquished.</p><p>Jesus is all alone. Far off now are the days when the words of the Man-God brought light and hope to men 's hearts, those long processions of sick people whom he healed, the triumphant acclaim of Jerusalem when the Lord arrived, riding on a gentle donkey. If only men had wanted to give a different outlet to God 's love! If only you and I had recognised the day of the Lord!</p><p><i>(Our Father, Hail Mary & Glory Be)</i></p>"            
         },
         {
-        "id": 1,
+        "id": 2,
         "title": "II",
         "station": "Second station",
         "subTitle": "Jesus takes up the cross",            
         "body": "<p><i>— We adore you, O Christ, and we bless you</i></p><p><i>— Because by your holy cross you have redeemed the world.</i></p><p>Outside the city, to the north-swest of Jerusalem, there is a little hill: Golgotha is its name in Aramaic; <i>locus Calvariae</i>, in Latin: the place of skulls or Calvary.</p><p>Offering no resistance, Jesus gives himself up to the execution of the sentence. He is to be spared nothing, and upon his shoulders falls the weight of the ignominious cross. But, through love, the Cross is to become the throne from which he reigns.</p><p>The people of Jerusalem and those from abroad who have come for the Passover push their way through the city streets, to catch a passing glimpse of Jesus of Nazareth, the King of the Jews. There is a tumult of voices, and, now and then, short silences: perhaps when Jesus fixes his eyes on someone:</p><p><i>If anyone wishes to come after me, let him take up his cross daily and follow me (Matt 16:24).</i></p><p>How lovingly Jesus embraces the wood which is to bring him to death!</p><p>Is it not true that as soon as you cease to be afraid of the Cross, of what people call the cross, when you set your will to accept the Will of God, then you find happiness, and all your worries, all your sufferings, physical or moral, pass away?</p><p>Truly the Cross of Jesus is gentle and lovable. There, sorrows cease to count; there is only the joy of knowing that we are co-redeemers with Him.</p><p><i>(Our Father, Hail Mary & Glory Be)</i></p>"            
         },
          {
-        "id": 2,
+        "id": 3,
         "title": "III",
         "station": "Third station",
         "subTitle": "Jesus falls the first time",            
         "body": "<p><i>— We adore you, O Christ, and we bless you</i></p><p><i>— Because by your holy cross you have redeemed the world.</i></p><p>The heavy Cross cuts and tears into Our Lord's shoulders.</p><p>The crowd has swollen into a multitude, and the legionaries can scarcely contain the angry, surging mob which, like a river that has burst its banks, flows through the streets and alleyways of Jerusalem.</p><p>The worn out body of Jesus staggers now beneath the huge Cross. His most loving Heart can barely summon up another breath of life for his poor wounded limbs.</p><p>To right and left, Our Lord sees the multitude moving around like sheep without a shepherd. He could call them one by one by their names, by our names. There they are, those who were fed at the multiplication of the loaves and fishes, those who were cured of their ailments, those he taught by the lakeside, on the mountain and in the porticoes of the Temple.</p><p>A sharp pain pierces the soul of Jesus; Our Lord falls to the ground exhausted.</p><p>You and I can say nothing: now we know why the Cross of Jesus weighs so much. We weep over our wretched failings and also for the terrible ingratitude of the human heart. From the depths of our soul there comes an act of real contrition, that lifts us up from the prostration of sin. Jesus has fallen that we might get up: once and for all.</p><p><i>(Our Father, Hail Mary & Glory Be)</i></p>"            
         },
          {
-        "id": 3,
+        "id": 4,
         "title": "IV",
         "station": "Fourth station",
         "subTitle": "Jesus is met by his Blessed Mother",            
         "body": "<p><i>— We adore you, O Christ, and we bless you</i></p><p><i>— Because by your holy cross you have redeemed the world.</i></p><p> No sooner has Jesus risen from his first fall than he meets his Blessed Mother, standing by the wayside where He is passing.</p><p>With immense love Mary looks at Jesus, and Jesus at his Mother. Their eyes meet, and each heart pours into the other its own deep sorrow. Mary's soul is steeped in bitter grief, the grief of Jesus Christ.</p><p>O all you that pass by the way, look and see, was there ever a sorrow to compare with my sorrow! (Lam 1:12).</p><p>But no one notices, no one pays attention; only Jesus.</p><p>Simeon's prophecy has been fulfilled: thy own soul a sword shall pierce (Luke 2:35).</p><p>In the dark loneliness of the Passion, Our Lady offers her Son a comforting balm of tenderness, of union, of faithfulness; a 'yes' to the divine will.</p><p>Hand in hand with Mary, you and I also want to console Jesus, by accepting always and in everything the Will of his Father, of our Father.</p><p>Only thus will we taste the sweetness of Christ's Cross, and come to embrace it with all the strength of Love, carrying it in triumph along the ways of the earth.</p><p><i>(Our Father, Hail Mary & Glory Be)</i></p>"            
         },
          {
-        "id": 4,
+        "id": 5,
         "title": "V",
         "station": "Fifth station",
         "subTitle": "Simon of Cyrene helps Jesus to carry the Cross",            
         "body": "<p><i>— We adore you, O Christ, and we bless you</i></p><p><i>— Because by your holy cross you have redeemed the world.</i></p><p> Jesus is exhausted. His footsteps become more and more unsteady, and the soldiers are in a hurry to be finished. So, when they are going out of the city through the Judgement Gate, they take hold of a man who was coming in from a farm, a man called Simon of Cyrene, the father of Alexander and Rufus, and they force him to carry the Cross of Jesus (cf. Mark 15:21).</p><p>In the whole context of the Passion, this help does not add up to very much. But for Jesus, a smile, a word, a gesture, a little bit of love is enough for him to pour out his grace bountifully on the soul of his friend. Years later, Simon's sons, Christians by then, will be known and held in high esteem among their brothers in the faith. And it all started with this unexpected meeting with the Cross.</p><p>I went to those who were not looking for me; I was found by those that sought me not (Isai 65:1).</p><p>At times the Cross appears without our looking for it: it is Christ who is seeking us out. And if by chance, before this unexpected Cross which, perhaps, is therefore more difficult to understand, your heart were to show repugnance... don 't give it consolations. And, filled with a noble compassion, when it asks for them, say to it slowly, as one speaking in confidence: 'Heart: heart on the Cross! Heart on the Cross!'</p><p><i>(Our Father, Hail Mary & Glory Be)</i></p>"            
         },
          {
-        "id": 5,
+        "id": 6,
         "title": "VI",
         "station": "Sixth station",
         "subTitle": "The face of Jesus is wiped by Veronica",            
         "body": "<p><i>— We adore you, O Christ, and we bless you</i></p><p><i>— Because by your holy cross you have redeemed the world.</i></p><p>There is no beauty in him, nor comeliness: and we have seen him, and there was no sightliness, that we should be attracted to him. Despised and the most abject of men, a man of sorrows and acquainted with infirmity; and his look was as it were hidden and despised. Whereupon we esteemed him not (Isai 53:2-3).</p><p>And it is the Son of God who is passing by, a madman... madly in Love!</p><p>A woman, Veronica by name, makes her way through the crowd, with a white linen cloth folded in her hands, and with this she reverently wipes the face of Jesus. Our Lord leaves the impression of his Holy Face on the three parts of that veil.</p><p>The beloved face of Jesus, that had smiled upon children and was transfigured with glory on Mount Thabor, is now, as it were, concealed by suffering. But this suffering is our purification; the sweat and the blood, which disfigure and tarnish his features, serve to cleanse us.</p><p>Lord, help me decide to tear off, through penance, this pitiful mask I have fashioned with my wretched doings... Then, and only then, by following the path of contemplation and atonement, will my life begin to copy faithfully the features of your life. We will find ourselves becoming more and more like You.</p><p>We will be other Christs, Christ himself, <i>ipse Christus.</i> </p><p><i>(Our Father, Hail Mary & Glory Be)</i></p>"            
         },
          {
-        "id": 6,
+        "id": 7,
         "title": "VII",
         "station": "Seventh station",
         "subTitle": "Jesus falls a second time",            
         "body": "<p><i>— We adore you, O Christ, and we bless you</i></p><p><i>— Because by your holy cross you have redeemed the world.</i></p><p>There is no beauty in him, nor comeliness: and we have seen him, and there was no sightliness, that we should be attracted to him. Despised and the most abject of men, a man of sorrows and acquainted with infirmity; and his look was as it were hidden and despised. Whereupon we esteemed him not (Isai 53:2-3).</p><p>And it is the Son of God who is passing by, a madman... madly in Love!</p><p>A woman, Veronica by name, makes her way through the crowd, with a white linen cloth folded in her hands, and with this she reverently wipes the face of Jesus. Our Lord leaves the impression of his Holy Face on the three parts of that veil.</p><p>The beloved face of Jesus, that had smiled upon children and was transfigured with glory on Mount Thabor, is now, as it were, concealed by suffering. But this suffering is our purification; the sweat and the blood, which disfigure and tarnish his features, serve to cleanse us.</p><p>Lord, help me decide to tear off, through penance, this pitiful mask I have fashioned with my wretched doings... Then, and only then, by following the path of contemplation and atonement, will my life begin to copy faithfully the features of your life. We will find ourselves becoming more and more like You.</p><p>We will be other Christs, Christ himself, <i>ipse Christus.</i> </p><p><i>(Our Father, Hail Mary & Glory Be)</i></p>"            
         },
          {
-        "id": 7,
+        "id": 8,
         "title": "VIII",
         "station": "Eighth station",
         "subTitle": "Jesus consoles the women of Jerusalem",            
         "body": "<p><i>— We adore you, O Christ, and we bless you</i></p><p><i>— Because by your holy cross you have redeemed the world.</i></p><p>Among the people watching Our Lord as he passes by are a number of women who are unable to restrain their compassion and break into tears, perhaps recalling those glorious days spent with Jesus, when everyone exclaimed in amazement: <i>bene omnia fecit</i> (Mark 7:37), he has done all things well.</p><p>But Our Lord wishes to channel their weeping towards a more supernatural motive, and he invites them to weep for sins, which are the cause of the Passion and which will draw down the rigour of divine justice:</p><p>Daughters of Jerusalem, weep not for me, but weep for yourselves and for your children... For if they do these things to the green wood, what shall be done to the dry? (Luke 23:28,31).</p><p>Your sins, my sins, the sins of all men, rise up. All the evil we have done and the good that we have neglected to do. The desolate panorama of the countless crimes and iniquities which we would have committed, if He, Jesus, had not strengthened us with the light of his most loving glance.</p><p>How little a life is for making atonement!</p><p><i>(Our Father, Hail Mary & Glory Be)</i></p>"            
         },
          {
-        "id": 8,
+        "id": 9,
         "title": "IX",
         "station": "Ninth station",
         "subTitle": "Jesus falls the third time",            
         "body": "<p><i>— We adore you, O Christ, and we bless you</i></p><p><i>— Because by your holy cross you have redeemed the world.</i></p><p>Our Lord falls for the third time, on the slope leading up to Calvary, with only forty or fifty paces between him and the summit. Jesus can no longer stay on his feet: his strength has failed him, and he lies on the ground in utter exhaustion.</p><p>He offered himself up because it was his will; abused and ill-treated, he opened not his mouth, as a sheep led to the slaughter, dumb as a lamb before its shearers (Isai 53:7).</p><p>Everyone against Him... the people of the city and those from abroad, and the Pharisees and the soldiers and the chief priests... All of them executioners. His Mother -my Mother- weeps.</p><p>Jesus fulfils the will of his Father! Poor: naked. Generous: what is there left for him to surrender? <i>Dilexit me, et tradidit semetipsum pro me</i> (Gal 2:20), he loved me and delivered himself up unto death for me.</p><p>My God! may I hate sin, and unite myself to You, taking the Holy Cross into my arms, so that I, in my turn, may fulfil your most lovable Will.... stripped of every earthly attachment, with no other goal but your glory.... generously, not keeping anything back, offering myself with you in a perfect holocaust.</p><p><i>(Our Father, Hail Mary & Glory Be)</i></p>"            
         },
          {
-        "id": 9,
+        "id": 10,
         "title": "X",
         "station": "Tenth station",
         "subTitle": "Jesus is stripped of his garments",            
         "body": "<p><i>— We adore you, O Christ, and we bless you</i></p><p><i>— Because by your holy cross you have redeemed the world.</i></p><p> When Our Lord arrives at Calvary, he is given some wine to drink mixed with gall, as a narcotic to lessen in some way the pain of the crucifixion. But Jesus, after tasting it to show his gratitude for that kind service, has not wanted to drink (cf. Matt 27:34). He gives himself up to death with the full freedom of Love.</p><p>Then, the soldiers strip Christ of his garments.</p><p>From the soles of his feet to the top of his head, there is nothing healthy in him: wounds and bruises and swelling sores. They are not bound up, nor dressed, nor anointed with oil (Isai 1:6).</p><p>The executioners take his garments and divide them into four parts. But the cloak is without seam, so they say:</p><p>It would be better not to tear it, but let us cast lots for it to see whose it shall be (John 19:24).</p><p>Thus, Scripture is again fulfilled: They divided my garments among them, and upon my vesture they cast lots (Ps 21:19).</p><p>Despoiled, stripped, left in the most absolute poverty. Our Lord is left with nothing, save the wood of the Cross.</p><p>For us to reach God, Christ is the way; but Christ is on the Cross, and to climb up to the Cross we must have our heart free, not tied to earthly things.</p><p><i>(Our Father, Hail Mary & Glory Be)</i></p>"            
         },
          {
-        "id": 10,
+        "id": 11,
         "title": "XI",
         "station": "Eleventh station",
         "subTitle": "Jesus is nailed to the Cross",            
         "body": "<p><i>— We adore you, O Christ, and we bless you</i></p><p><i>— Because by your holy cross you have redeemed the world.</i></p><p> Now they are crucifying Our Lord, and with him two thieves, one on his right and one on his left. Meanwhile, Jesus says:</p><p>Father, forgive them for they do not know what they are doing (Luke 23:34).</p><p>It is Love that has brought Jesus to Calvary. And once on the Cross, all his gestures and all his words are of love, a love both calm and strong.</p><p>With a gesture befitting an Eternal Priest, without father or mother, without lineage (cf. Heb 7:3), he opens his arms to the whole human race.</p><p>With the hammerblows with which Jesus is being nailed, there resound the prophetic words of Holy Scripture: They have pierced my hands and feet. I can count all my bones, and they stare and gloat over me (Ps 21:17-18).</p><p>My people, what have I done to thee, or in what have I saddened thee? Answer me! (Mich 6:3).</p><p>And we, our soul rent with sorrow, say to Jesus in all sincerity: I am yours and I give my whole self to You; gladly do I nail myself to your Cross, ready to be in the cross-roads of this world a soul dedicated to You, to your glory, to the work of Redemption, the co-redemption of the whole human race.</p><p><i>(Our Father, Hail Mary & Glory Be)</i></p>"            
         },
          {
-        "id": 11,
+        "id": 12,
         "title": "XII",
         "station": "Twelfth station",
         "subTitle": "Jesus dies on the Cross",            
         "body": "<p><i>— We adore you, O Christ, and we bless you</i></p><p><i>— Because by your holy cross you have redeemed the world.</i></p><p>On the uppermost part of the Cross the reason for the sentence is written: Jesus of Nazareth King of the Jews (John 19:19). And all who pass by insult him and jeer at him.</p><p>If he is the king of Israel, let him come down here and now from the cross (Matt 27:42).</p><p>One of the thieves comes to his defence:</p><p>This man has done no evil... (Luke 23:41).</p><p>Then, turning to Jesus, he makes a humble request, full of faith: Lord, remember me when thou comest into thy kingdom (Luke 23:42).</p><p>Truly, I say to thee: This day thou shalt be with me in Paradise (Luke 23:43).</p><p>At the foot of the Cross stands his Mother, Mary, with other holy women. Jesus looks at her; then he looks at the disciple whom he loves, and he says to his Mother:</p><p>Woman, behold thy son.</p><p>Then he says to the disciple:</p><p>Behold thy mother (John 19:26-27).</p><p>The sun's light is extinguished and the earth is left in darkness. It is close on three o'clock, when Jesus cries out:</p><p> <i>Eli, Eli, lamma sabacthani?</i> That is: My God, my God, why hast thou forsaken me? (Matt 27:46).</p><p>Then, knowing that all things are about to be accomplished, that the Scriptures may be fulfilled, he says:</p><p>I am thirsty (John 19:28).</p><p>The soldiers soak a sponge in vinegar and, placing it on a reed of hyssop, they put it to his mouth. Jesus sips the vinegar, and exclaims:</p><p>It is accomplished (John 19:30).</p><p>The veil of the temple is rent, and the earth trembles, when the Lord cries out in a loud voice:</p><p>Father, into thy hands I commend my spirit (Luke 23:46).</p><p>And he expires.</p><p>Love sacrifice; it is a fountain of interior life. Love the Cross, which is an altar of sacrifice. Love pain, until you drink, as Christ did, the very dregs of the chalice.</p><p><i>(Our Father, Hail Mary & Glory Be)</i></p>"            
         },
          {
-        "id": 12,
+        "id": 13,
         "title": "XIII",
         "station": "Thirteenth station",
         "subTitle": "Jesus is laid in the arms of his Blessed Mother",            
         "body": "<p><i>— We adore you, O Christ, and we bless you</i></p><p><i>— Because by your holy cross you have redeemed the world.</i></p><p>Mary stands by the Cross, engulfed in grief. And John is beside her. But it is getting late, and the Jews press for Our Lord to be removed from there.</p><p>Having obtained from Pilate the permission required by Roman law for the burial of condemned prisoners, there comes to Calvary a councillor named Joseph, a good and upright man, a native of Arimathea. He has not consented to their counsel and their doings, but is himself one of those waiting for the kingdom of God (Luke 23:50-51). With him too comes Nicodemus, the same who earlier visited Jesus by night; he brings with him a mixture of myrrh and aloes, about a hundred pounds weight (John 19:39).</p><p>These men were not known publicly as disciples of the Master. They had not been present at the great miracles, nor did they accompany him on his triumphal entry into Jerusalem. But now, when things have turned bad, when the others have fled, they are not afraid to stand up for their Lord.</p><p>Between the two of them they take down the body of Jesus and place it in the arms of his most holy Mother. Mary's grief is renewed.</p><p>Where has thy Beloved gone, o fairest of women? Where has he whom thou lovest gone, and we will seek him with thee? (Cant 5:17).</p><p>The Blessed Virgin is our Mother, and we do not wish to, we cannot, leave her alone.</p><p><i>(Our Father, Hail Mary & Glory Be)</i></p>"            
         },
          {
-        "id": 13,
+        "id": 14,
         "title": "XIV",
         "station": "Fourteenth station",
         "subTitle": "Jesus is laid in the tomb",            
