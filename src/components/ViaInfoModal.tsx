@@ -62,7 +62,11 @@ import logoNew from '../assets/images/logoNew.svg'
                         <h2 className='modalSubTitle'>{t('main.howTo')}</h2>
                         <Trans>
                          {t('main.howToBody')}
-                        </Trans>                                     
+                        </Trans>
+                        <h2 className='modalSubTitle'>{t('main.openingPrayer')}</h2>
+                        <Trans>
+                         {t('main.openingPrayerBody')}
+                        </Trans>                                      
                       </div>
                     </div>
                   </div>
